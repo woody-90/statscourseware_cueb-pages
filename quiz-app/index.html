@@ -218,7 +218,7 @@ fetch('questions.json')
 
 function renderChapters() {
   // Sort chapters numerically by extracting chapter number
-  const chapters = [...new Set(questions.map(q => q.chapter))];
+  const chapters = [...new Set(questions.map(q => q.chapter))].filter(ch => ch && ch.trim());
   chapters.sort((a, b) => {
     const na = parseInt(a.match(/第(\d+)章/)?.[1] || '99');
     const nb = parseInt(b.match(/第(\d+)章/)?.[1] || '99');
