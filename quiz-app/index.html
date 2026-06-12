@@ -225,20 +225,18 @@ function renderChapters() {
     return na - nb;
   });
   const grid = document.getElementById('chapter-grid');
-  grid.innerHTML = chapters.map(ch =>
-    `<button class="chapter-btn active" data-ch="${ch}" onclick="toggleChapter(this,'${ch.replace(/'/g,"\\'")}')">${ch}</button>`
+  grid.innerHTML = chapters.map((ch, i) =>
+    `<button class="chapter-btn${i===0?' active':''}" data-ch="${ch}" onclick="toggleChapter(this,'${ch.replace(/'/g,"\\'")}')">${ch}</button>`
   ).join('');
-  // Select all by default
-  selectedChapters = [...chapters];
+  // Select first chapter by default
+  selectedChapters = [chapters[0]];
 }
 
 function toggleChapter(btn, ch) {
-  btn.classList.toggle('active');
-  if (btn.classList.contains('active')) {
-    if (!selectedChapters.includes(ch)) selectedChapters.push(ch);
-  } else {
-    selectedChapters = selectedChapters.filter(c => c !== ch);
-  }
+  // Single-select mode: deselect all, then select only this one
+  document.querySelectorAll('.chapter-btn').forEach(b => b.classList.remove('active'));
+  btn.classList.add('active');
+  selectedChapters = [ch];
 }
 
 function selectMode(mode) {
