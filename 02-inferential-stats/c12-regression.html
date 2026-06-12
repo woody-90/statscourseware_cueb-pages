@@ -1146,13 +1146,18 @@ tags: 'ams',    macros: {
       </a></li>
       <li>
         <a href="#slide-7" data-slide="7">
-          <span class="toc-num">7</span>案例：广告投入与销售额
+          <span class="toc-num">7</span>最小二乘估计（OLS）
         </a>
       </li>
-      <li><a href="#slide-8" data-slide="8" class="toc-section">
+      <li>
+        <a href="#slide-8" data-slide="8">
+          <span class="toc-num">8</span>案例：广告投入与销售额
+        </a>
+      </li>
+      <li><a href="#slide-9" data-slide="9" class="toc-section">
         第三节 回归方程的评价与检验
       </a></li>
-      <li><a href="#slide-9" data-slide="9" class="toc-section">
+      <li><a href="#slide-10" data-slide="10" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1162,7 +1167,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 10</span>
+  <span id="slide-counter">1 / 11</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1277,10 +1282,15 @@ data-has-math="true">
   class="slide slide-content"
   data-slide="4"
   id="slide-4"
->
+data-has-math="true">
   <div class="slide-content">
     <h3 id="_5">散点图</h3>
-<p>用图形直观展示两个变量间的关系——从左下到右上为<strong>正相关</strong>，从左上到右下为<strong>负相关</strong>，无明显模式为<strong>不相关</strong>。</p>
+<p>用图形直观展示两个变量间的关系：</p>
+<p style="display:flex;gap:10px;justify-content:center;flex-wrap:wrap;text-align:center">
+<span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iOTAlIiBzdHlsZT0ibWF4LXdpZHRoOjQwMHB4Ij4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2ZhZmFmYSIgcng9IjgiLz4KICA8bGluZSB4MT0iNDUiIHkxPSI0NSIgeDI9IjQ1IiB5Mj0iMjU1IiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI0NSIgeTE9IjI1NSIgeDI9IjM1NSIgeTI9IjI1NSIgc3Ryb2tlPSIjOTk5IiBzdHJva2Utd2lkdGg9IjEiLz4KICA8Y2lyY2xlIGN4PSI0NS4wIiBjeT0iMjM4LjAiIHI9IjQiIGZpbGw9IiMyYjZjYjAiIG9wYWNpdHk9IjAuNyIvPjxjaXJjbGUgY3g9IjU2LjIiIGN5PSIyNTUuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iNjguOSIgY3k9IjIxOC45IiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIxMTIuNCIgY3k9IjIyMi44IiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIxODQuOCIgY3k9IjE3My4wIiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIyMzUuMyIgY3k9IjE2OS40IiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIyNjMuNSIgY3k9IjEzMi40IiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIyNjcuNCIgY3k9Ijk5LjciIHI9IjQiIGZpbGw9IiMyYjZjYjAiIG9wYWNpdHk9IjAuNyIvPjxjaXJjbGUgY3g9IjM1NS4wIiBjeT0iNDUuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+CiAgPHRleHQgeD0iMjAwLjAiIHk9IjI5MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzFhMzY1ZCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSI+5q2j55u45YWzIChyID4gMCk8L3RleHQ+Cjwvc3ZnPg==" alt="" style="width:30%"><br>正相关 <span class="math inline">\((r > 0)\)</span></span>
+<span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iOTAlIiBzdHlsZT0ibWF4LXdpZHRoOjQwMHB4Ij4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2ZhZmFmYSIgcng9IjgiLz4KICA8bGluZSB4MT0iNDUiIHkxPSI0NSIgeDI9IjQ1IiB5Mj0iMjU1IiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI0NSIgeTE9IjI1NSIgeDI9IjM1NSIgeTI9IjI1NSIgc3Ryb2tlPSIjOTk5IiBzdHJva2Utd2lkdGg9IjEiLz4KICA8Y2lyY2xlIGN4PSI1MS45IiBjeT0iNDUuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iNDUuMCIgY3k9IjUzLjIiIHI9IjQiIGZpbGw9IiMyYjZjYjAiIG9wYWNpdHk9IjAuNyIvPjxjaXJjbGUgY3g9Ijk3LjQiIGN5PSIxMDUuMyIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTA3LjgiIGN5PSIxMTYuNCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTMyLjgiIGN5PSIxNDEuNCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTg4LjMiIGN5PSIxNTQuMyIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMjE5LjkiIGN5PSIxNjQuNCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMjcwLjMiIGN5PSIyNTUuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMzU1LjAiIGN5PSIyMjYuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+CiAgPHRleHQgeD0iMjAwLjAiIHk9IjI5MiIgdGV4dC1hbmNob3I9Im1pZGRsZSIgZm9udC1zaXplPSIxMyIgZm9udC13ZWlnaHQ9IjYwMCIgZmlsbD0iIzFhMzY1ZCIgZm9udC1mYW1pbHk9InN5c3RlbS11aSI+6LSf55u45YWzIChyIDwgMCk8L3RleHQ+Cjwvc3ZnPg==" alt="" style="width:30%"><br>负相关 <span class="math inline">\((r < 0)\)</span></span>
+<span><img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MDAgMzAwIiB3aWR0aD0iOTAlIiBzdHlsZT0ibWF4LXdpZHRoOjQwMHB4Ij4KICA8cmVjdCB3aWR0aD0iNDAwIiBoZWlnaHQ9IjMwMCIgZmlsbD0iI2ZhZmFmYSIgcng9IjgiLz4KICA8bGluZSB4MT0iNDUiIHkxPSI0NSIgeDI9IjQ1IiB5Mj0iMjU1IiBzdHJva2U9IiM5OTkiIHN0cm9rZS13aWR0aD0iMSIvPgogIDxsaW5lIHgxPSI0NSIgeTE9IjI1NSIgeDI9IjM1NSIgeTI9IjI1NSIgc3Ryb2tlPSIjOTk5IiBzdHJva2Utd2lkdGg9IjEiLz4KICA8Y2lyY2xlIGN4PSIxMTUuOSIgY3k9IjEyOS43IiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIxNTcuNiIgY3k9IjExNC4xIiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIyMzguMyIgY3k9IjI1NS4wIiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSI0NS4wIiBjeT0iNTMuMCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMTIyLjciIGN5PSIyMTAuOCIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMzU1LjAiIGN5PSIxNDkuMSIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMzA0LjgiIGN5PSIxNDcuNSIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMjQyLjUiIGN5PSIyMzIuNyIgcj0iNCIgZmlsbD0iIzJiNmNiMCIgb3BhY2l0eT0iMC43Ii8+PGNpcmNsZSBjeD0iMjQxLjIiIGN5PSI0NS4wIiByPSI0IiBmaWxsPSIjMmI2Y2IwIiBvcGFjaXR5PSIwLjciLz48Y2lyY2xlIGN4PSIyMDUuOSIgY3k9Ijc4LjIiIHI9IjQiIGZpbGw9IiMyYjZjYjAiIG9wYWNpdHk9IjAuNyIvPgogIDx0ZXh0IHg9IjIwMC4wIiB5PSIyOTIiIHRleHQtYW5jaG9yPSJtaWRkbGUiIGZvbnQtc2l6ZT0iMTMiIGZvbnQtd2VpZ2h0PSI2MDAiIGZpbGw9IiMxYTM2NWQiIGZvbnQtZmFtaWx5PSJzeXN0ZW0tdWkiPuS4jeebuOWFsyAociDiiYggMCk8L3RleHQ+Cjwvc3ZnPg==" alt="" style="width:30%"><br>不相关 <span class="math inline">\((r \approx 0)\)</span></span>
+</p>
   </div>
 </section>
 <section
@@ -1389,7 +1399,15 @@ $$Y = \beta_0 + \beta_1 X + \varepsilon, \quad \varepsilon \sim N(0, \sigma^2)$$
 <p><strong>基本假定</strong>：
 1. <span class="math inline">\(Y\)</span> 与 <span class="math inline">\(X\)</span> 存在线性关系
 2. 误差项 <span class="math inline">\(\varepsilon\)</span> 满足：正态性、方差齐性、独立性</p>
-<h3 id="ols">最小二乘估计（OLS）</h3>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="7"
+  id="slide-7"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="ols">最小二乘估计（OLS）</h3>
 <p>使残差平方和 <span class="math inline">\(\sum (y_i - \hat{y}_i)^2\)</span> 最小：</p>
 <p>
 <div class="math display">
@@ -1403,8 +1421,8 @@ $$b_1 = \frac{\sum (x_i - \bar{x})(y_i - \bar{y})}{\sum (x_i - \bar{x})^2}, \qua
 </section>
 <section
   class="slide slide-content"
-  data-slide="7"
-  id="slide-7"
+  data-slide="8"
+  id="slide-8"
 data-has-math="true">
   <div class="slide-content">
     <h3 id="_10">案例：广告投入与销售额</h3>
@@ -1447,22 +1465,6 @@ data-has-math="true">
 <blockquote>
 <p>求销售额对广告投入的回归方程。</p>
 </blockquote>
-<p><strong>解：</strong></p>
-<p>
-<div class="math display">
-$$\bar{x} = 13, \quad \bar{y} = 75$$
-</div>
-</p>
-<p>
-<div class="math display">
-$$\sum (x-\bar{x})(y-\bar{y}) = 1086, \quad \sum (x-\bar{x})^2 = 330$$
-</div>
-</p>
-<p>
-<div class="math display">
-$$b_1 = \frac{1086}{330} = 3.29, \quad b_0 = 75 - 3.29 \times 13 = 32.23$$
-</div>
-</p>
 <p><strong>回归方程</strong>：<span class="math inline">\(\hat{y} = 32.23 + 3.29x\)</span></p>
 <blockquote>
 <p><strong>解释：</strong> 广告投入每增加 1 万元，销售额平均增加 <strong>3.29 万元</strong>。不投广告时的基础销售额约为 <strong>32.23 万元</strong>。</p>
@@ -1471,8 +1473,8 @@ $$b_1 = \frac{1086}{330} = 3.29, \quad b_0 = 75 - 3.29 \times 13 = 32.23$$
 </section>
 <section
   class="slide slide-section"
-  data-slide="8"
-  id="slide-8"
+  data-slide="9"
+  id="slide-9"
 data-has-math="true">
   <div class="slide-content">
     <h2 id="_11">第三节 回归方程的评价与检验</h2>
@@ -1504,7 +1506,7 @@ $$SST = SSR + SSE$$
 </tr>
 </tbody>
 </table>
-<h3 id="math_placeholder_c56be9338dfb4d379df70ed90fb69cbf">拟合优度 <span class="math inline">\(R^2\)</span></h3>
+<h3 id="math_placeholder_bf0133720ee647d88d8307c6a77c7eed">拟合优度 <span class="math inline">\(R^2\)</span></h3>
 <p>
 <div class="math display">
 $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
@@ -1544,8 +1546,8 @@ $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
 </section>
 <section
   class="slide slide-section"
-  data-slide="9"
-  id="slide-9"
+  data-slide="10"
+  id="slide-10"
 data-has-math="true">
   <div class="slide-content">
     <h2 id="_14">本章小结</h2>
@@ -1559,8 +1561,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="10"
-  id="slide-10"
+  data-slide="11"
+  id="slide-11"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
