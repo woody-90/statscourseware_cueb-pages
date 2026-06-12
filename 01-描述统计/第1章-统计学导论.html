@@ -957,6 +957,81 @@ dd {
   }
 }
 
+/* --- Interactive Quiz ------------------------------------ */
+
+.quiz {
+  background: #f8fafc;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem 0;
+}
+
+.quiz-question {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-heading);
+}
+
+.quiz-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-option {
+  display: block;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.4rem;
+  background: #fff;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 0.9rem;
+}
+
+.quiz-option:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+  transform: translateX(4px);
+}
+
+.quiz-option.correct {
+  border-color: #38a169;
+  background: #f0fff4;
+  color: #22543d;
+  font-weight: 600;
+  cursor: default;
+  transform: none;
+}
+
+.quiz-option.wrong {
+  border-color: #e53e3e;
+  background: #fff5f5;
+  color: #c53030;
+  cursor: default;
+  transform: none;
+}
+
+.quiz-option.answered {
+  pointer-events: none;
+}
+
+.quiz-feedback {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+  min-height: 2rem;
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 /* --- Slide Background Variants ---------------------------- */
 
 .slide[data-theme="dark"] {
@@ -1001,8 +1076,24 @@ tags: 'ams',    macros: {
   }
 };
 </script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+<!-- Load MathJax: local first, CDN fallback -->
+<script>
+(function() {
+  var script = document.createElement('script');
+  script.id = 'MathJax-script';
+  script.async = true;
+  // Try local copy first
+  script.src = '../mathjax/tex-mml-chtml.js';
+  script.onerror = function() {
+    // Fallback to CDN
+    var fallback = document.createElement('script');
+    fallback.id = 'MathJax-script';
+    fallback.async = true;
+    fallback.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+    document.head.appendChild(fallback);
+  };
+  document.head.appendChild(script);
+})();
 </script>
 </head>
 
@@ -1029,25 +1120,27 @@ tags: 'ams',    macros: {
     <ul id="toc-list">
       <li>
         <a href="#slide-1" data-slide="1">
-          <span class="toc-num">1</span>统计学
+          <span class="toc-num">1</span>第一章 统计学导论
         </a>
       </li>
-      <li><a href="#slide-2" data-slide="2" class="toc-section">
+      <li>
+        <a href="#slide-2" data-slide="2">
+          <span class="toc-num">2</span>本章内容
+        </a>
+      </li>
+      <li><a href="#slide-3" data-slide="3" class="toc-section">
         课程介绍
       </a></li>
       <li>
-        <a href="#slide-3" data-slide="3">
-          <span class="toc-num">3</span>主要参考书目
+        <a href="#slide-4" data-slide="4">
+          <span class="toc-num">4</span>主要参考书目
         </a>
       </li>
       <li>
-        <a href="#slide-4" data-slide="4">
-          <span class="toc-num">4</span>课程考核
+        <a href="#slide-5" data-slide="5">
+          <span class="toc-num">5</span>课程考核
         </a>
       </li>
-      <li><a href="#slide-5" data-slide="5" class="toc-section">
-        第一章 导论
-      </a></li>
       <li><a href="#slide-6" data-slide="6" class="toc-section">
         身边的统计学
       </a></li>
@@ -1170,19 +1263,35 @@ tags: 'ams',    macros: {
   id="slide-1"
 >
   <div class="slide-content">
-    <h1 id="_1">统计学</h1>
+    <h1 id="_1">第一章 统计学导论</h1>
 <p class="subtitle">首都经济贸易大学<br>统计与数据科学学院</p>
 <p class="author">统计学课程组</p>
   </div>
 </section>
 <section
-  class="slide slide-section"
+  class="slide slide-content"
   data-slide="2"
   id="slide-2"
 >
   <div class="slide-content">
-    <h2 id="_2">课程介绍</h2>
-<h3 id="_3">本课程特点</h3>
+    <h3 id="_2">本章内容</h3>
+<ul>
+<li>身边的统计学</li>
+<li>统计学的产生与发展</li>
+<li>统计学的性质与基本概念</li>
+<li>统计的基本方法与学科体系</li>
+<li>统计的误用与滥用</li>
+</ul>
+  </div>
+</section>
+<section
+  class="slide slide-section"
+  data-slide="3"
+  id="slide-3"
+>
+  <div class="slide-content">
+    <h2 id="_3">课程介绍</h2>
+<h3 id="_4">本课程特点</h3>
 <ul>
 <li>主要介绍各种统计分析方法的基本思路和原理，涉及少量方法和公式的推导过程</li>
 <li>从数据入手，讲述各种分析方法，最后得出结论</li>
@@ -1196,11 +1305,11 @@ tags: 'ams',    macros: {
 </section>
 <section
   class="slide slide-content"
-  data-slide="3"
-  id="slide-3"
+  data-slide="4"
+  id="slide-4"
 >
   <div class="slide-content">
-    <h3 id="_4">主要参考书目</h3>
+    <h3 id="_5">主要参考书目</h3>
 <table>
 <thead>
 <tr>
@@ -1237,7 +1346,7 @@ tags: 'ams',    macros: {
 </tr>
 </tbody>
 </table>
-<h3 id="_5">线上学习资料</h3>
+<h3 id="_6">线上学习资料</h3>
 <ul>
 <li>中国 MOOC：<strong>统计学（首都经济贸易大学）</strong></li>
 <li>用于平时预习、复习和期中测试</li>
@@ -1246,11 +1355,11 @@ tags: 'ams',    macros: {
 </section>
 <section
   class="slide slide-content"
-  data-slide="4"
-  id="slide-4"
+  data-slide="5"
+  id="slide-5"
 >
   <div class="slide-content">
-    <h3 id="_6">课程考核</h3>
+    <h3 id="_7">课程考核</h3>
 <table>
 <thead>
 <tr>
@@ -1277,29 +1386,12 @@ tags: 'ams',    macros: {
 </section>
 <section
   class="slide slide-section"
-  data-slide="5"
-  id="slide-5"
->
-  <div class="slide-content">
-    <h2 id="_7">第一章 导论</h2>
-<h3 id="_8">本章内容</h3>
-<ul>
-<li>身边的统计学</li>
-<li>统计学的产生与发展</li>
-<li>统计学的性质与基本概念</li>
-<li>统计的基本方法与学科体系</li>
-<li>统计的误用与滥用</li>
-</ul>
-  </div>
-</section>
-<section
-  class="slide slide-section"
   data-slide="6"
   id="slide-6"
 >
   <div class="slide-content">
-    <h2 id="_9">身边的统计学</h2>
-<h3 id="_10">人口普查</h3>
+    <h2 id="_8">身边的统计学</h2>
+<h3 id="_9">人口普查</h3>
 <p>人口普查每 10 年进行一次，尾数逢 0 的年份为普查年度。新中国成立以来，我国已经成功进行过<strong>七次</strong>全国人口普查（1953、1964、1982、1990、2000、2010、2020）。</p>
 <p>人口普查数据的用途：</p>
 <ul>
@@ -1315,7 +1407,7 @@ tags: 'ams',    macros: {
   id="slide-7"
 >
   <div class="slide-content">
-    <h3 id="_11">居民收入数据</h3>
+    <h3 id="_10">居民收入数据</h3>
 <p>2021 年全年全国居民人均可支配收入 <strong>35128 元</strong>，比上年名义增长 9.1%。</p>
 <ul>
 <li>全国居民人均可支配收入<strong>中位数</strong> 29975 元，增长 8.8%</li>
@@ -1335,8 +1427,8 @@ tags: 'ams',    macros: {
   id="slide-8"
 >
   <div class="slide-content">
-    <h2 id="_12">统计学的产生与发展</h2>
-<h3 id="_13">统计学的萌芽：结绳记事</h3>
+    <h2 id="_11">统计学的产生与发展</h2>
+<h3 id="_12">统计学的萌芽：结绳记事</h3>
 <p>结绳记事是我国原始公社时期的一种计量方法。</p>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
@@ -1351,7 +1443,7 @@ tags: 'ams',    macros: {
   id="slide-9"
 >
   <div class="slide-content">
-    <h3 id="_14">统计学发展三阶段</h3>
+    <h3 id="_13">统计学发展三阶段</h3>
 <table>
 <thead>
 <tr>
@@ -1386,7 +1478,7 @@ tags: 'ams',    macros: {
   id="slide-10"
 >
   <div class="slide-content">
-    <h3 id="_15">古典时期：国势学派</h3>
+    <h3 id="_14">古典时期：国势学派</h3>
 <p>又称<strong>记述学派</strong>，产生于 17 世纪德国。</p>
 <ul>
 <li>主要以文字记述国家的显著事项</li>
@@ -1402,7 +1494,7 @@ tags: 'ams',    macros: {
   id="slide-11"
 >
   <div class="slide-content">
-    <h3 id="_16">古典时期：政治算术学派</h3>
+    <h3 id="_15">古典时期：政治算术学派</h3>
 <p>产生于 17 世纪中叶的英国，"政治算术"的特点是统计方法与数学计算和推理方法开始结合。</p>
 <ul>
 <li>创始人：<strong>威廉·配第</strong>（William Petty，1623—1687）</li>
@@ -1421,7 +1513,7 @@ tags: 'ams',    macros: {
   id="slide-12"
 >
   <div class="slide-content">
-    <h3 id="_17">近代时期：数理统计学派</h3>
+    <h3 id="_16">近代时期：数理统计学派</h3>
 <p>19 世纪中叶，概率论被引进统计学从而形成数理统计学派。</p>
 <ul>
 <li>奠基人：比利时的<strong>阿道夫·凯特莱</strong>（1796—1874）</li>
@@ -1435,7 +1527,7 @@ tags: 'ams',    macros: {
   id="slide-13"
 >
   <div class="slide-content">
-    <h3 id="_18">近代时期：社会统计学派</h3>
+    <h3 id="_17">近代时期：社会统计学派</h3>
 <p>产生于 19 世纪后半叶。</p>
 <ul>
 <li>创始人：德国<strong>克尼斯</strong>（1821—1898）</li>
@@ -1450,7 +1542,7 @@ tags: 'ams',    macros: {
   id="slide-14"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_19">现代时期：统计分析科学</h3>
+    <h3 id="_18">现代时期：统计分析科学</h3>
 <p>"统计分析科学"课程的出现是现代统计发展阶段的开端。</p>
 <table>
 <thead>
@@ -1494,8 +1586,8 @@ data-has-math="true">
   id="slide-15"
 >
   <div class="slide-content">
-    <h2 id="_20">统计学的性质与基本概念</h2>
-<h3 id="_21">什么是统计学？</h3>
+    <h2 id="_19">统计学的性质与基本概念</h2>
+<h3 id="_20">什么是统计学？</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> "统计学是收集、分析、表述和解释数据的科学。" ——《不列颠百科全书》</p>
@@ -1516,7 +1608,7 @@ data-has-math="true">
   id="slide-16"
 >
   <div class="slide-content">
-    <h3 id="_22">统计学的性质与研究对象</h3>
+    <h3 id="_21">统计学的性质与研究对象</h3>
 <ul>
 <li>统计学是一门关于<strong>数据</strong>的科学</li>
 <li>研究对象是<strong>总体</strong>而不是个体，是客观事物的<strong>规律</strong>，而不是偶然出现的某一现象</li>
@@ -1535,7 +1627,7 @@ data-has-math="true">
   id="slide-17"
 >
   <div class="slide-content">
-    <h3 id="_23">随机性与规律性</h3>
+    <h3 id="_22">随机性与规律性</h3>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
 <p> 人的寿命很难预先确定。一个吸烟、喝酒、不锻炼的人可能比一个生活习惯良好的人活得长。但对总体来说，居民的平均年龄非常稳定，女性平均寿命稳定地比男性高几年。</p>
@@ -1553,7 +1645,7 @@ data-has-math="true">
   id="slide-18"
 >
   <div class="slide-content">
-    <h2 id="_24">统计的基本方法</h2>
+    <h2 id="_23">统计的基本方法</h2>
 <h3 id="descriptive-statistics">描述统计 (Descriptive Statistics)</h3>
 <p>研究数据收集、整理和描述的统计学分支。</p>
 <table>
@@ -1611,12 +1703,23 @@ data-has-math="true">
   id="slide-20"
 >
   <div class="slide-content">
-    <h3 id="_25">描述统计与推断统计的关系</h3>
+    <h3 id="_24">描述统计与推断统计的关系</h3>
 <p><strong>第一步 — 描述统计</strong>：对数据进行搜集、整理、展示和描述性分析，发现数据的基本特征和规律。</p>
 <p>↓</p>
 <p><strong>第二步 — 推断统计</strong>：利用样本数据，通过参数估计和假设检验等方法，对总体特征作出推断。</p>
 <p>↓</p>
 <p><strong>第三步 — 得出结论</strong>：将样本信息推广到总体，形成关于客观现象的统计规律认识。</p>
+<p>&nbsp;</p>
+<div class="quiz" id="quiz_1434952322878504679">
+<p class="quiz-question"><strong>📝 小测验：</strong>某研究人员收集了 500 名大学生的月消费数据，计算平均消费为 1500 元，标准差为 300 元。这项研究属于？</p>
+<ul class="quiz-options">
+<li data-correct="false" id="quiz_1434952322878504679_0" class="quiz-option">描述统计</li>
+<li data-correct="false" id="quiz_1434952322878504679_1" class="quiz-option">推断统计</li>
+<li data-correct="true" id="quiz_1434952322878504679_2" class="quiz-option">描述统计为主（仅描述了样本特征，未推断总体）</li>
+<li data-correct="false" id="quiz_1434952322878504679_3" class="quiz-option">既不是描述也不是推断</li>
+</ul>
+<div class="quiz-feedback" id="quiz_1434952322878504679_feedback"></div>
+</div>
   </div>
 </section>
 <section
@@ -1625,11 +1728,11 @@ data-has-math="true">
   id="slide-21"
 >
   <div class="slide-content">
-    <h2 id="_26">统计学科体系</h2>
-<h3 id="_27">理论统计学</h3>
+    <h2 id="_25">统计学科体系</h2>
+<h3 id="_26">理论统计学</h3>
 <p>侧重于研究统计学的<strong>方法论和基础理论</strong>。</p>
 <p>基本内容包括：统计估计、假设检验、抽样调查、试验设计、非参数统计、时间数列、统计决策、序贯分析、多元统计、统计诊断、稳健统计、探索性分析。</p>
-<h3 id="_28">应用统计学</h3>
+<h3 id="_27">应用统计学</h3>
 <p>运用统计思想和方法，处理实践中遇到的各种问题的理论与方法。</p>
 <p>分类：统计计算方法、应用统计学理论基础、统计学应用、统计学与其他应用数学学科的结合。</p>
   </div>
@@ -1640,7 +1743,7 @@ data-has-math="true">
   id="slide-22"
 >
   <div class="slide-content">
-    <h2 id="_29">统计的误用与滥用</h2>
+    <h2 id="_28">统计的误用与滥用</h2>
 <blockquote class="callout-note">
 <div class="callout-label">注意</div>
 <p> 一个世纪以前，政治家 Benjamin Disraeli 曾有一个著名的论断：<strong>"有三类谎言：谎言、糟透的谎言和统计。"</strong></p>
@@ -1652,6 +1755,17 @@ data-has-math="true">
 <li>误导性图表（纵轴截断、比例失调）</li>
 <li>局部描述（以偏概全）</li>
 </ul>
+<p>&nbsp;</p>
+<div class="quiz" id="quiz_7514631431018447564">
+<p class="quiz-question"><strong>📝 小测验：</strong>某品牌在广告中宣称"90% 的用户推荐该产品"，但调查仅回收了 200 份问卷中的 60 份。这属于哪种统计滥用？</p>
+<ul class="quiz-options">
+<li data-correct="false" id="quiz_7514631431018447564_0" class="quiz-option">误导性图表</li>
+<li data-correct="true" id="quiz_7514631431018447564_1" class="quiz-option">过小的样本（低回收率导致样本有偏）</li>
+<li data-correct="false" id="quiz_7514631431018447564_2" class="quiz-option">不好的样本</li>
+<li data-correct="false" id="quiz_7514631431018447564_3" class="quiz-option">局部描述</li>
+</ul>
+<div class="quiz-feedback" id="quiz_7514631431018447564_feedback"></div>
+</div>
   </div>
 </section>
 <section
@@ -1660,7 +1774,7 @@ data-has-math="true">
   id="slide-23"
 >
   <div class="slide-content">
-    <h2 id="_30">小结</h2>
+    <h2 id="_29">小结</h2>
 <ol>
 <li>统计学是关于<strong>数据</strong>的方法论科学，包括收集、分析、表述和解释数据</li>
 <li>统计学经历了古典、近代、现代三个发展时期，形成了多个学派</li>
@@ -1972,6 +2086,37 @@ data-has-math="true">
       }
     });
   }
+
+  // ---- Quiz interaction ----
+  document.querySelectorAll('.quiz-option').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      var quiz = this.parentElement.parentElement;
+      var allOptions = quiz.querySelectorAll('.quiz-option');
+      var feedback = quiz.querySelector('.quiz-feedback');
+
+      // Already correctly answered — no more changes
+      var alreadyCorrect = quiz.querySelector('.quiz-option.correct');
+      if (alreadyCorrect) return;
+
+      var isCorrect = this.dataset.correct === 'true';
+
+      if (isCorrect) {
+        // Right answer — celebrate and lock
+        this.classList.add('correct');
+        allOptions.forEach(function(o) { o.style.pointerEvents = 'none'; });
+        feedback.textContent = '\u{1F600} 回答正确！';
+      } else {
+        // Wrong answer — mark briefly, then let retry
+        this.classList.add('wrong');
+        feedback.textContent = '\u{1F62D} 不对哦，再试试！';
+        var that = this;
+        setTimeout(function() {
+          that.classList.remove('wrong');
+          feedback.textContent = '';
+        }, 800);
+      }
+    });
+  });
 
   console.log('📊 Stats Slide Processor — ' + totalSlides + ' slides ready');
   console.log('   ← → keys to navigate, M to toggle scroll mode, ? for shortcuts');

@@ -957,6 +957,81 @@ dd {
   }
 }
 
+/* --- Interactive Quiz ------------------------------------ */
+
+.quiz {
+  background: #f8fafc;
+  border: 2px solid var(--color-border);
+  border-radius: 10px;
+  padding: 1.2rem 1.5rem;
+  margin: 1.2rem 0;
+}
+
+.quiz-question {
+  font-size: 1rem;
+  margin-bottom: 0.8rem;
+  color: var(--color-heading);
+}
+
+.quiz-options {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.quiz-option {
+  display: block;
+  padding: 0.6rem 1rem;
+  margin-bottom: 0.4rem;
+  background: #fff;
+  border: 2px solid var(--color-border);
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.15s;
+  font-size: 0.9rem;
+}
+
+.quiz-option:hover {
+  border-color: var(--color-accent);
+  background: var(--color-accent-light);
+  transform: translateX(4px);
+}
+
+.quiz-option.correct {
+  border-color: #38a169;
+  background: #f0fff4;
+  color: #22543d;
+  font-weight: 600;
+  cursor: default;
+  transform: none;
+}
+
+.quiz-option.wrong {
+  border-color: #e53e3e;
+  background: #fff5f5;
+  color: #c53030;
+  cursor: default;
+  transform: none;
+}
+
+.quiz-option.answered {
+  pointer-events: none;
+}
+
+.quiz-feedback {
+  margin-top: 0.8rem;
+  font-size: 1.5rem;
+  text-align: center;
+  min-height: 2rem;
+  animation: popIn 0.4s ease;
+}
+
+@keyframes popIn {
+  0% { transform: scale(0); opacity: 0; }
+  70% { transform: scale(1.2); }
+  100% { transform: scale(1); opacity: 1; }
+}
+
 /* --- Slide Background Variants ---------------------------- */
 
 .slide[data-theme="dark"] {
@@ -1001,8 +1076,24 @@ tags: 'ams',    macros: {
   }
 };
 </script>
-<script id="MathJax-script" async
-  src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+<!-- Load MathJax: local first, CDN fallback -->
+<script>
+(function() {
+  var script = document.createElement('script');
+  script.id = 'MathJax-script';
+  script.async = true;
+  // Try local copy first
+  script.src = '../mathjax/tex-mml-chtml.js';
+  script.onerror = function() {
+    // Fallback to CDN
+    var fallback = document.createElement('script');
+    fallback.id = 'MathJax-script';
+    fallback.async = true;
+    fallback.src = 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js';
+    document.head.appendChild(fallback);
+  };
+  document.head.appendChild(script);
+})();
 </script>
 </head>
 
@@ -1029,12 +1120,14 @@ tags: 'ams',    macros: {
     <ul id="toc-list">
       <li>
         <a href="#slide-1" data-slide="1">
-          <span class="toc-num">1</span>数据收集的方法
+          <span class="toc-num">1</span>第二章 数据收集的方法
         </a>
       </li>
-      <li><a href="#slide-2" data-slide="2" class="toc-section">
-        第二章 数据收集的方法
-      </a></li>
+      <li>
+        <a href="#slide-2" data-slide="2">
+          <span class="toc-num">2</span>本章内容
+        </a>
+      </li>
       <li><a href="#slide-3" data-slide="3" class="toc-section">
         第一节 数据的来源
       </a></li>
@@ -1245,19 +1338,18 @@ tags: 'ams',    macros: {
   id="slide-1"
 >
   <div class="slide-content">
-    <h1 id="_1">数据收集的方法</h1>
+    <h1 id="_1">第二章 数据收集的方法</h1>
 <p class="subtitle">首都经济贸易大学<br>统计与数据科学学院</p>
 <p class="author">统计学课程组</p>
   </div>
 </section>
 <section
-  class="slide slide-section"
+  class="slide slide-content"
   data-slide="2"
   id="slide-2"
 >
   <div class="slide-content">
-    <h2 id="_2">第二章 数据收集的方法</h2>
-<h3 id="_3">本章内容</h3>
+    <h3 id="_2">本章内容</h3>
 <ul>
 <li>数据的来源：间接来源与直接来源</li>
 <li>统计调查方案的设计</li>
@@ -1272,8 +1364,8 @@ tags: 'ams',    macros: {
   id="slide-3"
 >
   <div class="slide-content">
-    <h2 id="_4">第一节 数据的来源</h2>
-<h3 id="_5">间接来源与直接来源</h3>
+    <h2 id="_3">第一节 数据的来源</h2>
+<h3 id="_4">间接来源与直接来源</h3>
 <p>数据的来源主要有两种渠道：</p>
 <ul>
 <li><strong>第一手/直接数据</strong>：来源于直接的调查和实验</li>
@@ -1291,7 +1383,7 @@ tags: 'ams',    macros: {
   id="slide-4"
 >
   <div class="slide-content">
-    <h3 id="_6">数据的间接来源（二手数据）</h3>
+    <h3 id="_5">数据的间接来源（二手数据）</h3>
 <p>常见的二手数据来源：</p>
 <ul>
 <li>统计部门和政府部门公布的资料，如各类统计年鉴</li>
@@ -1308,7 +1400,7 @@ tags: 'ams',    macros: {
   id="slide-5"
 >
   <div class="slide-content">
-    <h3 id="_7">二手数据的特点与评估</h3>
+    <h3 id="_6">二手数据的特点与评估</h3>
 <p><strong>特点：</strong></p>
 <ul>
 <li>收集容易，采集成本低</li>
@@ -1329,7 +1421,7 @@ tags: 'ams',    macros: {
   id="slide-6"
 >
   <div class="slide-content">
-    <h3 id="_8">数据的直接来源（原始数据）</h3>
+    <h3 id="_7">数据的直接来源（原始数据）</h3>
 <table>
 <thead>
 <tr>
@@ -1359,7 +1451,7 @@ tags: 'ams',    macros: {
   id="slide-7"
 >
   <div class="slide-content">
-    <h3 id="_9">统计调查</h3>
+    <h3 id="_8">统计调查</h3>
 <p>统计调查是取得统计数据的主要来源，也是获得直接统计数据的重要手段。</p>
 <ul>
 <li><strong>普查</strong>：调查总体中的所有单位</li>
@@ -1377,8 +1469,8 @@ tags: 'ams',    macros: {
   id="slide-8"
 >
   <div class="slide-content">
-    <h2 id="_10">基本概念</h2>
-<h3 id="_11">总体与样本</h3>
+    <h2 id="_9">基本概念</h2>
+<h3 id="_10">总体与样本</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>总体（Population）</strong> — 研究对象中的所有个体或数据集合。可以是具有某种共同性质的许多个体（企业、居民、职工、学生等），也可以是由某一现象的所有个别观察值所组成。</p>
@@ -1394,7 +1486,7 @@ tags: 'ams',    macros: {
   id="slide-9"
 >
   <div class="slide-content">
-    <h3 id="_12">概率抽样</h3>
+    <h3 id="_11">概率抽样</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>概率抽样</strong> — 按照随机原则在总体中抽取样本。每个单位被抽中的概率是已知的，或可以计算出来的。</p>
@@ -1433,10 +1525,11 @@ tags: 'ams',    macros: {
   id="slide-10"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_13">概率抽样：简单随机抽样</h3>
+    <h3 id="_12">概率抽样：简单随机抽样</h3>
 <p>从总体 <span class="math inline">\(N\)</span> 个单位中随机地抽取 <span class="math inline">\(n\)</span> 个单位作为样本，使得每一个容量为 <span class="math inline">\(n\)</span> 的样本都有相同的机会被抽中。</p>
 <p><strong>操作方法</strong>：抽签法、随机数表法等
 <strong>抽取方式</strong>：重复抽样、不重复抽样</p>
+<p><img src="assets/简单随机抽样（图示）.png" alt="简单随机抽样" style="width:50%"></p>
 <table>
 <thead>
 <tr>
@@ -1467,7 +1560,7 @@ data-has-math="true">
   id="slide-11"
 >
   <div class="slide-content">
-    <h3 id="_14">抽样框</h3>
+    <h3 id="_13">抽样框</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>抽样框</strong> — 包括研究对象所有单位的一个名单或框架，用来从中抽取样本。</p>
@@ -1481,12 +1574,13 @@ data-has-math="true">
   id="slide-12"
 >
   <div class="slide-content">
-    <h3 id="_15">概率抽样：分层抽样</h3>
+    <h3 id="_14">概率抽样：分层抽样</h3>
 <p>将抽样单位按某种特征或规则划分为不同的<strong>层</strong>，然后从不同的层中独立、随机地抽取样本。</p>
 <ul>
 <li>划分要求：将相近的总体单位划归同一层，减少层内差异</li>
 <li>优点：保证样本结构与总体结构相近，提高估计精度</li>
 </ul>
+<p><img src="assets/分层抽样（图示）.png" alt="分层抽样" style="width:50%"></p>
   </div>
 </section>
 <section
@@ -1495,12 +1589,13 @@ data-has-math="true">
   id="slide-13"
 >
   <div class="slide-content">
-    <h3 id="_16">概率抽样：整群抽样</h3>
+    <h3 id="_15">概率抽样：整群抽样</h3>
 <p>将总体中若干个单位合并为<strong>组（群）</strong>，抽样时直接抽取群，然后对中选群中的所有单位全部实施调查。</p>
 <ul>
 <li>与分层抽样的区别：整群抽样的目的是扩大"总体单位"</li>
 <li>优点：只需群的抽样框，简化工作量</li>
 </ul>
+<p><img src="assets/整群抽样图示.png" alt="整群抽样" style="width:50%"></p>
   </div>
 </section>
 <section
@@ -1509,7 +1604,7 @@ data-has-math="true">
   id="slide-14"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_17">概率抽样：系统抽样</h3>
+    <h3 id="_16">概率抽样：系统抽样</h3>
 <p>将总体中的所有单位按一定顺序排列，在规定的范围内随机抽取初始单位，然后按事先规定好的规则确定其他样本单位。</p>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
@@ -1538,6 +1633,7 @@ data-has-math="true">
 </tr>
 </tbody>
 </table>
+<p><img src="assets/系统抽样图示.png" alt="系统抽样" style="width:50%"></p>
   </div>
 </section>
 <section
@@ -1546,13 +1642,14 @@ data-has-math="true">
   id="slide-15"
 >
   <div class="slide-content">
-    <h3 id="_18">概率抽样：多阶段抽样</h3>
+    <h3 id="_17">概率抽样：多阶段抽样</h3>
 <p>在大规模抽样调查中，可以看作是<strong>多次整群抽样的嵌套</strong>。</p>
 <ul>
 <li>先抽取群，再从选中的群中抽取若干单位</li>
 <li>优点：保证样本相对集中，节约调查费用</li>
 <li>需要包含所有低阶段抽样单位的抽样框</li>
 </ul>
+<p><img src="assets/多阶段抽样图示.png" alt="多阶段抽样" style="width:50%"></p>
   </div>
 </section>
 <section
@@ -1561,7 +1658,7 @@ data-has-math="true">
   id="slide-16"
 >
   <div class="slide-content">
-    <h3 id="_19">四种概率抽样方法对比</h3>
+    <h3 id="_18">四种概率抽样方法对比</h3>
 <table>
 <thead>
 <tr>
@@ -1597,6 +1694,18 @@ data-has-math="true">
 <div class="callout-label">例子</div>
 <p> 学校想要调查学生上网时长，在全校宿舍中随机抽取了 10 个宿舍，并调查了这 10 个宿舍中的所有学生 → 这是<strong>整群抽样</strong>。</p>
 </blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="quiz" id="quiz_3891680588120199723">
+<p class="quiz-question"><strong>📝 小测验：</strong>某市要调查居民收入水平，先将全市按行政区划分层，再在每个区内随机抽取 100 户。这种抽样方法是？</p>
+<ul class="quiz-options">
+<li data-correct="false" id="quiz_3891680588120199723_0" class="quiz-option">简单随机抽样</li>
+<li data-correct="true" id="quiz_3891680588120199723_1" class="quiz-option">分层抽样</li>
+<li data-correct="false" id="quiz_3891680588120199723_2" class="quiz-option">整群抽样</li>
+<li data-correct="false" id="quiz_3891680588120199723_3" class="quiz-option">系统抽样</li>
+</ul>
+<div class="quiz-feedback" id="quiz_3891680588120199723_feedback"></div>
+</div>
   </div>
 </section>
 <section
@@ -1605,7 +1714,7 @@ data-has-math="true">
   id="slide-17"
 >
   <div class="slide-content">
-    <h2 id="_20">非概率抽样</h2>
+    <h2 id="_19">非概率抽样</h2>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>非概率抽样</strong> — 抽取样本时不是依据随机原则，而是根据研究目的对数据的要求，采用某种方式从总体中抽出部分单位。</p>
@@ -1649,7 +1758,7 @@ data-has-math="true">
   id="slide-18"
 >
   <div class="slide-content">
-    <h3 id="_21">概率抽样与非概率抽样比较</h3>
+    <h3 id="_20">概率抽样与非概率抽样比较</h3>
 <table>
 <thead>
 <tr>
@@ -1684,8 +1793,8 @@ data-has-math="true">
   id="slide-19"
 >
   <div class="slide-content">
-    <h2 id="_22">第二节 统计调查方案的设计</h2>
-<h3 id="_23">调查方案的组成</h3>
+    <h2 id="_21">第二节 统计调查方案的设计</h2>
+<h3 id="_22">调查方案的组成</h3>
 <p>在进行统计调查之前，需要制定一个科学、合理的调查方案。一个完整的调查方案需要包括：</p>
 <ol>
 <li><strong>调查目的</strong> — 回答"为什么调查？"</li>
@@ -1702,8 +1811,8 @@ data-has-math="true">
   id="slide-20"
 >
   <div class="slide-content">
-    <h2 id="_24">第三节 数据收集的方法</h2>
-<h3 id="_25">常用数据收集方法</h3>
+    <h2 id="_23">第三节 数据收集的方法</h2>
+<h3 id="_24">常用数据收集方法</h3>
 <p>在确定了统计调查方法后，常用的数据搜集方法有：</p>
 <table>
 <thead>
@@ -1735,7 +1844,7 @@ data-has-math="true">
   id="slide-21"
 >
   <div class="slide-content">
-    <h3 id="_26">访问法</h3>
+    <h3 id="_25">访问法</h3>
 <p><strong>面谈访问</strong>：调查者与被调查者面对面交谈获得资料
 - 标准式访问：按事先设计好的问卷进行
 - 非标准式访问：事先一般不制作问卷</p>
@@ -1752,7 +1861,7 @@ data-has-math="true">
   id="slide-22"
 >
   <div class="slide-content">
-    <h3 id="_27">报告法</h3>
+    <h3 id="_26">报告法</h3>
 <table>
 <thead>
 <tr>
@@ -1787,7 +1896,7 @@ data-has-math="true">
   id="slide-23"
 >
   <div class="slide-content">
-    <h3 id="_28">观察法</h3>
+    <h3 id="_27">观察法</h3>
 <p>通过直接"看"（观察、跟踪等）的方式记录被调查者情况。</p>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
@@ -1819,8 +1928,8 @@ data-has-math="true">
   id="slide-24"
 >
   <div class="slide-content">
-    <h2 id="_29">调查问卷设计</h2>
-<h3 id="_30">问卷的结构</h3>
+    <h2 id="_28">调查问卷设计</h2>
+<h3 id="_29">问卷的结构</h3>
 <p>问卷是对询问的问题或提纲按要求填选答案的调查表。一份完整的问卷包括：</p>
 <ol>
 <li><strong>问卷标题</strong></li>
@@ -1838,7 +1947,7 @@ data-has-math="true">
   id="slide-25"
 >
   <div class="slide-content">
-    <h3 id="_31">问题类型</h3>
+    <h3 id="_30">问题类型</h3>
 <table>
 <thead>
 <tr>
@@ -1871,7 +1980,7 @@ data-has-math="true">
   id="slide-26"
 >
   <div class="slide-content">
-    <h3 id="_32">封闭式问题的常见形式</h3>
+    <h3 id="_31">封闭式问题的常见形式</h3>
 <table>
 <thead>
 <tr>
@@ -1921,7 +2030,7 @@ data-has-math="true">
   id="slide-27"
 >
   <div class="slide-content">
-    <h3 id="_33">设计问句的注意事项</h3>
+    <h3 id="_32">设计问句的注意事项</h3>
 <ol>
 <li>❌ 避免笼统、抽象的问题 → ✅ 具体到哪方面的印象</li>
 <li>❌ 避免不确切的词语（如"经常"）→ ✅ 使用可量化的表述</li>
@@ -1940,7 +2049,7 @@ data-has-math="true">
   id="slide-28"
 >
   <div class="slide-content">
-    <h3 id="_34">前沿的数据收集方式*</h3>
+    <h3 id="_33">前沿的数据收集方式*</h3>
 <ul>
 <li><strong>具身智能与机器人遥操作</strong>：VR 遥操作和动捕手套收集数据</li>
 <li><strong>自动化与智能化收集</strong>：网络爬虫、API 调用、传感器数据采集</li>
@@ -1957,8 +2066,8 @@ data-has-math="true">
   id="slide-29"
 >
   <div class="slide-content">
-    <h2 id="_35">第四节 统计数据的质量与类型</h2>
-<h3 id="_36">统计数据的质量要求</h3>
+    <h2 id="_34">第四节 统计数据的质量与类型</h2>
+<h3 id="_35">统计数据的质量要求</h3>
 <p>数据的质量会直接影响到分析的结果和结论。</p>
 <table>
 <thead>
@@ -2002,7 +2111,7 @@ data-has-math="true">
   id="slide-30"
 >
   <div class="slide-content">
-    <h3 id="_37">抽样误差</h3>
+    <h3 id="_36">抽样误差</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>抽样误差</strong> — 由于抽样的随机性所带来的误差。是样本对总体的代表性导致的，<strong>不是错误</strong>，而是随机抽样所特有的。</p>
@@ -2018,7 +2127,7 @@ data-has-math="true">
   id="slide-31"
 >
   <div class="slide-content">
-    <h3 id="_38">非抽样误差</h3>
+    <h3 id="_37">非抽样误差</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
 <p> <strong>非抽样误差</strong> — 除抽样误差之外，由于其他原因造成的样本观察结果与总体真值之间的差异。可能存在于所有的调查之中。</p>
@@ -2091,7 +2200,7 @@ data-has-math="true">
   id="slide-33"
 >
   <div class="slide-content">
-    <h3 id="_39">误差的控制</h3>
+    <h3 id="_38">误差的控制</h3>
 <ul>
 <li><strong>抽样误差</strong>：可计算、可控制（通过样本量和抽样设计）</li>
 <li><strong>非抽样误差</strong>：需从源头避免</li>
@@ -2109,8 +2218,8 @@ data-has-math="true">
   id="slide-34"
 >
   <div class="slide-content">
-    <h3 id="_40">统计数据的计量尺度</h3>
-<h4 id="_41">四种计量尺度</h4>
+    <h3 id="_39">统计数据的计量尺度</h3>
+<h4 id="_40">四种计量尺度</h4>
 <table>
 <thead>
 <tr>
@@ -2155,7 +2264,7 @@ data-has-math="true">
   id="slide-35"
 >
   <div class="slide-content">
-    <h4 id="_42">定距与定比的区分</h4>
+    <h4 id="_41">定距与定比的区分</h4>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
 <p>
@@ -2171,7 +2280,7 @@ data-has-math="true">
   id="slide-36"
 >
   <div class="slide-content">
-    <h4 id="_43">四种尺度的层次关系</h4>
+    <h4 id="_42">四种尺度的层次关系</h4>
 <pre class="highlight"><code>定比尺度 → 可分类、排序、测量距离、计算比值（最高）
    ↑
 定距尺度 → 可分类、排序、测量距离
@@ -2185,6 +2294,18 @@ data-has-math="true">
 <div class="callout-label">注意</div>
 <p> 高层次的计量尺度可向低层次转化。例如：温度（定距）→ 很冷、较冷、舒适、较热、很热（定序）。</p>
 </blockquote>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="quiz" id="quiz_2730438020992338109">
+<p class="quiz-question"><strong>📝 小测验：</strong>考试分数（0-100 分）属于哪种计量尺度？</p>
+<ul class="quiz-options">
+<li data-correct="false" id="quiz_2730438020992338109_0" class="quiz-option">定类尺度</li>
+<li data-correct="false" id="quiz_2730438020992338109_1" class="quiz-option">定序尺度</li>
+<li data-correct="true" id="quiz_2730438020992338109_2" class="quiz-option">定距尺度</li>
+<li data-correct="false" id="quiz_2730438020992338109_3" class="quiz-option">定比尺度</li>
+</ul>
+<div class="quiz-feedback" id="quiz_2730438020992338109_feedback"></div>
+</div>
   </div>
 </section>
 <section
@@ -2193,8 +2314,8 @@ data-has-math="true">
   id="slide-37"
 >
   <div class="slide-content">
-    <h3 id="_44">统计数据的类型</h3>
-<h4 id="_45">按计量尺度划分</h4>
+    <h3 id="_43">统计数据的类型</h3>
+<h4 id="_44">按计量尺度划分</h4>
 <table>
 <thead>
 <tr>
@@ -2221,7 +2342,7 @@ data-has-math="true">
 </tr>
 </tbody>
 </table>
-<h4 id="_46">按其他标准划分</h4>
+<h4 id="_45">按其他标准划分</h4>
 <table>
 <thead>
 <tr>
@@ -2248,6 +2369,17 @@ data-has-math="true">
 </tr>
 </tbody>
 </table>
+<p>&nbsp;</p>
+<div class="quiz" id="quiz_8121093805516702034">
+<p class="quiz-question"><strong>📝 小测验：</strong>以下哪种数据类型层次最高，可以进行加减乘除所有运算？</p>
+<ul class="quiz-options">
+<li data-correct="false" id="quiz_8121093805516702034_0" class="quiz-option">分类数据</li>
+<li data-correct="false" id="quiz_8121093805516702034_1" class="quiz-option">顺序数据</li>
+<li data-correct="true" id="quiz_8121093805516702034_2" class="quiz-option">数值型数据</li>
+<li data-correct="false" id="quiz_8121093805516702034_3" class="quiz-option">以上都可以</li>
+</ul>
+<div class="quiz-feedback" id="quiz_8121093805516702034_feedback"></div>
+</div>
   </div>
 </section>
 <section
@@ -2256,7 +2388,7 @@ data-has-math="true">
   id="slide-38"
 >
   <div class="slide-content">
-    <h2 id="_47">本章小结</h2>
+    <h2 id="_46">本章小结</h2>
 <ol>
 <li>数据来源分为<strong>间接来源</strong>（二手数据）和<strong>直接来源</strong>（原始数据）</li>
 <li>概率抽样依据随机原则，包括简单随机、分层、整群、系统、多阶段抽样</li>
@@ -2567,6 +2699,37 @@ data-has-math="true">
       }
     });
   }
+
+  // ---- Quiz interaction ----
+  document.querySelectorAll('.quiz-option').forEach(function(opt) {
+    opt.addEventListener('click', function() {
+      var quiz = this.parentElement.parentElement;
+      var allOptions = quiz.querySelectorAll('.quiz-option');
+      var feedback = quiz.querySelector('.quiz-feedback');
+
+      // Already correctly answered — no more changes
+      var alreadyCorrect = quiz.querySelector('.quiz-option.correct');
+      if (alreadyCorrect) return;
+
+      var isCorrect = this.dataset.correct === 'true';
+
+      if (isCorrect) {
+        // Right answer — celebrate and lock
+        this.classList.add('correct');
+        allOptions.forEach(function(o) { o.style.pointerEvents = 'none'; });
+        feedback.textContent = '\u{1F600} 回答正确！';
+      } else {
+        // Wrong answer — mark briefly, then let retry
+        this.classList.add('wrong');
+        feedback.textContent = '\u{1F62D} 不对哦，再试试！';
+        var that = this;
+        setTimeout(function() {
+          that.classList.remove('wrong');
+          feedback.textContent = '';
+        }, 800);
+      }
+    });
+  });
 
   console.log('📊 Stats Slide Processor — ' + totalSlides + ' slides ready');
   console.log('   ← → keys to navigate, M to toggle scroll mode, ? for shortcuts');
