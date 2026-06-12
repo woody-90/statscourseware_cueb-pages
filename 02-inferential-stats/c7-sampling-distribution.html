@@ -1138,38 +1138,96 @@ tags: 'ams',    macros: {
       </li>
       <li>
         <a href="#slide-5" data-slide="5">
-          <span class="toc-num">5</span>二项分布
+          <span class="toc-num">5</span>两点分布
         </a>
       </li>
       <li>
         <a href="#slide-6" data-slide="6">
-          <span class="toc-num">6</span>正态分布
+          <span class="toc-num">6</span>二项分布
         </a>
       </li>
       <li>
         <a href="#slide-7" data-slide="7">
-          <span class="toc-num">7</span>由正态分布导出的三大分布
+          <span class="toc-num">7</span>泊松分布
         </a>
       </li>
-      <li><a href="#slide-8" data-slide="8" class="toc-section">
-        第二节 抽样分布
-      </a></li>
+      <li>
+        <a href="#slide-8" data-slide="8">
+          <span class="toc-num">8</span>连续型随机变量
+        </a>
+      </li>
       <li>
         <a href="#slide-9" data-slide="9">
-          <span class="toc-num">9</span>样本均值的抽样分布
+          <span class="toc-num">9</span>均匀分布
         </a>
       </li>
       <li>
         <a href="#slide-10" data-slide="10">
-          <span class="toc-num">10</span>样本比例的抽样分布
+          <span class="toc-num">10</span>正态分布
         </a>
       </li>
       <li>
         <a href="#slide-11" data-slide="11">
-          <span class="toc-num">11</span>两个样本均值之差的抽样分布
+          <span class="toc-num">11</span>由正态分布导出的三大分布
         </a>
       </li>
       <li><a href="#slide-12" data-slide="12" class="toc-section">
+        第二节 概率抽样方法
+      </a></li>
+      <li>
+        <a href="#slide-13" data-slide="13">
+          <span class="toc-num">13</span>简单随机抽样
+        </a>
+      </li>
+      <li>
+        <a href="#slide-14" data-slide="14">
+          <span class="toc-num">14</span>抽样框
+        </a>
+      </li>
+      <li>
+        <a href="#slide-15" data-slide="15">
+          <span class="toc-num">15</span>分层抽样
+        </a>
+      </li>
+      <li>
+        <a href="#slide-16" data-slide="16">
+          <span class="toc-num">16</span>整群抽样
+        </a>
+      </li>
+      <li>
+        <a href="#slide-17" data-slide="17">
+          <span class="toc-num">17</span>系统抽样
+        </a>
+      </li>
+      <li>
+        <a href="#slide-18" data-slide="18">
+          <span class="toc-num">18</span>多阶段抽样
+        </a>
+      </li>
+      <li><a href="#slide-19" data-slide="19" class="toc-section">
+        第三节 抽样分布
+      </a></li>
+      <li>
+        <a href="#slide-20" data-slide="20">
+          <span class="toc-num">20</span>样本均值的抽样分布
+        </a>
+      </li>
+      <li>
+        <a href="#slide-21" data-slide="21">
+          <span class="toc-num">21</span>中心极限定理
+        </a>
+      </li>
+      <li>
+        <a href="#slide-22" data-slide="22">
+          <span class="toc-num">22</span>样本比例的抽样分布
+        </a>
+      </li>
+      <li>
+        <a href="#slide-23" data-slide="23">
+          <span class="toc-num">23</span>两个样本均值之差的抽样分布
+        </a>
+      </li>
+      <li><a href="#slide-24" data-slide="24" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1179,7 +1237,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 13</span>
+  <span id="slide-counter">1 / 25</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1248,12 +1306,30 @@ data-has-math="true">
 <h3 id="_4">随机变量</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> <strong>随机变量</strong> — 描述随机试验结果的变量，常用 <span class="math inline">\(X, Y, Z\)</span> 表示。分为<strong>离散型</strong>和<strong>连续型</strong>两类。</p>
+<p> <strong>随机试验</strong> — 可在相同条件下重复进行、事先知道可能出现的结果、但试验前不知道哪个结果会发生。</p>
+<p><strong>定义：</strong> <strong>随机变量</strong> — 用数值描述随机试验结果的变量，常用 <span class="math inline">\(X, Y, Z\)</span> 表示。</p>
 </blockquote>
-<ul>
-<li><strong>离散型随机变量</strong>：取值可一一列举（有限个或无限可列个），如次品个数</li>
-<li><strong>连续型随机变量</strong>：取值不能逐个列举，取数轴上某区间内的任一点，如使用寿命</li>
-</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>特点</th>
+<th>例子</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>离散型</td>
+<td>取值可一一列举</td>
+<td>次品个数、掷骰子点数</td>
+</tr>
+<tr>
+<td>连续型</td>
+<td>取值不能逐个列举，取某区间内任一点</td>
+<td>使用寿命、身高</td>
+</tr>
+</tbody>
+</table>
   </div>
 </section>
 <section
@@ -1264,17 +1340,13 @@ data-has-math="true">
   <div class="slide-content">
     <h3 id="_5">离散型随机变量的概率分布</h3>
 <p><strong>概率函数</strong>：<span class="math inline">\(P(X = x_i) = p_i\)</span></p>
-<p>表示方法：
-- 公式法
-- 列表法
-- 图示法</p>
-<p><strong>期望值</strong>（描述集中程度）：</p>
+<p><strong>期望</strong>（集中程度）：</p>
 <p>
 <div class="math display">
 $$\mu = E(X) = \sum x_i \cdot p_i$$
 </div>
 </p>
-<p><strong>方差</strong>（描述分散程度）：</p>
+<p><strong>方差</strong>（分散程度）：</p>
 <p>
 <div class="math display">
 $$\sigma^2 = D(X) = \sum [x_i - E(X)]^2 \cdot p_i$$
@@ -1288,17 +1360,12 @@ $$\sigma^2 = D(X) = \sum [x_i - E(X)]^2 \cdot p_i$$
   id="slide-5"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_6">二项分布</h3>
-<blockquote class="callout-def">
-<div class="callout-label">定义</div>
-<p> 在 <span class="math inline">\(n\)</span> 次独立重复伯努利试验中，成功的次数 <span class="math inline">\(X\)</span> 服从二项分布。</p>
-</blockquote>
-<p>期望与方差：</p>
-<p>
-<div class="math display">
-$$E(X) = np, \quad D(X) = np(1-p)$$
-</div>
-</p>
+    <h3 id="_6">两点分布</h3>
+<p>随机变量 <span class="math inline">\(X\)</span> 只取 0 和 1 两个值。</p>
+<ul>
+<li>期望：<span class="math inline">\(E(X) = p\)</span></li>
+<li>方差：<span class="math inline">\(D(X) = p(1-p)\)</span></li>
+</ul>
   </div>
 </section>
 <section
@@ -1307,19 +1374,23 @@ $$E(X) = np, \quad D(X) = np(1-p)$$
   id="slide-6"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_7">正态分布</h3>
+    <h3 id="_7">二项分布</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> 连续型随机变量中最重要的分布，记为 <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span>。</p>
+<p> 在 <span class="math inline">\(n\)</span> 次独立重复伯努利试验中，成功的次数 <span class="math inline">\(X\)</span> 服从二项分布，记为 <span class="math inline">\(X \sim B(n, p)\)</span>。</p>
 </blockquote>
-<p><strong>特点</strong>：
-- 对称的钟形曲线，均值 = 中位数 = 众数
-- <span class="math inline">\(\mu\)</span> 决定位置，<span class="math inline">\(\sigma\)</span> 决定形状
-- 曲线下总面积 = 1</p>
-<p><strong>标准正态分布</strong>：<span class="math inline">\(Z \sim N(0, 1)\)</span></p>
+<p><strong>伯努利试验条件</strong>：
+1. 一次试验只有两个可能结果（"成功"和"失败"）
+2. 成功概率 <span class="math inline">\(p\)</span> 对每次试验都相同
+3. 试验相互独立，可重复 <span class="math inline">\(n\)</span> 次</p>
 <p>
 <div class="math display">
-$$Z = \frac{X - \mu}{\sigma}$$
+$$P(X = x) = C_n^x \cdot p^x \cdot (1-p)^{n-x}$$
+</div>
+</p>
+<p>
+<div class="math display">
+$$E(X) = np, \quad D(X) = np(1-p)$$
 </div>
 </p>
   </div>
@@ -1330,24 +1401,106 @@ $$Z = \frac{X - \mu}{\sigma}$$
   id="slide-7"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_8">由正态分布导出的三大分布</h3>
+    <h3 id="_8">泊松分布</h3>
+<p>用于描述在指定时间范围或空间范围内事件出现次数的分布。</p>
+<p>
+<div class="math display">
+$$P(X = x) = \frac{\lambda^x e^{-\lambda}}{x!}$$
+</div>
+</p>
+<p>
+<div class="math display">
+$$E(X) = \lambda, \quad D(X) = \lambda$$
+</div>
+</p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="8"
+  id="slide-8"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_9">连续型随机变量</h3>
+<ul>
+<li>取值不能逐个列举，用<strong>概率密度函数</strong> <span class="math inline">\(f(x)\)</span> 描述</li>
+<li>取任何特定值的概率为 0，通常研究区间概率</li>
+<li>密度函数曲线下面积 = 1</li>
+</ul>
+<p><strong>分布函数</strong> <span class="math inline">\(F(x) = P(X \leq x)\)</span>：
+- <span class="math inline">\(F(x)\)</span> 是 <span class="math inline">\(f(x)\)</span> 的积分
+- <span class="math inline">\(f(x)\)</span> 是 <span class="math inline">\(F(x)\)</span> 的导数
+- <span class="math inline">\(F(x)\)</span> 单调非减</p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="9"
+  id="slide-9"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_10">均匀分布</h3>
+<p>随机变量在 <span class="math inline">\([a, b]\)</span> 内取任何等长区间的概率相等，记为 <span class="math inline">\(X \sim U[a, b]\)</span>。</p>
+<p>
+<div class="math display">
+$$E(X) = \frac{a+b}{2}, \quad D(X) = \frac{(b-a)^2}{12}$$
+</div>
+</p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="10"
+  id="slide-10"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_11">正态分布</h3>
+<blockquote class="callout-def">
+<div class="callout-label">定义</div>
+<p> 连续型随机变量中最重要的分布，记为 <span class="math inline">\(X \sim N(\mu, \sigma^2)\)</span>。</p>
+</blockquote>
+<p><strong>特点</strong>：
+- 对称钟形曲线，均值 = 中位数 = 众数
+- <span class="math inline">\(\mu\)</span> 决定位置，<span class="math inline">\(\sigma\)</span> 决定形状
+- 曲线下总面积 = 1</p>
+<p><strong>标准正态分布</strong>：<span class="math inline">\(Z \sim N(0, 1)\)</span></p>
+<p>
+<div class="math display">
+$$Z = \frac{X - \mu}{\sigma}$$
+</div>
+</p>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> 零件长度 <span class="math inline">\(X \sim N(10, 0.2^2)\)</span>。求 <span class="math inline">\(P(X < 9.4)\)</span> 和 <span class="math inline">\(P(9.5 < X < 10.5)\)</span>。</p>
+<p><span class="math inline">\(P(X < 9.4) = P(Z < \frac{9.4-10}{0.2}) = P(Z < -3) \approx 0.00135\)</span></p>
+<p><span class="math inline">\(P(9.5 < X < 10.5) = P(-2.5 < Z < 2.5) \approx 0.9876\)</span></p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="11"
+  id="slide-11"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_12">由正态分布导出的三大分布</h3>
 <table>
 <thead>
 <tr>
 <th>分布</th>
-<th>定义</th>
+<th>构造</th>
 <th>用途</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><span class="math inline">\(\chi^2\)</span> 分布</td>
+<td><span class="math inline">\(\chi^2\)</span>（卡方）</td>
 <td><span class="math inline">\(n\)</span> 个独立标准正态变量的平方和</td>
-<td>方差估计、拟合优度检验</td>
+<td>方差估计、拟合优度</td>
 </tr>
 <tr>
 <td><span class="math inline">\(t\)</span> 分布</td>
-<td>正态变量除以 <span class="math inline">\(\chi^2\)</span> 的平方根</td>
+<td><span class="math inline">\(Z / \sqrt{\chi^2 / \nu}\)</span></td>
 <td>小样本均值推断</td>
 </tr>
 <tr>
@@ -1361,58 +1514,42 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-section"
-  data-slide="8"
-  id="slide-8"
+  data-slide="12"
+  id="slide-12"
 >
   <div class="slide-content">
-    <h2 id="_9">第二节 抽样分布</h2>
-<h3 id="_10">抽样分布的概念</h3>
-<blockquote class="callout-def">
-<div class="callout-label">定义</div>
-<p> <strong>抽样分布</strong> — 样本统计量的概率分布，是统计推断的理论基础。</p>
-</blockquote>
+    <h2 id="_13">第二节 概率抽样方法</h2>
+<h3 id="_14">基本概念</h3>
 <ul>
-<li>样本统计量是随机变量，有自己的分布</li>
-<li>所有可能样本的统计量构成的分布就是抽样分布</li>
+<li><strong>总体（Population）</strong>：研究对象全体，分有限总体和无限总体</li>
+<li><strong>样本（Sample）</strong>：按抽样原则从总体中抽取的部分单位</li>
+<li><strong>概率抽样</strong>：按随机原则抽取，每个单位被抽中概率已知</li>
+<li><strong>随机样本</strong>：由概率抽样所抽取的样本</li>
 </ul>
-  </div>
-</section>
-<section
-  class="slide slide-content"
-  data-slide="9"
-  id="slide-9"
-data-has-math="true">
-  <div class="slide-content">
-    <h3 id="_11">样本均值的抽样分布</h3>
-<p><strong>中心极限定理（CLT）</strong>：</p>
-<blockquote class="callout-thm">
-<div class="callout-label">定理</div>
-<p> 从均值为 <span class="math inline">\(\mu\)</span>、方差为 <span class="math inline">\(\sigma^2\)</span> 的任意总体中抽取容量为 <span class="math inline">\(n\)</span> 的样本，当 <span class="math inline">\(n \geq 30\)</span> 时，样本均值 <span class="math inline">\(\bar{x}\)</span> 近似服从正态分布：</p>
-</blockquote>
-<p>
-<div class="math display">
-$$\bar{x} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$$
-</div>
-</p>
+<h3 id="_15">概率抽样的特点</h3>
 <table>
 <thead>
 <tr>
-<th>条件</th>
-<th>分布</th>
+<th>特点</th>
+<th>说明</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>正态总体，<span class="math inline">\(\sigma\)</span> 已知</td>
-<td><span class="math inline">\(\bar{x} \sim N(\mu, \sigma^2/n)\)</span></td>
+<td>随机原则</td>
+<td>每个单位都有一定机会被抽中</td>
 </tr>
 <tr>
-<td>正态总体，<span class="math inline">\(\sigma\)</span> 未知，小样本</td>
-<td><span class="math inline">\(\frac{\bar{x} - \mu}{s/\sqrt{n}} \sim t(n-1)\)</span></td>
+<td>概率已知</td>
+<td>可以计算出来</td>
 </tr>
 <tr>
-<td>非正态，大样本 <span class="math inline">\(n \geq 30\)</span></td>
-<td>近似 <span class="math inline">\(N(\mu, \sigma^2/n)\)</span>（CLT）</td>
+<td>避免主观偏差</td>
+<td>防止样本代表性不足</td>
+</tr>
+<tr>
+<td>可推断总体</td>
+<td>基于大数定律</td>
 </tr>
 </tbody>
 </table>
@@ -1420,11 +1557,170 @@ $$\bar{x} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$$
 </section>
 <section
   class="slide slide-content"
-  data-slide="10"
-  id="slide-10"
+  data-slide="13"
+  id="slide-13"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_12">样本比例的抽样分布</h3>
+    <h3 id="_16">简单随机抽样</h3>
+<p>从总体 <span class="math inline">\(N\)</span> 个单位中随机抽 <span class="math inline">\(n\)</span> 个，每个容量为 <span class="math inline">\(n\)</span> 的样本有相同机会被抽中。</p>
+<ul>
+<li>操作方法：抽签法、随机数表法</li>
+<li>抽取方式：重复抽样、不重复抽样</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>优点</th>
+<th>局限性</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>简单直观</td>
+<td><span class="math inline">\(N\)</span> 大时不易构造抽样框</td>
+</tr>
+<tr>
+<td>估计方便</td>
+<td>单位分散，实施困难</td>
+</tr>
+</tbody>
+</table>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="14"
+  id="slide-14"
+>
+  <div class="slide-content">
+    <h3 id="_17">抽样框</h3>
+<blockquote class="callout-def">
+<div class="callout-label">定义</div>
+<p> 包括研究对象所有单位的一个名单或框架。确定抽样框后，可计算每个个体的抽样概率。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="15"
+  id="slide-15"
+>
+  <div class="slide-content">
+    <h3 id="_18">分层抽样</h3>
+<p>按某种特征划分为<strong>层</strong>（层内差异小），每层独立随机抽样。</p>
+<ul>
+<li>优点：样本结构与总体结构相近，提高估计精度</li>
+</ul>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="16"
+  id="slide-16"
+>
+  <div class="slide-content">
+    <h3 id="_19">整群抽样</h3>
+<p>将总体单位合并为<strong>群</strong>，直接抽群，中选群全部调查。</p>
+<ul>
+<li>与分层区别：整群抽样扩大"总体单位"，只需群的抽样框</li>
+</ul>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="17"
+  id="slide-17"
+>
+  <div class="slide-content">
+    <h3 id="_20">系统抽样</h3>
+<p>按一定顺序排列，随机起点后等间隔抽取。</p>
+<ul>
+<li>随机起点等距抽样、半距起点等距抽样、对称等距抽样</li>
+</ul>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="18"
+  id="slide-18"
+>
+  <div class="slide-content">
+    <h3 id="_21">多阶段抽样</h3>
+<p>大规模调查中多次整群抽样的嵌套。先抽群，再在群内抽单位。</p>
+  </div>
+</section>
+<section
+  class="slide slide-section"
+  data-slide="19"
+  id="slide-19"
+>
+  <div class="slide-content">
+    <h2 id="_22">第三节 抽样分布</h2>
+<h3 id="_23">抽样分布的概念</h3>
+<blockquote class="callout-def">
+<div class="callout-label">定义</div>
+<p> <strong>抽样分布</strong> — 样本统计量的概率分布。每个样本统计量都是随机变量，所有可能样本的统计量构成抽样分布。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="20"
+  id="slide-20"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_24">样本均值的抽样分布</h3>
+<p>从均值为 <span class="math inline">\(\mu\)</span>、方差为 <span class="math inline">\(\sigma^2\)</span> 的总体中抽容量为 <span class="math inline">\(n\)</span> 的样本：</p>
+<table>
+<thead>
+<tr>
+<th>条件</th>
+<th>抽样分布</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>正态总体，<span class="math inline">\(\sigma\)</span> 已知</td>
+<td><span class="math inline">\(\bar{x} \sim N(\mu, \frac{\sigma^2}{n})\)</span></td>
+</tr>
+<tr>
+<td>正态总体，<span class="math inline">\(\sigma\)</span> 未知，小样本</td>
+<td><span class="math inline">\(\frac{\bar{x} - \mu}{s/\sqrt{n}} \sim t(n-1)\)</span></td>
+</tr>
+<tr>
+<td>非正态总体，大样本 <span class="math inline">\(n \geq 30\)</span></td>
+<td>近似 <span class="math inline">\(N(\mu, \frac{\sigma^2}{n})\)</span>（中心极限定理）</td>
+</tr>
+</tbody>
+</table>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="21"
+  id="slide-21"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_25">中心极限定理</h3>
+<blockquote class="callout-thm">
+<div class="callout-label">定理</div>
+<p> 从均值为 <span class="math inline">\(\mu\)</span>、方差为 <span class="math inline">\(\sigma^2\)</span> 的<strong>任意</strong>总体中抽容量 <span class="math inline">\(n\)</span> 的样本，当 <span class="math inline">\(n \geq 30\)</span> 时，样本均值的抽样分布近似正态：</p>
+</blockquote>
+<p>
+<div class="math display">
+$$\bar{x} \sim N\left(\mu, \frac{\sigma^2}{n}\right)$$
+</div>
+</p>
+<p>样本均值的标准误差：<span class="math inline">\(\sigma_{\bar{x}} = \frac{\sigma}{\sqrt{n}}\)</span></p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="22"
+  id="slide-22"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_26">样本比例的抽样分布</h3>
 <p>当 <span class="math inline">\(np \geq 10\)</span> 且 <span class="math inline">\(n(1-p) \geq 10\)</span>（大样本）：</p>
 <p>
 <div class="math display">
@@ -1435,37 +1731,43 @@ $$p \sim N\left(P, \frac{P(1-P)}{n}\right)$$
 </section>
 <section
   class="slide slide-content"
-  data-slide="11"
-  id="slide-11"
+  data-slide="23"
+  id="slide-23"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_13">两个样本均值之差的抽样分布</h3>
+    <h3 id="_27">两个样本均值之差的抽样分布</h3>
 <ul>
-<li>大样本或正态总体：<span class="math inline">\((\bar{x}_1 - \bar{x}_2)\)</span> 服从正态分布</li>
-<li>小样本 + 正态 + 方差相等：<span class="math inline">\(t(n_1 + n_2 - 2)\)</span> 分布</li>
+<li>两大样本 → 近似正态</li>
+<li>小样本 + 正态 + 方差相等 → <span class="math inline">\(t(n_1 + n_2 - 2)\)</span></li>
+</ul>
+<h3 id="_28">两个样本比例之差的抽样分布</h3>
+<ul>
+<li>两大样本 → 近似正态</li>
 </ul>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="12"
-  id="slide-12"
+  data-slide="24"
+  id="slide-24"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_14">本章小结</h2>
+    <h2 id="_29">本章小结</h2>
 <ol>
-<li>随机变量分为离散型和连续型，正态分布是最重要的连续型分布</li>
-<li>二项分布的期望 <span class="math inline">\(np\)</span>，方差 <span class="math inline">\(np(1-p)\)</span></li>
-<li>中心极限定理：<span class="math inline">\(n \geq 30\)</span> 时样本均值近似正态分布</li>
-<li>抽样分布是统计推断（参数估计、假设检验）的理论基础</li>
-<li>样本均值的标准误差 <span class="math inline">\(\sigma/\sqrt{n}\)</span>，随 <span class="math inline">\(n\)</span> 增大而减小</li>
+<li>随机变量分离散型和连续型；正态分布是最重要的连续分布</li>
+<li>二项分布 <span class="math inline">\(E(X)=np\)</span>，<span class="math inline">\(D(X)=np(1-p)\)</span>；泊松分布期望=方差=<span class="math inline">\(\lambda\)</span></li>
+<li>标准正态分布 <span class="math inline">\(Z \sim N(0,1)\)</span> 可通过 <span class="math inline">\(Z = \frac{X-\mu}{\sigma}\)</span> 转换</li>
+<li>三大抽样分布：<span class="math inline">\(\chi^2\)</span>（方差）、<span class="math inline">\(t\)</span>（小样本均值）、<span class="math inline">\(F\)</span>（方差分析）</li>
+<li>概率抽样：简单随机、分层、整群、系统、多阶段</li>
+<li>中心极限定理：<span class="math inline">\(n \geq 30\)</span> 时样本均值近似正态</li>
+<li>抽样分布是参数估计和假设检验的理论基础</li>
 </ol>
   </div>
 </section>
 <section
   class="slide slide-content"
-  data-slide="13"
-  id="slide-13"
+  data-slide="25"
+  id="slide-25"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
