@@ -1,1122 +1,3475 @@
 [
   {
-    "qtype": "单选题",
+    "id": 1,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "下列选项中影响抽样误差的是（  ）",
     "options": [
-      [
-        "A",
-        "样本量较小"
-      ],
-      [
-        "B",
-        "被调查者拒绝回答"
-      ],
-      [
-        "C",
-        "抽样框不完整"
-      ],
-      [
-        "D",
-        "调查人员工作失误"
-      ]
+      {
+        "label": "A",
+        "text": "样本量较小"
+      },
+      {
+        "label": "B",
+        "text": "被调查者拒绝回答"
+      },
+      {
+        "label": "C",
+        "text": "抽样框不完整"
+      },
+      {
+        "label": "D",
+        "text": "调查人员工作失误"
+      }
     ],
-    "answer": "A",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 1
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 2,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "为了解我国国有企业在职职工的延迟退休意愿，有关部门采用简单随机抽样方法抽取20家国有企业，对被抽中企业的所有在职职工发放问卷开展调查。该调查使用的抽样方法是（  ）",
     "options": [
-      [
-        "A",
-        "整群抽样"
-      ],
-      [
-        "B",
-        "分层抽样"
-      ],
-      [
-        "C",
-        "判断抽样"
-      ],
-      [
-        "D",
-        "等距抽样"
-      ]
+      {
+        "label": "A",
+        "text": "整群抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "判断抽样"
+      },
+      {
+        "label": "D",
+        "text": "等距抽样"
+      }
     ],
-    "answer": "A",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 2
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 3,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
     "question": "下列用于测度离散程度的指标中，最容易受极端值影响的是",
     "options": [
-      [
-        "A",
-        "四分位差"
-      ],
-      [
-        "B",
-        "极差"
-      ],
-      [
-        "C",
-        "标准差"
-      ],
-      [
-        "D",
-        "离散系数"
-      ]
+      {
+        "label": "A",
+        "text": "四分位差"
+      },
+      {
+        "label": "B",
+        "text": "极差"
+      },
+      {
+        "label": "C",
+        "text": "标准差"
+      },
+      {
+        "label": "D",
+        "text": "离散系数"
+      }
     ],
-    "answer": "B",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库4",
-    "answer_original": "B",
-    "id": 3
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "单选题",
+    "id": 4,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
     "question": "假定某银行办理某项业务的时间服从正态分布，方差未知。50位调查人员每人随机抽取40名到该银行办理业务的客户并记录其办理业务时间。之后，这些调查人员根据各自样本数据，分别构造了客户到该银行办理业务所用平均时间的90%置信区间。理论上，这些置信区间中大约有多少个会包含总体均值",
     "options": [
-      [
-        "A",
-        "40"
-      ],
-      [
-        "B",
-        "50"
-      ],
-      [
-        "C",
-        "45"
-      ],
-      [
-        "D",
-        "36"
-      ]
+      {
+        "label": "A",
+        "text": "40"
+      },
+      {
+        "label": "B",
+        "text": "50"
+      },
+      {
+        "label": "C",
+        "text": "45"
+      },
+      {
+        "label": "D",
+        "text": "36"
+      }
     ],
-    "answer": "C",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库4",
-    "answer_original": "C",
-    "id": 4
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "单选题",
+    "id": 5,
+    "chapter": "第9章 假设检验",
+    "type": "single",
     "question": "在一次假设检验中，当显著水平设为0.05时，结论是拒绝原假设，现将显著水平设为0.1，那么",
     "options": [
-      [
-        "A",
-        "仍然拒绝原假设"
-      ],
-      [
-        "B",
-        "不一定拒绝原假设"
-      ],
-      [
-        "C",
-        "需要重新进行假设检验"
-      ],
-      [
-        "D",
-        "有可能拒绝原假设"
-      ]
+      {
+        "label": "A",
+        "text": "仍然拒绝原假设"
+      },
+      {
+        "label": "B",
+        "text": "不一定拒绝原假设"
+      },
+      {
+        "label": "C",
+        "text": "需要重新进行假设检验"
+      },
+      {
+        "label": "D",
+        "text": "有可能拒绝原假设"
+      }
     ],
-    "answer": "A",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 5
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "单选题",
+    "id": 6,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "对某单位职工进行调查，共回收200份问卷。问卷进行整理时，发现“问题5. 您的个人年收入是多少？”，仅有100人作答，这种情形会导致以下哪种误差",
     "options": [
-      [
-        "A",
-        "抽样框误差"
-      ],
-      [
-        "B",
-        "抽样误差"
-      ],
-      [
-        "C",
-        "测量误差"
-      ],
-      [
-        "D",
-        "无回答误差"
-      ]
+      {
+        "label": "A",
+        "text": "抽样框误差"
+      },
+      {
+        "label": "B",
+        "text": "抽样误差"
+      },
+      {
+        "label": "C",
+        "text": "测量误差"
+      },
+      {
+        "label": "D",
+        "text": "无回答误差"
+      }
     ],
-    "answer": "D",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "D",
-    "id": 6
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 7,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
     "question": "甲乙两地区职工的月平均工资分别是5000元和6000元，工资的标准差分别是400元和500元，则下面说法错误的是",
     "options": [
-      [
-        "A",
-        "甲地区工资的差异比乙地区的大"
-      ],
-      [
-        "B",
-        "乙地区工资的方差比甲地区的大"
-      ],
-      [
-        "C",
-        "甲地区工资的差异比乙地区的小"
-      ],
-      [
-        "D",
-        "甲地区工资的差异与乙地区工资的差异一样"
-      ]
+      {
+        "label": "A",
+        "text": "甲地区工资的差异比乙地区的大"
+      },
+      {
+        "label": "B",
+        "text": "乙地区工资的方差比甲地区的大"
+      },
+      {
+        "label": "C",
+        "text": "甲地区工资的差异比乙地区的小"
+      },
+      {
+        "label": "D",
+        "text": "条件不够区分不了"
+      }
     ],
-    "answer": "A",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 7
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "单选题",
+    "id": 8,
+    "chapter": "第7章 概率抽样与抽样分布",
+    "type": "single",
     "question": "从容量为N的总体中抽取容量为n（大于30）的样本，那么关于样本均值，以下说法错误的是",
     "options": [
-      [
-        "A",
-        "样本均值的抽样分布为正态分布"
-      ],
-      [
-        "B",
-        "样本均值抽样分布的方差为总体方差的2/n"
-      ],
-      [
-        "C",
-        "样本均值抽样分布的均值为总体的均值"
-      ],
-      [
-        "D",
-        "样本均值是一个随机变量"
-      ]
+      {
+        "label": "A",
+        "text": "样本均值的抽样分布为正态分布"
+      },
+      {
+        "label": "B",
+        "text": "样本均值抽样分布的方差为总体方差的2/n"
+      },
+      {
+        "label": "C",
+        "text": "样本均值抽样分布的均值为总体的均值"
+      },
+      {
+        "label": "D",
+        "text": "样本均值是一个随机变量"
+      }
     ],
-    "answer": "B",
-    "chapter": "第7章 概率抽样与抽样分布",
-    "knowledge": "第7章 概率抽样与抽样分布",
-    "source": "题库4",
-    "answer_original": "B",
-    "id": 8
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第7章 概率抽样与抽样分布"
   },
   {
-    "qtype": "单选题",
+    "id": 9,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
     "question": "关于置信区间，以下说法正确的是",
     "options": [
-      [
-        "A",
-        "对总体比例构造置信区间，使用卡方分布"
-      ],
-      [
-        "B",
-        "95%置信度指总体参数落在一个特定样本所构造的区间内的概率为95%"
-      ],
-      [
-        "C",
-        "其他条件不变时，置信度越小，对总体方差构造的置信区间越宽"
-      ],
-      [
-        "D",
-        "其他条件不变时，样本容量n越小，对总体均值构造的置信区间越宽"
-      ]
+      {
+        "label": "A",
+        "text": "对总体比例构造置信区间，使用卡方分布"
+      },
+      {
+        "label": "B",
+        "text": "95%置信度指总体参数落在一个特定样本所构造的区间内的概率为95%"
+      },
+      {
+        "label": "C",
+        "text": "其他条件不变时，置信度越小，对总体方差构造的置信区间越宽"
+      },
+      {
+        "label": "D",
+        "text": "其他条件不变时，样本容量n越小，对总体均值构造的置信区间越宽"
+      }
     ],
-    "answer": "D",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库4",
-    "answer_original": "D",
-    "id": 9
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "单选题",
+    "id": 10,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "single",
     "question": "根据某班学生的英语考试成绩进行统计分组，分为60分以下、60-70分、70-80分、80-90分、90分以上，共5组，下列说法正确的是",
     "options": [
-      [
-        "A",
-        "第二组（60-70分）的组距为10"
-      ],
-      [
-        "B",
-        "第一组（60分以下）的组中值为30"
-      ],
-      [
-        "C",
-        "某学生的考试成绩为90分，应将其计入第四组（80-90分）"
-      ],
-      [
-        "D",
-        "第三组（70-80分）的上组限为80.1"
-      ]
+      {
+        "label": "A",
+        "text": "第二组60-70分的组距为10"
+      },
+      {
+        "label": "B",
+        "text": "第一组（60分以下的组中值为30"
+      },
+      {
+        "label": "C",
+        "text": "某学生的考试成绩为90分，应将其计入第四组（80-90分"
+      },
+      {
+        "label": "D",
+        "text": "第三组（70-80分的上组限为80.1"
+      }
     ],
-    "answer": "A",
-    "chapter": "第3章 数据的预处理与分组整理",
-    "knowledge": "第3章 数据的预处理与分组整理",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 10
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
-    "qtype": "单选题",
+    "id": 11,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
     "question": "关于平均数、中位数及众数，下列说法正确的是",
     "options": [
-      [
-        "A",
-        "中位数适用于所有类型的数据"
-      ],
-      [
-        "B",
-        "平均数不易受极端值影响"
-      ],
-      [
-        "C",
-        "单峰分布的对称数据集，其平均数与中位数相等"
-      ],
-      [
-        "D",
-        "一组数据只可能有一个众数"
-      ]
+      {
+        "label": "A",
+        "text": "中位数适用于所有类型的数据"
+      },
+      {
+        "label": "B",
+        "text": "平均数不易受极端值影响"
+      },
+      {
+        "label": "C",
+        "text": "单峰分布的对称数据集，其平均数与中位数相等"
+      },
+      {
+        "label": "D",
+        "text": "一组数据只可能有一个众数"
+      }
     ],
-    "answer": "C",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库4",
-    "answer_original": "C",
-    "id": 11
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "单选题",
+    "id": 12,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "为了解疫情期间学生体育锻炼情况，某校从全校60个班级中随机抽取10个班级，并对所抽中的10个班级中所有学生均开展调查，该调查采用的抽样方法是",
     "options": [
-      [
-        "A",
-        "整群抽样"
-      ],
-      [
-        "B",
-        "分层抽样"
-      ],
-      [
-        "C",
-        "等距抽样"
-      ],
-      [
-        "D",
-        "判断抽样"
-      ]
+      {
+        "label": "A",
+        "text": "整群抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "等距抽样"
+      },
+      {
+        "label": "D",
+        "text": "判断抽样"
+      }
     ],
-    "answer": "A",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 12
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 13,
+    "chapter": "第8章 参数估计",
+    "type": "single",
     "question": "关于一个总体均值的区间估计，下列说法错误的是",
     "options": [
-      [
-        "A",
-        "边际误差由置信水平与统计量的抽样标准差决定"
-      ],
-      [
-        "B",
-        "计算得到总体均值的95%置信区间，意味着该区间将以95%的概率包含总体均值"
-      ],
-      [
-        "C",
-        "若总体均值的95%置信区间为（12，20），则总体均值的点估计值为16"
-      ],
-      [
-        "D",
-        "对于非正态总体，在大样本条件下，估计总体均值区间可采用Z统计量"
-      ]
+      {
+        "label": "A",
+        "text": "边际误差由置信水平与统计量的抽样标准差决定"
+      },
+      {
+        "label": "B",
+        "text": "计算得到总体均值的95%置信区间，意味着该区间将以95%的概率包含总体均值"
+      },
+      {
+        "label": "C",
+        "text": "若总体均值的95%置信区间为（12，20，则总体均值的点估计值为16"
+      },
+      {
+        "label": "D",
+        "text": "对于非正态总体，在大样本条件下，估计总体均值区间可采用Z统计量"
+      }
     ],
-    "answer": "B",
-    "chapter": "第8章 参数估计",
-    "knowledge": "第8章 参数估计",
-    "source": "题库4",
-    "answer_original": "B",
-    "id": 13
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
   },
   {
-    "qtype": "单选题",
+    "id": 14,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "下列变量的数据类型为数值型的是",
     "options": [
-      [
-        "A",
-        "手机号"
-      ],
-      [
-        "B",
-        "性别"
-      ],
-      [
-        "C",
-        "身高"
-      ],
-      [
-        "D",
-        "文化程度"
-      ]
+      {
+        "label": "A",
+        "text": "手机号"
+      },
+      {
+        "label": "B",
+        "text": "性别"
+      },
+      {
+        "label": "C",
+        "text": "身高"
+      },
+      {
+        "label": "D",
+        "text": "文化程度"
+      }
     ],
-    "answer": "C",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "C",
-    "id": 14
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 15,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "以下各种抽样方式中，一定属于非随机抽样的方式是",
     "options": [
-      [
-        "A",
-        "重点抽样"
-      ],
-      [
-        "B",
-        "分层抽样"
-      ],
-      [
-        "C",
-        "简单随机抽样"
-      ],
-      [
-        "D",
-        "等距抽样"
-      ]
+      {
+        "label": "A",
+        "text": "重点抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "D",
+        "text": "等距抽样"
+      }
     ],
-    "answer": "A",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 15
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 16,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
     "question": "下面哪种抽样方法属于概率抽样",
     "options": [
-      [
-        "A",
-        "方便抽样"
-      ],
-      [
-        "B",
-        "判断抽样"
-      ],
-      [
-        "C",
-        "自愿样本"
-      ],
-      [
-        "D",
-        "分层抽样"
-      ]
+      {
+        "label": "A",
+        "text": "方便抽样"
+      },
+      {
+        "label": "B",
+        "text": "判断抽样"
+      },
+      {
+        "label": "C",
+        "text": "自愿样本"
+      },
+      {
+        "label": "D",
+        "text": "分层抽样"
+      }
     ],
-    "answer": "D",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库4",
-    "answer_original": "D",
-    "id": 16
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "单选题",
+    "id": 17,
+    "chapter": "第8章 参数估计",
+    "type": "single",
     "question": "在估计某一总体均值时,随机抽取n个单元作样本,用样本均值作估计量,在构造置信区间时,发现置信区间太宽,其主要原因是",
     "options": [
-      [
-        "A",
-        "样本容量太小"
-      ],
-      [
-        "B",
-        "估计量缺乏有效性"
-      ],
-      [
-        "C",
-        "选择的估计量有偏"
-      ],
-      [
-        "D",
-        "抽取样本时破坏了随机性"
-      ]
+      {
+        "label": "A",
+        "text": "样本容量太小"
+      },
+      {
+        "label": "B",
+        "text": "估计量缺乏有效性"
+      },
+      {
+        "label": "C",
+        "text": "选择的估计量有偏"
+      },
+      {
+        "label": "D",
+        "text": "抽取样本时破坏了随机性"
+      }
     ],
-    "answer": "A",
-    "chapter": "第8章 参数估计",
-    "knowledge": "第8章 参数估计",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 17
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
   },
   {
-    "qtype": "单选题",
+    "id": 18,
+    "chapter": "第9章 假设检验",
+    "type": "single",
     "question": "在一项消费者口味偏好的调查研究中，随机抽取了200名饮料的消费者，调查他们对两种主要的饮料品牌的口味满意度，零假设是消费者对两种饮料没有偏好。如果满意度使用10分制打分，得到饮料甲平均得分为7分，饮料乙平均得分为5分。检验p值为0.001，研究人员做出拒绝零假设的结论，说明",
     "options": [
-      [
-        "A",
-        "研究结果犯错误的概率等于0.999"
-      ],
-      [
-        "B",
-        "研究结果犯错误的概率不大于0.999"
-      ],
-      [
-        "C",
-        "研究结果犯错误的概率等于0.001"
-      ],
-      [
-        "D",
-        "研究结果犯错误的概率不大于0.001"
-      ]
+      {
+        "label": "A",
+        "text": "研究结果犯错误的概率等于0.999"
+      },
+      {
+        "label": "B",
+        "text": "研究结果犯错误的概率不大于0.999"
+      },
+      {
+        "label": "C",
+        "text": "研究结果犯错误的概率等于0.001"
+      },
+      {
+        "label": "D",
+        "text": "研究结果犯错误的概率不大于0.001"
+      }
     ],
-    "answer": "C",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库4",
-    "answer_original": "C",
-    "id": 18
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "单选题",
+    "id": 19,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
     "question": "某广告公司调查公众对某广告创意的评价，分别统计了满意、一般、不满意的人数，适用于该数据的统计图是",
     "options": [
-      [
-        "A",
-        "条形图"
-      ],
-      [
-        "B",
-        "散点图"
-      ],
-      [
-        "C",
-        "直方图"
-      ],
-      [
-        "D",
-        "茎叶图"
-      ]
+      {
+        "label": "A",
+        "text": "条形图"
+      },
+      {
+        "label": "B",
+        "text": "散点图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "茎叶图"
+      }
     ],
-    "answer": "A",
-    "chapter": "第5章 数据资料的图形展示",
-    "knowledge": "第5章 数据资料的图形展示",
-    "source": "题库4",
-    "answer_original": "A",
-    "id": 19
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
-    "qtype": "多选题",
+    "id": 20,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "multi",
     "question": "将学生英语成绩分组为60分以下、60-75分、75-85分、85分以上，下列说法不正确的是",
     "options": [
-      [
-        "A",
-        "该分组方法为等距分组"
-      ],
-      [
-        "B",
-        "第二组（60-75分）的组距为10"
-      ],
-      [
-        "C",
-        "第三组（75-85分）的上组限为75"
-      ],
-      [
-        "D",
-        "某学生的考试成绩为85分，应将其计入第四组（85分以上）"
-      ],
-      [
-        "E",
-        "第三组（75-85分）的组中值为80"
-      ]
+      {
+        "label": "A",
+        "text": "该分组方法为等距分组"
+      },
+      {
+        "label": "B",
+        "text": "第二组（60-75分的组距为10"
+      },
+      {
+        "label": "C",
+        "text": "第三组（75-85分的上组限为75"
+      },
+      {
+        "label": "D",
+        "text": "某学生的考试成绩为85分，应将其计入第四组（85分以上"
+      },
+      {
+        "label": "E",
+        "text": "第三组（75-85分的组中值为80"
+      }
     ],
-    "answer": "ABC",
-    "chapter": "第3章 数据的预处理与分组整理",
-    "knowledge": "第3章 数据的预处理与分组整理",
-    "source": "题库5",
-    "answer_original": "A，B，C",
-    "id": 20
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
-    "qtype": "多选题",
+    "id": 21,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
     "question": "下列各项中，不受个别低分同学影响的有",
     "options": [
-      [
-        "A",
-        "众数"
-      ],
-      [
-        "B",
-        "中位数"
-      ],
-      [
-        "C",
-        "均值"
-      ],
-      [
-        "D",
-        "方差"
-      ],
-      [
-        "E",
-        "标准差"
-      ]
+      {
+        "label": "A",
+        "text": "众数"
+      },
+      {
+        "label": "B",
+        "text": "中位数"
+      },
+      {
+        "label": "C",
+        "text": "均值"
+      },
+      {
+        "label": "D",
+        "text": "方差"
+      },
+      {
+        "label": "E",
+        "text": "标准差"
+      }
     ],
-    "answer": "AB",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库5",
-    "answer_original": "A，B",
-    "id": 21
+    "correct": [
+      "A",
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "多选题",
+    "id": 22,
+    "chapter": "第8章 参数估计",
+    "type": "multi",
     "question": "参数估计中，评价估计量优劣的标准有",
     "options": [
-      [
-        "A",
-        "无偏性"
-      ],
-      [
-        "B",
-        "一致性"
-      ],
-      [
-        "C",
-        "有效性"
-      ],
-      [
-        "D",
-        "独立性"
-      ],
-      [
-        "E",
-        "显著性"
-      ]
+      {
+        "label": "A",
+        "text": "无偏性"
+      },
+      {
+        "label": "B",
+        "text": "一致性"
+      },
+      {
+        "label": "C",
+        "text": "有效性"
+      },
+      {
+        "label": "D",
+        "text": "独立性"
+      },
+      {
+        "label": "E",
+        "text": "显著性"
+      }
     ],
-    "answer": "ABC",
-    "chapter": "第8章 参数估计",
-    "knowledge": "第8章 参数估计",
-    "source": "题库5",
-    "answer_original": "A，B，C",
-    "id": 22
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
   },
   {
-    "qtype": "多选题",
+    "id": 23,
+    "chapter": "第1章 统计学导论",
+    "type": "multi",
     "question": "下列各项中属于定性变量的是",
     "options": [
-      [
-        "A",
-        "学号"
-      ],
-      [
-        "B",
-        "血型"
-      ],
-      [
-        "C",
-        "性别"
-      ],
-      [
-        "D",
-        "年龄（单位：岁）"
-      ],
-      [
-        "E",
-        "身高（单位：米）"
-      ]
+      {
+        "label": "A",
+        "text": "学号"
+      },
+      {
+        "label": "B",
+        "text": "血型"
+      },
+      {
+        "label": "C",
+        "text": "性别"
+      },
+      {
+        "label": "D",
+        "text": "年龄（单位：岁"
+      },
+      {
+        "label": "E",
+        "text": "身高（单位：米"
+      }
     ],
-    "answer": "ABC",
-    "chapter": "第1章 统计学导论",
-    "knowledge": "第1章 统计学导论",
-    "source": "题库5",
-    "answer_original": "A，B，C",
-    "id": 23
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c1-stat-introduction.html"
   },
   {
-    "qtype": "多选题",
+    "id": 24,
+    "chapter": "第9章 假设检验",
+    "type": "multi",
     "question": "在一个总体均值的左侧检验中，当我们计算的Z统计量为0时，表示",
     "options": [
-      [
-        "A",
-        "有充足的理由否定原假设"
-      ],
-      [
-        "B",
-        "原假设必定是错误的"
-      ],
-      [
-        "C",
-        "不能拒绝原假设"
-      ],
-      [
-        "D",
-        "可能会犯取伪错误"
-      ],
-      [
-        "E",
-        "可能会犯弃真错误"
-      ]
+      {
+        "label": "A",
+        "text": "有充足的理由否定原假设"
+      },
+      {
+        "label": "B",
+        "text": "原假设必定是错误的"
+      },
+      {
+        "label": "C",
+        "text": "不能拒绝原假设"
+      },
+      {
+        "label": "D",
+        "text": "可能会犯取伪错误"
+      },
+      {
+        "label": "E",
+        "text": "可能会犯弃真错误"
+      }
     ],
-    "answer": "CD",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库5",
-    "answer_original": "C，D",
-    "id": 24
+    "correct": [
+      "C",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "多选题",
+    "id": 25,
+    "chapter": "第9章 假设检验",
+    "type": "multi",
     "question": "在假设检验中，若检验结果是拒绝原假设，则意味着",
     "options": [
-      [
-        "A",
-        "原假设一定是错误的"
-      ],
-      [
-        "B",
-        "原假设极有可能是错误的"
-      ],
-      [
-        "C",
-        "可能发生弃真错误"
-      ],
-      [
-        "D",
-        "备择假设一定是错误的"
-      ],
-      [
-        "E",
-        "可能发生小概率事件"
-      ]
+      {
+        "label": "A",
+        "text": "原假设一定是错误的"
+      },
+      {
+        "label": "B",
+        "text": "原假设极有可能是错误的"
+      },
+      {
+        "label": "C",
+        "text": "可能发生弃真错误"
+      },
+      {
+        "label": "D",
+        "text": "备择假设一定是错误的"
+      },
+      {
+        "label": "E",
+        "text": "可能发生小概率事件"
+      }
     ],
-    "answer": "BCE",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库5",
-    "answer_original": "B，C，E",
-    "id": 25
+    "correct": [
+      "B",
+      "C",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "多选题",
+    "id": 26,
+    "chapter": "第2章 数据的收集方法",
+    "type": "multi",
     "question": "为了了解顾客对产品质量的满意情况，分别于2017年1月1日、7月1日和11月1日，对100人进行了调查，得到满意、一般、不满意的人数。则得到的数据是",
     "options": [
-      [
-        "A",
-        "数值型数据"
-      ],
-      [
-        "B",
-        "观察数据"
-      ],
-      [
-        "C",
-        "实验数据"
-      ],
-      [
-        "D",
-        "时间序列数据"
-      ],
-      [
-        "E",
-        "顺序数据"
-      ]
+      {
+        "label": "A",
+        "text": "数值型数据"
+      },
+      {
+        "label": "B",
+        "text": "观察数据"
+      },
+      {
+        "label": "C",
+        "text": "实验数据"
+      },
+      {
+        "label": "D",
+        "text": "时间序列数据"
+      },
+      {
+        "label": "E",
+        "text": "顺序数据"
+      }
     ],
-    "answer": "BDE",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库5",
-    "answer_original": "B，D，E",
-    "id": 26
+    "correct": [
+      "B",
+      "D",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "多选题",
+    "id": 27,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
     "question": "利用盒形图（箱线图）反映原始数据的分布，该图可以显示数据的",
     "options": [
-      [
-        "A",
-        "均值"
-      ],
-      [
-        "B",
-        "中位数"
-      ],
-      [
-        "C",
-        "最大值"
-      ],
-      [
-        "D",
-        "最小值"
-      ],
-      [
-        "E",
-        "四分位数"
-      ]
+      {
+        "label": "A",
+        "text": "均值"
+      },
+      {
+        "label": "B",
+        "text": "中位数"
+      },
+      {
+        "label": "C",
+        "text": "最大值"
+      },
+      {
+        "label": "D",
+        "text": "最小值"
+      },
+      {
+        "label": "E",
+        "text": "四分位数"
+      }
     ],
-    "answer": "BCDE",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库5",
-    "answer_original": "B，C，D，E",
-    "id": 27
+    "correct": [
+      "B",
+      "C",
+      "D",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "多选题",
+    "id": 28,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
     "question": "将一组数据标准化得到标准分数，下列关于标准分数的说法中正确的是",
     "options": [
-      [
-        "A",
-        "标准分数的均值为0"
-      ],
-      [
-        "B",
-        "标准分数的均值为1"
-      ],
-      [
-        "C",
-        "标准分数的方差为0"
-      ],
-      [
-        "D",
-        "标准分数的方差为1"
-      ],
-      [
-        "E",
-        "标准分数表明各原始数据在数据中的相对位置"
-      ]
+      {
+        "label": "A",
+        "text": "标准分数的均值为0"
+      },
+      {
+        "label": "B",
+        "text": "标准分数的均值为1"
+      },
+      {
+        "label": "C",
+        "text": "标准分数的方差为0"
+      },
+      {
+        "label": "D",
+        "text": "标准分数的方差为1"
+      },
+      {
+        "label": "E",
+        "text": "标准分数表明各原始数据在数据中的相对位置"
+      }
     ],
-    "answer": "ADE",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库5",
-    "answer_original": "A，D，E",
-    "id": 28
+    "correct": [
+      "A",
+      "D",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "判断题",
+    "id": 29,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "判断题",
     "question": "平均数比中位数稳健",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 29
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "判断题",
+    "id": 30,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "判断题",
     "question": "数据分组，组数越多越好",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第3章 数据的预处理与分组整理",
-    "knowledge": "第3章 数据的预处理与分组整理",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 30
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
-    "qtype": "判断题",
+    "id": 31,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "判断题",
     "question": "一组数据可能有多个众数",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "A",
-    "chapter": "第3章 数据的预处理与分组整理",
-    "knowledge": "第3章 数据的预处理与分组整理",
-    "source": "题库6",
-    "answer_original": "对",
-    "id": 31
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
-    "qtype": "判断题",
+    "id": 32,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "判断题",
     "question": "标准差可用于比较不同组数据的离散程度",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 32
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
-    "qtype": "判断题",
+    "id": 33,
+    "chapter": "第2章 数据的收集方法",
+    "type": "判断题",
     "question": "对我国粮食作物主要产区进行调查，以掌握全国粮食作物生长的基本情况这种调查是全面调查。",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 33
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "判断题",
+    "id": 34,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "判断题",
     "question": "编制变量分组数列时，如果有特大或特小的极端数值，则宜采用开口组表示",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "A",
-    "chapter": "第3章 数据的预处理与分组整理",
-    "knowledge": "第3章 数据的预处理与分组整理",
-    "source": "题库6",
-    "answer_original": "对",
-    "id": 34
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
-    "qtype": "判断题",
+    "id": 35,
+    "chapter": "第2章 数据的收集方法",
+    "type": "判断题",
     "question": "抽样误差仅存在于非概率抽样中，概率抽样不存在抽样误差",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 35
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "判断题",
+    "id": 36,
+    "chapter": "第2章 数据的收集方法",
+    "type": "判断题",
     "question": "根据人的性别特征将人口划分为男性和女性两类，所采用的测度计量尺度是定类尺度",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "A",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库6",
-    "answer_original": "对",
-    "id": 36
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "判断题",
+    "id": 37,
+    "chapter": "第9章 假设检验",
+    "type": "判断题",
     "question": "假设检验是依据样本提供的信息进行判断的，也就是由部分推断整体，因而假设检验不可能绝对准确",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "A",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库6",
-    "answer_original": "对",
-    "id": 37
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "判断题",
+    "id": 38,
+    "chapter": "第9章 假设检验",
+    "type": "判断题",
     "question": "我们可以通过减少第一类错误来降低第二类错误",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 38
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "判断题",
+    "id": 39,
+    "chapter": "第9章 假设检验",
+    "type": "判断题",
     "question": "假设检验的结果能证明原假设成立",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第9章 假设检验",
-    "knowledge": "第9章 假设检验",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 39
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   },
   {
-    "qtype": "判断题",
+    "id": 40,
+    "chapter": "第2章 数据的收集方法",
+    "type": "判断题",
     "question": "全面调查和非全面调查是根据调查结果所得的资料是否全面来划分的",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 40
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "判断题",
+    "id": 41,
+    "chapter": "第2章 数据的收集方法",
+    "type": "判断题",
     "question": "抽样误差可以通过更换抽样对象减少",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第2章 数据的收集方法",
-    "knowledge": "第2章 数据的收集方法",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 41
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
   },
   {
-    "qtype": "判断题",
+    "id": 42,
+    "chapter": "第1章 统计学导论",
+    "type": "判断题",
     "question": "只有数字才能应用统计学进行分析，非数字无法进行统计学分析",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "B",
-    "chapter": "第1章 统计学导论",
-    "knowledge": "第1章 统计学导论",
-    "source": "题库6",
-    "answer_original": "错",
-    "id": 42
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c1-stat-introduction.html"
   },
   {
-    "qtype": "判断题",
+    "id": 43,
+    "chapter": "第8章 参数估计",
+    "type": "判断题",
     "question": "点估计是用样本统计量的值直接估计被估计的总体参数",
     "options": [
-      [
-        "A",
-        "正确"
-      ],
-      [
-        "B",
-        "错误"
-      ]
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
     ],
-    "answer": "A",
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 44,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "在统计调查中，以下关于误差的说法正确的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "抽样误差是由样本随机性引起的，其大小与样本容量、总体内部差异有关"
+      },
+      {
+        "label": "B",
+        "text": "非抽样误差包括无回答误差、抽样框误差和计量误差，可通过增大样本容量来消除"
+      },
+      {
+        "label": "C",
+        "text": "抽样框遗漏部分总体单元属于抽样误差的一种表现形式"
+      },
+      {
+        "label": "D",
+        "text": "抽样误差和非抽样误差均可通过优化调查方案设计完全避免"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 45,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "某市教育部门拟调查高中生体育锻炼情况，该市共有 30 所高中，其中重点高中 10 所、普通高中 20 所。重点高中和普通高中学生的锻炼习惯可能显著不同。以下抽样方法中，最合理的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样：从全市高中生名单中随机抽取 1000 名学生"
+      },
+      {
+        "label": "B",
+        "text": "整群抽样：随机抽取 5 所学校（不分类型，对抽中学校的全体学生进行调查"
+      },
+      {
+        "label": "C",
+        "text": "分层抽样：按学校类型（重点 / 普通分层，在每层内随机抽取若干学校，再在抽中学校内随机抽取部分学生进行调查"
+      },
+      {
+        "label": "D",
+        "text": "等距抽样：将所有学生按学号排序，每隔 100 人抽取 1 人进行调查"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 46,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "single",
+    "question": "对某数值型数据进行分组，最小的组（即第一组）和最大的组（即最后一组）为开口组，其中最大的组的下限为 50。已知其相邻组的组中值为 46，则最大的组的组中值为（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "52"
+      },
+      {
+        "label": "B",
+        "text": "54"
+      },
+      {
+        "label": "C",
+        "text": "56"
+      },
+      {
+        "label": "D",
+        "text": "58"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
+  },
+  {
+    "id": 47,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "下列关于总体参数与样本统计量的说法正确的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "两者均为常数，但计算方式不同"
+      },
+      {
+        "label": "B",
+        "text": "两者均为随机变量，但用途不同"
+      },
+      {
+        "label": "C",
+        "text": "总体参数是常数，样本统计量是随机变量"
+      },
+      {
+        "label": "D",
+        "text": "总体参数是随机变量，样本统计量是常数"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 48,
     "chapter": "第8章 参数估计",
-    "knowledge": "第8章 参数估计",
-    "source": "题库6",
-    "answer_original": "对",
-    "id": 43
+    "type": "single",
+    "question": "已知总体方差，对总体均值进行区间估计，当其他条件不变时，若将置信水平从 95% 提高到 99%，则置信区间会（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "不变"
+      },
+      {
+        "label": "B",
+        "text": "变窄"
+      },
+      {
+        "label": "C",
+        "text": "变宽"
+      },
+      {
+        "label": "D",
+        "text": "可能变窄或变宽"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 49,
+    "chapter": "第9章 假设检验",
+    "type": "single",
+    "question": "在一次假设检验中，当显著性水平设为 0.05 时，结论为拒绝原假设。现调整显著性水平为 0.1，那么（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "拒绝原假设"
+      },
+      {
+        "label": "B",
+        "text": "不拒绝原假设"
+      },
+      {
+        "label": "C",
+        "text": "不一定拒绝原假设"
+      },
+      {
+        "label": "D",
+        "text": "需要重新进行假设检验"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
+  },
+  {
+    "id": 50,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "以下关于方差分析的说法正确的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "方差分析的应用条件之一是各总体的均值相等"
+      },
+      {
+        "label": "B",
+        "text": "方差分析的应用条件之一是各组样本容量相同"
+      },
+      {
+        "label": "C",
+        "text": "方差分析的主要目的是检验多个总体方差是否相同"
+      },
+      {
+        "label": "D",
+        "text": "方差分析的主要目的是检验多个总体均值是否相同"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 51,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "在简单线性回归分析中，若决定系数R²=0.64，则以下结论正确的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "自变量与因变量之间的相关系数为0.8"
+      },
+      {
+        "label": "B",
+        "text": "因变量的变差中有64%可由因变量和自变量的关系解释"
+      },
+      {
+        "label": "C",
+        "text": "回归直线的斜率为0.64"
+      },
+      {
+        "label": "D",
+        "text": "当自变量每增加1个单位，因变量平均增加0.64个单位 二、多项选择题（在每个小题五个备选答案中选出正确答案，填在题末的括号中，多选、少选均不得分。本大题共5小题"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 52,
+    "chapter": "第2章 数据的收集方法",
+    "type": "multi",
+    "question": "下列关于众数的叙述，正确的有（ ）。 A．一组数据可能存在多个众数 B．众数可用于分类数据、顺序数据和数值型数据 C．一组数据的众数是惟一的 D．众数不受极端值的影响 E．一组数据可能没有众数 在使用二手数据进行统计分析时，以下说法正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "二手数据的获取成本通常低于一手数据，但可能存在数据过时的问题"
+      },
+      {
+        "label": "B",
+        "text": "为确保二手数据的可靠性，需要详细了解数据的收集方法、统计口径和发布机构"
+      },
+      {
+        "label": "C",
+        "text": "二手数据可能因为原调查目的与自己的研究目的不一致，而需要进行调整和重新分组"
+      },
+      {
+        "label": "D",
+        "text": "二手数据的样本选取方式如果与自己的研究需求不匹配，会影响分析结果的有效性"
+      },
+      {
+        "label": "E",
+        "text": "可以直接使用二手数据进行分析，无需对数据质量进行评估"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 53,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "下列变量属于定量变量的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "性别"
+      },
+      {
+        "label": "B",
+        "text": "身份证号"
+      },
+      {
+        "label": "C",
+        "text": "职业"
+      },
+      {
+        "label": "D",
+        "text": "体重"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 54,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "下列只能用于描述定量数据分布特征的图形是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "饼形图"
+      },
+      {
+        "label": "B",
+        "text": "环形图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "条形图"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 55,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "用于比较两组同类型的定性数据分布结构的图形是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "茎叶图"
+      },
+      {
+        "label": "B",
+        "text": "环形图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "折线图"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 56,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "用于比较两组不同性质数据的离散程度的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "方差"
+      },
+      {
+        "label": "B",
+        "text": "标准差"
+      },
+      {
+        "label": "C",
+        "text": "离散系数"
+      },
+      {
+        "label": "D",
+        "text": "极差"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 57,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "以下哪个不是概率抽样（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "整群抽样"
+      },
+      {
+        "label": "D",
+        "text": "方便抽样"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 58,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "反映总体数量特征的量称为（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "参数"
+      },
+      {
+        "label": "B",
+        "text": "统计量"
+      },
+      {
+        "label": "C",
+        "text": "样本量"
+      },
+      {
+        "label": "D",
+        "text": "估计量"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 59,
+    "chapter": "第8章 参数估计",
+    "type": "single",
+    "question": "在进行总体均值区间估计时，下列情况中必须使用t统计量的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "正态总体，方差已知"
+      },
+      {
+        "label": "B",
+        "text": "正态总体，方差未知，大样本"
+      },
+      {
+        "label": "C",
+        "text": "正态总体，方差未知，小样本"
+      },
+      {
+        "label": "D",
+        "text": "总体分布形式未知，大样本"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 60,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "一元线性回归方程中，下面哪个数值可能小于0（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "回归系数"
+      },
+      {
+        "label": "B",
+        "text": "估计标准误差"
+      },
+      {
+        "label": "C",
+        "text": "判定系数（拟合优度 D．因变量y的总变差SST 二、多选题（本大题共5小题，每小题2分，总计10分，多选、少选均不得分"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 61,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "multi",
+    "question": "可用于描述定性数据分布特征的图形有（ ）",
+    "options": [
+      {
+        "label": "B",
+        "text": "直方图"
+      },
+      {
+        "label": "C",
+        "text": "环形图"
+      },
+      {
+        "label": "D",
+        "text": "饼形图"
+      },
+      {
+        "label": "E",
+        "text": "折线图"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 62,
+    "chapter": "第10章 方差分析",
+    "type": "multi",
+    "question": "方差分析要求数据必须满足的条件包括（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "独立性"
+      },
+      {
+        "label": "B",
+        "text": "正态性"
+      },
+      {
+        "label": "C",
+        "text": "方差齐性"
+      },
+      {
+        "label": "D",
+        "text": "相关性 E无偏性"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 63,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "下面关于方差分析，说法正确的有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "用于多总体均值的比较"
+      },
+      {
+        "label": "B",
+        "text": "原假设H0: μ1=μ2=…=μt, 备择假设H1: μ1，μ2，…，μt不完全相等"
+      },
+      {
+        "label": "C",
+        "text": "原假设H0: μ1=μ2=…=μt, 备择假设H1: μ1，μ2，…，μt完全不相等"
+      },
+      {
+        "label": "D",
+        "text": "如果拒绝了原假设，就认为因子对因变量的影响是显著的"
+      },
+      {
+        "label": "E",
+        "text": "用于分析定性因子对定量目标变量的影响"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 64,
+    "chapter": "第1章 统计学导论",
+    "type": "single",
+    "question": "下列变量属于定性变量的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "性别"
+      },
+      {
+        "label": "B",
+        "text": "年龄"
+      },
+      {
+        "label": "C",
+        "text": "受教育年限"
+      },
+      {
+        "label": "D",
+        "text": "体重"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c1-stat-introduction.html"
+  },
+  {
+    "id": 65,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "用于反映两个变量之间是否存在相关关系的图形是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "茎叶图"
+      },
+      {
+        "label": "B",
+        "text": "环形图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "散点图"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 66,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "可以用于比较两组数据的离散程度的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "相关系数"
+      },
+      {
+        "label": "B",
+        "text": "判定系数"
+      },
+      {
+        "label": "C",
+        "text": "离散系数"
+      },
+      {
+        "label": "D",
+        "text": "回归系数"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 67,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "下面反映总体数量特征的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "总体均值"
+      },
+      {
+        "label": "B",
+        "text": "样本均值"
+      },
+      {
+        "label": "C",
+        "text": "样本容量"
+      },
+      {
+        "label": "D",
+        "text": "总体分布"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 68,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "收入与消费支出的一元线性回归方程中，可能的回归系数是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "1.2"
+      },
+      {
+        "label": "B",
+        "text": "0.67"
+      },
+      {
+        "label": "C",
+        "text": "-0.8"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 69,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "multi",
+    "question": "可用于描述数值型数据分布特征的图形有（ ）",
+    "options": [
+      {
+        "label": "B",
+        "text": "直方图"
+      },
+      {
+        "label": "C",
+        "text": "环形图"
+      },
+      {
+        "label": "D",
+        "text": "饼形图"
+      },
+      {
+        "label": "E",
+        "text": "散点图"
+      }
+    ],
+    "correct": [
+      "B",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 70,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "方差分析可以解决的问题有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "用于多总体均值的比较"
+      },
+      {
+        "label": "B",
+        "text": "用于检验总体均值是否高于某个特定的值"
+      },
+      {
+        "label": "C",
+        "text": "用于检验总体比例是否高于某个特定的值"
+      },
+      {
+        "label": "D",
+        "text": "用于检验两个数值型变量之间是否相关"
+      },
+      {
+        "label": "E",
+        "text": "用于分析定性因子对定量目标变量的影响"
+      }
+    ],
+    "correct": [
+      "A",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 71,
+    "chapter": "其他",
+    "type": "single",
+    "question": "下列变量中属于连续型变量的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "身高"
+      },
+      {
+        "label": "B",
+        "text": "产品件数"
+      },
+      {
+        "label": "C",
+        "text": "企业人数"
+      },
+      {
+        "label": "D",
+        "text": "产品品种"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "其他"
+  },
+  {
+    "id": 72,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "下列图形中不能展示分类数据的图是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "饼形图"
+      },
+      {
+        "label": "B",
+        "text": "环形图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "条形图"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 73,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "某样本数据的方差是36，均值是10，则该组数据的离散系数是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "3.60"
+      },
+      {
+        "label": "B",
+        "text": "0.60"
+      },
+      {
+        "label": "C",
+        "text": "1.67"
+      },
+      {
+        "label": "D",
+        "text": "0.28"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 74,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "以下各种抽样方式中，一定属于非随机抽样的方式是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "等距抽样"
+      },
+      {
+        "label": "C",
+        "text": "重点抽样"
+      },
+      {
+        "label": "D",
+        "text": "分层抽样"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 75,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "在回归直线yc=a+bx,b<0,则x与y之间的相关系数（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "r=0"
+      },
+      {
+        "label": "B",
+        "text": "r=1"
+      },
+      {
+        "label": "C",
+        "text": "0<r<1"
+      },
+      {
+        "label": "D",
+        "text": "-1<r<0"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 76,
+    "chapter": "第9章 假设检验",
+    "type": "single",
+    "question": "在一次假设检验中，当显著水平设为0.05时，结论是拒绝原假设，现将显著水 平设为0.1，那么（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "仍然拒绝原假设"
+      },
+      {
+        "label": "B",
+        "text": "不一定拒绝原假设"
+      },
+      {
+        "label": "C",
+        "text": "需要重新进行假设检验"
+      },
+      {
+        "label": "D",
+        "text": "有可能拒绝原假设"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
+  },
+  {
+    "id": 77,
+    "chapter": "其他",
+    "type": "single",
+    "question": "利用主成分分析得到的各个主成分之间（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "相互独立"
+      },
+      {
+        "label": "B",
+        "text": "线性相关"
+      },
+      {
+        "label": "C",
+        "text": "不完全相关"
+      },
+      {
+        "label": "D",
+        "text": "互不相关 二、多选题（本大题共5小题，每小题2分，总计10分，多选、少选均不得分"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "其他"
+  },
+  {
+    "id": 78,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
+    "question": "下列平均数中，容易受数列中极端值影响的平均数有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "算术平均数"
+      },
+      {
+        "label": "B",
+        "text": "标准差系数"
+      },
+      {
+        "label": "C",
+        "text": "几何平均数"
+      },
+      {
+        "label": "D",
+        "text": "中位数"
+      },
+      {
+        "label": "E",
+        "text": "众数"
+      }
+    ],
+    "correct": [
+      "A",
+      "C",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 79,
+    "chapter": "第10章 方差分析",
+    "type": "multi",
+    "question": "对单因素方差分析的组内误差，下面说法正确的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "其自由度为k-1"
+      },
+      {
+        "label": "B",
+        "text": "反映的是随机因素的影响"
+      },
+      {
+        "label": "C",
+        "text": "反映的是随机因素和系统因素的影响"
+      },
+      {
+        "label": "D",
+        "text": "组内误差一定小于组间误差"
+      },
+      {
+        "label": "E",
+        "text": "其自由度为n-k"
+      }
+    ],
+    "correct": [
+      "B",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 80,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "某研究者欲面向全校在校生调查学校食堂服务的满意程度，首先将全体在校生分为不同年级，然后在各年级中随机抽取100人作为调查样本。这种抽样方法为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "整群抽样"
+      },
+      {
+        "label": "D",
+        "text": "等距抽样"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 81,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "某市场调查机构想要结合品牌和销量数据分析哪个品牌的新能源汽车最受市场青睐，以下不合适的图形是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "条形图"
+      },
+      {
+        "label": "B",
+        "text": "饼图"
+      },
+      {
+        "label": "C",
+        "text": "雷达图"
+      },
+      {
+        "label": "D",
+        "text": "帕累托图"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 82,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "下列用于测度离散程度的指标中，最容易受极端值影响的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "标准差"
+      },
+      {
+        "label": "B",
+        "text": "四分位差"
+      },
+      {
+        "label": "C",
+        "text": "极差"
+      },
+      {
+        "label": "D",
+        "text": "离散系数"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 83,
+    "chapter": "第8章 参数估计",
+    "type": "single",
+    "question": "对全校学生的平均身高进行区间估计，得到95%置信区间是[168,172]，其中95%的含义是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "全校学生平均身高的真实值在该区间内的概率"
+      },
+      {
+        "label": "B",
+        "text": "多次抽样得到的区间中包含全校学生平均身高真实值的比例"
+      },
+      {
+        "label": "C",
+        "text": "样本中落入该区间的人数的比例"
+      },
+      {
+        "label": "D",
+        "text": "总体中落入该区间的人数的比例"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 84,
+    "chapter": "第9章 假设检验",
+    "type": "single",
+    "question": "在一次假设检验中，当显著性水平设为0.05时，结论是拒绝原假设，现将显著性水平设为0.1，那么（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "仍然拒绝原假设"
+      },
+      {
+        "label": "B",
+        "text": "不一定拒绝原假设"
+      },
+      {
+        "label": "C",
+        "text": "需要重新进行假设检验"
+      },
+      {
+        "label": "D",
+        "text": "有可能拒绝原假设"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
+  },
+  {
+    "id": 85,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "以下时间序列中，具有可加性的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "北京地区每季度失业率"
+      },
+      {
+        "label": "B",
+        "text": "北京地区每月降雨量"
+      },
+      {
+        "label": "C",
+        "text": "某公司每月末库存数"
+      },
+      {
+        "label": "D",
+        "text": "某上市公司每日平均股票价格"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 86,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "以下有关聚类分析的陈述，正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在快速聚类中，一个样本一旦被划入某一类就不可改变"
+      },
+      {
+        "label": "B",
+        "text": "欧式距离、夹角余弦、相关系数等是常用的类与类之间距离的度量方法"
+      },
+      {
+        "label": "C",
+        "text": "快速聚类方法需要提前确定聚类数。"
+      },
+      {
+        "label": "D",
+        "text": "进行聚类分析的前提是变量间具有很强的相关性"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 87,
+    "chapter": "第10章 方差分析",
+    "type": "single",
+    "question": "以下有关主成分分析和因子分析的陈述，正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "在主成分分析中，主成分的个数等于原始变量的个数"
+      },
+      {
+        "label": "B",
+        "text": "与因子分析相比，主成分分析得到的结果通常更容易解释"
+      },
+      {
+        "label": "C",
+        "text": "主成分分析和因子分析都是常用于进行预测的统计方法"
+      },
+      {
+        "label": "D",
+        "text": "主成分分析中得到的主成分之间彼此相关"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 88,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "研究发现我国居民的收入水平呈非对称分布，以下最适合度量我国居民收入水平的指标是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "平均数"
+      },
+      {
+        "label": "B",
+        "text": "中位数"
+      },
+      {
+        "label": "C",
+        "text": "标准差"
+      },
+      {
+        "label": "D",
+        "text": "离散系数"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 89,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "某研究机构想要了解某高校学生的上网习惯，首先将该校学生按照学院进行分组，然后从所有学院中等概率地抽取了3个学院，并调查了这3个学院的所有学生。请问这种抽样方法是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "整群抽样"
+      },
+      {
+        "label": "D",
+        "text": "典型抽样"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 90,
+    "chapter": "第8章 参数估计",
+    "type": "single",
+    "question": "评价估计量的标准不包含（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "无偏性"
+      },
+      {
+        "label": "B",
+        "text": "有效性"
+      },
+      {
+        "label": "C",
+        "text": "一致性"
+      },
+      {
+        "label": "D",
+        "text": "正态性"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 91,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "当样本量大于等于30时，样本均值与总体均值的关系是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "样本均值总是不等于总体均值"
+      },
+      {
+        "label": "B",
+        "text": "样本均值总是等于总体均值"
+      },
+      {
+        "label": "C",
+        "text": "样本均值及总体均值都是固定不变的"
+      },
+      {
+        "label": "D",
+        "text": "样本均值的数学期望总是等于总体均值"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 92,
+    "chapter": "第8章 参数估计",
+    "type": "single",
+    "question": "关于95%的置信水平，下列说法正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "总体参数落在一个特定样本所构造的区间内的概率为95%。"
+      },
+      {
+        "label": "B",
+        "text": "某一个特定样本所构造的置信区间包含总体参数的概率是95%。"
+      },
+      {
+        "label": "C",
+        "text": "其他条件不变时，置信水平提高，总体均值置信区间越宽。"
+      },
+      {
+        "label": "D",
+        "text": "对总体比例构造置信区间，使用卡方分布。"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 93,
+    "chapter": "第12章 相关分析与回归分析",
+    "type": "single",
+    "question": "利用10个样本数据建立一个一元线性回归模型，其中自变量X的平均值为5，因变量Y的平均值为10。根据模型的估计结果，当X每增加1个单位时，Y将平均增加2个单位。如果回归方程的截距为3，那么回归方程的斜率以及Y与X的相关系数分别是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "斜率为2，相关系数为1"
+      },
+      {
+        "label": "B",
+        "text": "斜率为2，相关系数在0到1之间"
+      },
+      {
+        "label": "C",
+        "text": "斜率无法确定，相关系数在-1到1之间"
+      },
+      {
+        "label": "D",
+        "text": "斜率为-2，相关系数在-1到1之间"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第12章 相关分析与回归分析"
+  },
+  {
+    "id": 94,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "multi",
+    "question": "将学生英语成绩分组为60分以下、60-75分、75-85分、85分以上，下列说法不正确的是",
+    "options": [
+      {
+        "label": "A",
+        "text": "该分组方法为等距分组"
+      },
+      {
+        "label": "B",
+        "text": "第二组（60-75分的组距为10"
+      },
+      {
+        "label": "C",
+        "text": "第三组（75-85分的上组限为75"
+      },
+      {
+        "label": "D",
+        "text": "某学生的考试成绩为85分，应将其计入第四组（85分以上"
+      },
+      {
+        "label": "E",
+        "text": "第三组（75-85分的组中值为80"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
+  },
+  {
+    "id": 95,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "对于概率抽样,抽样误差的大小取决于以下因素中的（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "总体内部的差异程度"
+      },
+      {
+        "label": "B",
+        "text": "样本容量的大小"
+      },
+      {
+        "label": "C",
+        "text": "抽样的方式（重复抽样不重复抽样"
+      },
+      {
+        "label": "D",
+        "text": "样本均值的大小"
+      },
+      {
+        "label": "E",
+        "text": "样本均值的抽样分布"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 96,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "下列属于数值型变量的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "月工资"
+      },
+      {
+        "label": "B",
+        "text": "性别"
+      },
+      {
+        "label": "C",
+        "text": "学历"
+      },
+      {
+        "label": "D",
+        "text": "健康状况"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 97,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "为了调查某校学生的每月的生活费支出，从全校抽取 8 个班级的学生进行调查，这种抽样方法为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "整群抽样"
+      },
+      {
+        "label": "D",
+        "text": "等距抽样"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 98,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "下列各项中，适合于比较研究两个或多个样本或总体的结构性问题的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "环形图"
+      },
+      {
+        "label": "B",
+        "text": "饼图"
+      },
+      {
+        "label": "C",
+        "text": "直方图"
+      },
+      {
+        "label": "D",
+        "text": "茎叶图"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c5-data-visualization.html"
+  },
+  {
+    "id": 99,
+    "chapter": "第10章 方差分析",
+    "type": "single",
+    "question": "下列关于单因素方差分析的叙述，不正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "方差分析可以对若干平均值是否相等同时进行检验"
+      },
+      {
+        "label": "B",
+        "text": "进行方差分析要求各水平下的样本容量相同"
+      },
+      {
+        "label": "C",
+        "text": "总平方和能分解为组内平方和与组间平方和之和"
+      },
+      {
+        "label": "D",
+        "text": "进行方差分析时各水平下的样本容量可以不相同"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 100,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "在其他条件不变的情况下，想要保持估计的准确性，总体数据的方差越大，估计时所需的样本量（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "越大"
+      },
+      {
+        "label": "B",
+        "text": "越小"
+      },
+      {
+        "label": "C",
+        "text": "可能大也可能小"
+      },
+      {
+        "label": "D",
+        "text": "不变"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 101,
+    "chapter": "第13章 时间序列的描述性分析",
+    "type": "single",
+    "question": "时间序列中各逐期环比值的几何平均数减 1 后的结果称为（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "环比增长率"
+      },
+      {
+        "label": "B",
+        "text": "定基增长率"
+      },
+      {
+        "label": "C",
+        "text": "平均增长速度"
+      },
+      {
+        "label": "D",
+        "text": "年度化增长率 二、多项选择题（在每个小题五个备选答案中选出正确答案，填在题末的括号中，多选、少选均不得分。本大题共5小题，每小题2分，共10分"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第13章 时间序列的描述性分析"
+  },
+  {
+    "id": 102,
+    "chapter": "第1章 统计学导论",
+    "type": "multi",
+    "question": "关于描述统计与推断统计的区别和联系，下列说法正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "描述统计主要通过图表或统计量来整理和概括数据特征。"
+      },
+      {
+        "label": "B",
+        "text": "推断统计的核心是利用样本数据去推断总体特征。"
+      },
+      {
+        "label": "C",
+        "text": "通常先做描述统计了解分布，再做推断统计。"
+      },
+      {
+        "label": "D",
+        "text": "描述统计只能用于总体数据，不能用于样本数据。"
+      },
+      {
+        "label": "E",
+        "text": "推断统计的理论基础是概率论。"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c1-stat-introduction.html"
+  },
+  {
+    "id": 103,
+    "chapter": "第9章 假设检验",
+    "type": "multi",
+    "question": "假设检验中可能犯“弃真”（第一类错误 ）和“取伪”（第二类错误 ）两类错误，下列描述正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "第一类错误：原假设是真的，却拒绝了它（弃真。"
+      },
+      {
+        "label": "B",
+        "text": "第二类错误：原假设是假的，却没拒绝它（取伪。"
+      },
+      {
+        "label": "C",
+        "text": "样本量固定时，减小第一类错误 ，往往会导致第二类错误 增大。"
+      },
+      {
+        "label": "D",
+        "text": "第一类错误和第二类错误的概率之和总是等于 1。"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
+  },
+  {
+    "id": 104,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "single",
+    "question": "为了保证统计分组的科学性，必须遵循的核心原则及做法包括（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "互斥性：任何一个数据只能归属于某一个组，不重复。"
+      },
+      {
+        "label": "B",
+        "text": "完备性：所有数据都能被分入某一个组，无遗漏。"
+      },
+      {
+        "label": "C",
+        "text": "组距分组通常采用“上限不在内”原则。"
+      },
+      {
+        "label": "D",
+        "text": "分组只能根据数量特征进行，不能根据品质特征进行。"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
+  },
+  {
+    "id": 105,
+    "chapter": "第10章 方差分析",
+    "type": "single",
+    "question": "关于方差分析（ANOVA），下列描述正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "虽然名为“方差”分析，但主要目的是检验多个总体的均值是否相等。"
+      },
+      {
+        "label": "B",
+        "text": "单因素方差分析将总方差（SST分解为组间方差（SSA和组内方差（SSE。"
+      },
+      {
+        "label": "C",
+        "text": "组间方差（SSA主要反映了随机误差的影响。"
+      },
+      {
+        "label": "D",
+        "text": "方差分析采用的检验统计量是 F 统计量。"
+      },
+      {
+        "label": "E",
+        "text": "应用时通常需满足正态性、方差齐性和独立性三个假设。"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 106,
+    "chapter": "第14章 时间序列的构成与预测",
+    "type": "single",
+    "question": "关于时间序列中加法模型和乘法模型的选择，下列说法正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "加法模型：假设各成分相互独立，总变动是各成分的简单叠加。"
+      },
+      {
+        "label": "B",
+        "text": "乘法模型：假设各成分存在交互影响，季节变动幅度随趋势变化。"
+      },
+      {
+        "label": "C",
+        "text": "若图表显示季节波动的振幅保持恒定（平行带状，应选加法模型。"
+      },
+      {
+        "label": "D",
+        "text": "若图表显示季节波动的振幅逐渐扩大（喇叭口状，应选乘法模型。"
+      },
+      {
+        "label": "E",
+        "text": "乘法模型中，季节变动的绝对量始终保持恒定。"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "第14章 时间序列的构成与预测"
+  },
+  {
+    "id": 107,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "某调研团队为分析 “农村数字金融服务普及成效”，通过调取县域农商行 2021-2023 年农户贷款还款系统记录，整理得出 “农户逾期还款次数（0 次、1 次、2 次……）” 的数据。该数据的类型与来源组合正确的是（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "定比数据 + 二手数据"
+      },
+      {
+        "label": "B",
+        "text": "定距数据 + 一手数据"
+      },
+      {
+        "label": "C",
+        "text": "定序数据 + 一手数据"
+      },
+      {
+        "label": "D",
+        "text": "定类数据 + 二手数据"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 108,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "某调研团队为精准分析 “全国县域农村电商发展不均衡性”，设计抽样方案如下：①按东部、中部、西部三大经济带分层，每层随机抽取 8 个省份；②从每个抽中省份中，按县域 GDP 水平分为高、中、低三档，每档随机抽取 3 个县域；③从每个抽中县域中，随机抽取 20 家农村电商经营主体（农户网店、合作社电商部门等）开展调查。该抽样方法属于（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "分层抽样"
+      },
+      {
+        "label": "B",
+        "text": "整群抽样"
+      },
+      {
+        "label": "C",
+        "text": "多阶段抽样"
+      },
+      {
+        "label": "D",
+        "text": "系统抽样"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 109,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
+    "question": "关于描述性统计分析与推断统计的说法，正确的有（ ）。",
+    "options": [
+      {
+        "label": "A",
+        "text": "描述性统计旨在整理样本数据特征（如均值、标准差，不涉及总体推断"
+      },
+      {
+        "label": "B",
+        "text": "推断统计通过样本数据推断总体参数（如置信区间、假设检验"
+      },
+      {
+        "label": "C",
+        "text": "直方图、条形图属于推断统计的常用工具"
+      },
+      {
+        "label": "D",
+        "text": "回归分析、参数估计均属于推断统计方法"
+      },
+      {
+        "label": "E",
+        "text": "描述性统计可直接得出总体的分布特征"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 110,
+    "chapter": "第9章 假设检验",
+    "type": "multi",
+    "question": "关于假设检验中两类错误的说法，正确的有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "第一类错误（α 错误是原假设为真时拒绝原假设"
+      },
+      {
+        "label": "B",
+        "text": "第二类错误（β 错误是原假设为假时接受原假设"
+      },
+      {
+        "label": "C",
+        "text": "显著性水平 α 是第二类错误的概率"
+      },
+      {
+        "label": "D",
+        "text": "样本量固定时，α 与 β 可同时减小"
+      },
+      {
+        "label": "E",
+        "text": "增大样本量有助于同时降低两类错误的概率"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "E"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
+  },
+  {
+    "id": 111,
+    "chapter": "第10章 方差分析",
+    "type": "single",
+    "question": "方差分析（ANOVA）的适用前提条件有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "各总体服从正态分布"
+      },
+      {
+        "label": "B",
+        "text": "各总体的方差相等（方差齐性"
+      },
+      {
+        "label": "C",
+        "text": "样本观测值相互独立"
+      },
+      {
+        "label": "D",
+        "text": "样本量必须大于 30（大样本"
+      },
+      {
+        "label": "E",
+        "text": "因变量为分类数据"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C"
+    ],
+    "knowledge": "",
+    "review": "第10章 方差分析"
+  },
+  {
+    "id": 112,
+    "chapter": "第14章 时间序列的构成与预测",
+    "type": "single",
+    "question": "时间序列的经典分解模型中，包含的核心因素有（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "长期趋势"
+      },
+      {
+        "label": "B",
+        "text": "季节变动"
+      },
+      {
+        "label": "C",
+        "text": "循环变动"
+      },
+      {
+        "label": "D",
+        "text": "不规则变动"
+      },
+      {
+        "label": "E",
+        "text": "短期波动"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ],
+    "knowledge": "",
+    "review": "第14章 时间序列的构成与预测"
+  },
+  {
+    "id": 113,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "下列选项中的变量属于数值型变量的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "民族"
+      },
+      {
+        "label": "B",
+        "text": "电话号码"
+      },
+      {
+        "label": "C",
+        "text": "考试成绩"
+      },
+      {
+        "label": "D",
+        "text": "身份证号"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 114,
+    "chapter": "第3章 数据的预处理与分组整理",
+    "type": "single",
+    "question": "下列选项中不属于统计数据预处理的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "数据的审核"
+      },
+      {
+        "label": "B",
+        "text": "数据的筛选"
+      },
+      {
+        "label": "C",
+        "text": "数据的排序"
+      },
+      {
+        "label": "D",
+        "text": "数据的收集"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c3-data-preprocessing.html"
+  },
+  {
+    "id": 115,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "下列选项中最不容易受到极端值影响的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "众数"
+      },
+      {
+        "label": "B",
+        "text": "平均数"
+      },
+      {
+        "label": "C",
+        "text": "极差"
+      },
+      {
+        "label": "D",
+        "text": "标准差"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 116,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "假定一组样本由5个数据组成：3，7，8，9，13；那么该组样本的方差为（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "7.8"
+      },
+      {
+        "label": "B",
+        "text": "8.3"
+      },
+      {
+        "label": "C",
+        "text": "10.4"
+      },
+      {
+        "label": "D",
+        "text": "13.0"
+      }
+    ],
+    "correct": [
+      "D"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c4-descriptive-measures.html"
+  },
+  {
+    "id": 117,
+    "chapter": "第2章 数据的收集方法",
+    "type": "single",
+    "question": "为了调查首经贸在校学生在购买书籍方面的费用支出情况，拟从男生中随机抽取100名学生调查，从女生中随机抽取 200 名学生调查，这种调查方法是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "系统抽样"
+      },
+      {
+        "label": "C",
+        "text": "分层抽样"
+      },
+      {
+        "label": "D",
+        "text": "整群抽样"
+      }
+    ],
+    "correct": [
+      "C"
+    ],
+    "knowledge": "",
+    "review": "../01-description/c2-data-collection.html"
+  },
+  {
+    "id": 118,
+    "chapter": "第8章 参数估计",
+    "type": "single",
+    "question": "总体均值的区间估计中，影响置信区间宽窄的因素不包括（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "置信水平"
+      },
+      {
+        "label": "B",
+        "text": "样本均值"
+      },
+      {
+        "label": "C",
+        "text": "总体标准差"
+      },
+      {
+        "label": "D",
+        "text": "样本容量"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "",
+    "review": "第8章 参数估计"
+  },
+  {
+    "id": 119,
+    "chapter": "第9章 假设检验",
+    "type": "single",
+    "question": "下列几个给定假设检验的 P 值输出结果中，拒绝原假设理由最充分的是（ ）",
+    "options": [
+      {
+        "label": "A",
+        "text": "1%"
+      },
+      {
+        "label": "B",
+        "text": "10%"
+      },
+      {
+        "label": "C",
+        "text": "50%"
+      },
+      {
+        "label": "D",
+        "text": "95%"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "",
+    "review": "第9章 假设检验"
   }
 ]
