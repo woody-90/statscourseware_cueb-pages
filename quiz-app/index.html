@@ -368,6 +368,7 @@ function submitQuiz() {
       wrong.push({
         index: i + 1,
         question: q.question,
+        options: q.options,
         chapter: q.chapter,
         userAnswer: userAns || '未作答',
         correctAnswer: correctAns,
@@ -411,11 +412,27 @@ function submitQuiz() {
       }
       const link = chapterMap[chKey] || '#';
 
+      // Build options display
+      const correctLabels = w.correctAnswer.split('');
+      const userLabels = w.userAnswer.split('');
+      const optionsHtml = (w.options || []).map(opt => {
+        let style = '';
+        if (correctLabels.includes(opt.label) && userLabels.includes(opt.label)) {
+          style = 'color:#38a169;font-weight:600'; // both correct and chosen
+        } else if (correctLabels.includes(opt.label)) {
+          style = 'color:#38a169;font-weight:600'; // correct answer
+        } else if (userLabels.includes(opt.label)) {
+          style = 'color:#e53e3e;text-decoration:line-through'; // wrong choice
+        }
+        return `<span style="${style};display:block;padding:0.15rem 0">${opt.label}. ${opt.text}</span>`;
+      }).join('');
+
       return `
       <div class="wrong-item">
         <p style="font-weight:600;margin-bottom:0.3rem">❌ 第${w.index}题 · ${w.chapter}</p>
-        <p style="margin-bottom:0.3rem">${w.question}</p>
-        <p style="color:var(--wrong)">你的答案：<b>${w.userAnswer}</b></p>
+        <p style="margin-bottom:0.5rem">${w.question}</p>
+        <div style="margin-bottom:0.5rem;padding-left:0.5rem;border-left:3px solid #e2e8f0">${optionsHtml}</div>
+        <p style="color:var(--wrong)">你的答案：<b>${w.userAnswer || '未作答'}</b></p>
         <p style="color:var(--correct)">正确答案：<b>${w.correctAnswer}</b></p>
         <p style="color:#888;font-size:0.85rem;margin-top:0.3rem">
           📍 知识点：${w.knowledge}
