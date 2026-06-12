@@ -26,7 +26,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 2,
@@ -55,7 +55,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 3,
@@ -84,7 +84,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 4,
@@ -113,7 +113,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 5,
@@ -171,7 +171,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 7,
@@ -200,7 +200,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 8,
@@ -258,7 +258,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 10,
@@ -287,7 +287,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 11,
@@ -316,7 +316,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 12,
@@ -345,7 +345,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 13,
@@ -403,7 +403,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 15,
@@ -432,7 +432,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 16,
@@ -461,7 +461,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 17,
@@ -548,7 +548,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 20,
@@ -583,7 +583,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 21,
@@ -617,7 +617,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 22,
@@ -656,7 +656,7 @@
   },
   {
     "id": 23,
-    "chapter": "第1章 统计学导论",
+    "chapter": "第2章 数据的收集方法",
     "type": "multi",
     "question": "下列各项中属于定性变量的是",
     "options": [
@@ -687,7 +687,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c1-stat-introduction.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 24,
@@ -791,7 +791,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 27,
@@ -827,7 +827,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 28,
@@ -862,7 +862,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 29,
@@ -883,7 +883,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 30,
@@ -904,7 +904,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 31,
@@ -925,7 +925,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 32,
@@ -946,7 +946,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 33,
@@ -967,7 +967,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 34,
@@ -988,7 +988,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 35,
@@ -1009,7 +1009,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 36,
@@ -1030,7 +1030,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 37,
@@ -1114,7 +1114,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 41,
@@ -1135,7 +1135,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 42,
@@ -1156,7 +1156,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c1-stat-introduction.html"
+    "review": "第1章 统计学导论"
   },
   {
     "id": 43,
@@ -1206,7 +1206,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 45,
@@ -1235,7 +1235,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 46,
@@ -1264,7 +1264,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
     "id": 47,
@@ -1293,7 +1293,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 48,
@@ -1380,7 +1380,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 51,
@@ -1445,7 +1445,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 53,
@@ -1474,7 +1474,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 54,
@@ -1503,7 +1503,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 55,
@@ -1532,7 +1532,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 56,
@@ -1561,7 +1561,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 57,
@@ -1590,7 +1590,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 58,
@@ -1619,7 +1619,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 59,
@@ -1704,7 +1704,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 62,
@@ -1771,11 +1771,11 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 64,
-    "chapter": "第1章 统计学导论",
+    "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "下列变量属于定性变量的是（ ）",
     "options": [
@@ -1800,7 +1800,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c1-stat-introduction.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 65,
@@ -1829,7 +1829,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 66,
@@ -1887,7 +1887,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 68,
@@ -1942,7 +1942,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 70,
@@ -1976,11 +1976,11 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 71,
-    "chapter": "其他",
+    "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "下列变量中属于连续型变量的是（ ）",
     "options": [
@@ -2005,7 +2005,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "其他"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 72,
@@ -2034,7 +2034,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
     "id": 73,
@@ -2063,7 +2063,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
     "id": 74,
@@ -2092,7 +2092,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
     "id": 75,
@@ -2154,35 +2154,6 @@
   },
   {
     "id": 77,
-    "chapter": "其他",
-    "type": "single",
-    "question": "利用主成分分析得到的各个主成分之间（ ）",
-    "options": [
-      {
-        "label": "A",
-        "text": "相互独立"
-      },
-      {
-        "label": "B",
-        "text": "线性相关"
-      },
-      {
-        "label": "C",
-        "text": "不完全相关"
-      },
-      {
-        "label": "D",
-        "text": "互不相关 二、多选题（本大题共5小题，每小题2分，总计10分，多选、少选均不得分"
-      }
-    ],
-    "correct": [
-      "A"
-    ],
-    "knowledge": "",
-    "review": "其他"
-  },
-  {
-    "id": 78,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "multi",
     "question": "下列平均数中，容易受数列中极端值影响的平均数有（ ）",
@@ -2214,10 +2185,10 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 79,
+    "id": 78,
     "chapter": "第10章 方差分析",
     "type": "multi",
     "question": "对单因素方差分析的组内误差，下面说法正确的是（ ）",
@@ -2251,7 +2222,7 @@
     "review": "第10章 方差分析"
   },
   {
-    "id": 80,
+    "id": 79,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "某研究者欲面向全校在校生调查学校食堂服务的满意程度，首先将全体在校生分为不同年级，然后在各年级中随机抽取100人作为调查样本。这种抽样方法为（ ）。",
@@ -2277,10 +2248,10 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 81,
+    "id": 80,
     "chapter": "第5章 数据资料的图形展示",
     "type": "single",
     "question": "某市场调查机构想要结合品牌和销量数据分析哪个品牌的新能源汽车最受市场青睐，以下不合适的图形是（ ）。",
@@ -2306,10 +2277,10 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
-    "id": 82,
+    "id": 81,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "下列用于测度离散程度的指标中，最容易受极端值影响的是（ ）。",
@@ -2335,10 +2306,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 83,
+    "id": 82,
     "chapter": "第8章 参数估计",
     "type": "single",
     "question": "对全校学生的平均身高进行区间估计，得到95%置信区间是[168,172]，其中95%的含义是（ ）。",
@@ -2367,7 +2338,7 @@
     "review": "第8章 参数估计"
   },
   {
-    "id": 84,
+    "id": 83,
     "chapter": "第9章 假设检验",
     "type": "single",
     "question": "在一次假设检验中，当显著性水平设为0.05时，结论是拒绝原假设，现将显著性水平设为0.1，那么（ ）。",
@@ -2396,7 +2367,7 @@
     "review": "第9章 假设检验"
   },
   {
-    "id": 85,
+    "id": 84,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "以下时间序列中，具有可加性的是（ ）。",
@@ -2422,10 +2393,10 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 86,
+    "id": 85,
     "chapter": "第12章 相关分析与回归分析",
     "type": "single",
     "question": "以下有关聚类分析的陈述，正确的是（ ）。",
@@ -2454,7 +2425,7 @@
     "review": "第12章 相关分析与回归分析"
   },
   {
-    "id": 87,
+    "id": 86,
     "chapter": "第10章 方差分析",
     "type": "single",
     "question": "以下有关主成分分析和因子分析的陈述，正确的是（ ）。",
@@ -2483,7 +2454,7 @@
     "review": "第10章 方差分析"
   },
   {
-    "id": 88,
+    "id": 87,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "研究发现我国居民的收入水平呈非对称分布，以下最适合度量我国居民收入水平的指标是（ ）。",
@@ -2509,10 +2480,10 @@
       "B"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 89,
+    "id": 88,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "某研究机构想要了解某高校学生的上网习惯，首先将该校学生按照学院进行分组，然后从所有学院中等概率地抽取了3个学院，并调查了这3个学院的所有学生。请问这种抽样方法是（ ）。",
@@ -2538,10 +2509,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 90,
+    "id": 89,
     "chapter": "第8章 参数估计",
     "type": "single",
     "question": "评价估计量的标准不包含（ ）。",
@@ -2570,7 +2541,7 @@
     "review": "第8章 参数估计"
   },
   {
-    "id": 91,
+    "id": 90,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "当样本量大于等于30时，样本均值与总体均值的关系是（ ）。",
@@ -2596,10 +2567,10 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 92,
+    "id": 91,
     "chapter": "第8章 参数估计",
     "type": "single",
     "question": "关于95%的置信水平，下列说法正确的是（ ）。",
@@ -2628,7 +2599,7 @@
     "review": "第8章 参数估计"
   },
   {
-    "id": 93,
+    "id": 92,
     "chapter": "第12章 相关分析与回归分析",
     "type": "single",
     "question": "利用10个样本数据建立一个一元线性回归模型，其中自变量X的平均值为5，因变量Y的平均值为10。根据模型的估计结果，当X每增加1个单位时，Y将平均增加2个单位。如果回归方程的截距为3，那么回归方程的斜率以及Y与X的相关系数分别是（ ）。",
@@ -2657,7 +2628,7 @@
     "review": "第12章 相关分析与回归分析"
   },
   {
-    "id": 94,
+    "id": 93,
     "chapter": "第3章 数据的预处理与分组整理",
     "type": "multi",
     "question": "将学生英语成绩分组为60分以下、60-75分、75-85分、85分以上，下列说法不正确的是",
@@ -2689,10 +2660,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
-    "id": 95,
+    "id": 94,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "对于概率抽样,抽样误差的大小取决于以下因素中的（ ）。",
@@ -2724,10 +2695,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 96,
+    "id": 95,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "下列属于数值型变量的是（ ）。",
@@ -2753,10 +2724,10 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 97,
+    "id": 96,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "为了调查某校学生的每月的生活费支出，从全校抽取 8 个班级的学生进行调查，这种抽样方法为（ ）。",
@@ -2782,10 +2753,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 98,
+    "id": 97,
     "chapter": "第5章 数据资料的图形展示",
     "type": "single",
     "question": "下列各项中，适合于比较研究两个或多个样本或总体的结构性问题的是（ ）。",
@@ -2811,10 +2782,10 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c5-data-visualization.html"
+    "review": "第5章 数据资料的图形展示"
   },
   {
-    "id": 99,
+    "id": 98,
     "chapter": "第10章 方差分析",
     "type": "single",
     "question": "下列关于单因素方差分析的叙述，不正确的是（ ）。",
@@ -2843,7 +2814,7 @@
     "review": "第10章 方差分析"
   },
   {
-    "id": 100,
+    "id": 99,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "在其他条件不变的情况下，想要保持估计的准确性，总体数据的方差越大，估计时所需的样本量（ ）。",
@@ -2869,10 +2840,10 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 101,
+    "id": 100,
     "chapter": "第13章 时间序列的描述性分析",
     "type": "single",
     "question": "时间序列中各逐期环比值的几何平均数减 1 后的结果称为（ ）。",
@@ -2901,7 +2872,7 @@
     "review": "第13章 时间序列的描述性分析"
   },
   {
-    "id": 102,
+    "id": 101,
     "chapter": "第1章 统计学导论",
     "type": "multi",
     "question": "关于描述统计与推断统计的区别和联系，下列说法正确的是（ ）。",
@@ -2934,10 +2905,10 @@
       "E"
     ],
     "knowledge": "",
-    "review": "../01-description/c1-stat-introduction.html"
+    "review": "第1章 统计学导论"
   },
   {
-    "id": 103,
+    "id": 102,
     "chapter": "第9章 假设检验",
     "type": "multi",
     "question": "假设检验中可能犯“弃真”（第一类错误 ）和“取伪”（第二类错误 ）两类错误，下列描述正确的是（ ）。",
@@ -2968,7 +2939,7 @@
     "review": "第9章 假设检验"
   },
   {
-    "id": 104,
+    "id": 103,
     "chapter": "第3章 数据的预处理与分组整理",
     "type": "single",
     "question": "为了保证统计分组的科学性，必须遵循的核心原则及做法包括（ ）。",
@@ -2996,10 +2967,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
-    "id": 105,
+    "id": 104,
     "chapter": "第10章 方差分析",
     "type": "single",
     "question": "关于方差分析（ANOVA），下列描述正确的是（ ）。",
@@ -3035,7 +3006,7 @@
     "review": "第10章 方差分析"
   },
   {
-    "id": 106,
+    "id": 105,
     "chapter": "第14章 时间序列的构成与预测",
     "type": "single",
     "question": "关于时间序列中加法模型和乘法模型的选择，下列说法正确的是（ ）。",
@@ -3071,7 +3042,7 @@
     "review": "第14章 时间序列的构成与预测"
   },
   {
-    "id": 107,
+    "id": 106,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "某调研团队为分析 “农村数字金融服务普及成效”，通过调取县域农商行 2021-2023 年农户贷款还款系统记录，整理得出 “农户逾期还款次数（0 次、1 次、2 次……）” 的数据。该数据的类型与来源组合正确的是（ ）。",
@@ -3097,10 +3068,10 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 108,
+    "id": 107,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "某调研团队为精准分析 “全国县域农村电商发展不均衡性”，设计抽样方案如下：①按东部、中部、西部三大经济带分层，每层随机抽取 8 个省份；②从每个抽中省份中，按县域 GDP 水平分为高、中、低三档，每档随机抽取 3 个县域；③从每个抽中县域中，随机抽取 20 家农村电商经营主体（农户网店、合作社电商部门等）开展调查。该抽样方法属于（ ）。",
@@ -3126,11 +3097,11 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 109,
-    "chapter": "第4章 数据特征的统计量描述",
+    "id": 108,
+    "chapter": "第1章 统计学导论",
     "type": "multi",
     "question": "关于描述性统计分析与推断统计的说法，正确的有（ ）。",
     "options": [
@@ -3161,10 +3132,10 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第1章 统计学导论"
   },
   {
-    "id": 110,
+    "id": 109,
     "chapter": "第9章 假设检验",
     "type": "multi",
     "question": "关于假设检验中两类错误的说法，正确的有（ ）",
@@ -3199,7 +3170,7 @@
     "review": "第9章 假设检验"
   },
   {
-    "id": 111,
+    "id": 110,
     "chapter": "第10章 方差分析",
     "type": "single",
     "question": "方差分析（ANOVA）的适用前提条件有（ ）",
@@ -3234,7 +3205,7 @@
     "review": "第10章 方差分析"
   },
   {
-    "id": 112,
+    "id": 111,
     "chapter": "第14章 时间序列的构成与预测",
     "type": "single",
     "question": "时间序列的经典分解模型中，包含的核心因素有（ ）",
@@ -3270,7 +3241,7 @@
     "review": "第14章 时间序列的构成与预测"
   },
   {
-    "id": 113,
+    "id": 112,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "下列选项中的变量属于数值型变量的是（ ）",
@@ -3296,10 +3267,10 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 114,
+    "id": 113,
     "chapter": "第3章 数据的预处理与分组整理",
     "type": "single",
     "question": "下列选项中不属于统计数据预处理的是（ ）",
@@ -3325,10 +3296,10 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c3-data-preprocessing.html"
+    "review": "第3章 数据的预处理与分组整理"
   },
   {
-    "id": 115,
+    "id": 114,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "下列选项中最不容易受到极端值影响的是（ ）",
@@ -3354,10 +3325,10 @@
       "A"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 116,
+    "id": 115,
     "chapter": "第4章 数据特征的统计量描述",
     "type": "single",
     "question": "假定一组样本由5个数据组成：3，7，8，9，13；那么该组样本的方差为（ ）",
@@ -3383,10 +3354,10 @@
       "D"
     ],
     "knowledge": "",
-    "review": "../01-description/c4-descriptive-measures.html"
+    "review": "第4章 数据特征的统计量描述"
   },
   {
-    "id": 117,
+    "id": 116,
     "chapter": "第2章 数据的收集方法",
     "type": "single",
     "question": "为了调查首经贸在校学生在购买书籍方面的费用支出情况，拟从男生中随机抽取100名学生调查，从女生中随机抽取 200 名学生调查，这种调查方法是（ ）",
@@ -3412,10 +3383,10 @@
       "C"
     ],
     "knowledge": "",
-    "review": "../01-description/c2-data-collection.html"
+    "review": "第2章 数据的收集方法"
   },
   {
-    "id": 118,
+    "id": 117,
     "chapter": "第8章 参数估计",
     "type": "single",
     "question": "总体均值的区间估计中，影响置信区间宽窄的因素不包括（ ）",
@@ -3444,7 +3415,7 @@
     "review": "第8章 参数估计"
   },
   {
-    "id": 119,
+    "id": 118,
     "chapter": "第9章 假设检验",
     "type": "single",
     "question": "下列几个给定假设检验的 P 值输出结果中，拒绝原假设理由最充分的是（ ）",
@@ -3471,5 +3442,15 @@
     ],
     "knowledge": "",
     "review": "第9章 假设检验"
+  },
+  {
+    "id": 119,
+    "chapter": "",
+    "type": "single",
+    "question": "",
+    "options": [],
+    "correct": [],
+    "knowledge": "",
+    "review": ""
   }
 ]

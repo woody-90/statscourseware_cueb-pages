@@ -217,10 +217,16 @@ fetch('questions.json')
   });
 
 function renderChapters() {
+  // Sort chapters numerically by extracting chapter number
   const chapters = [...new Set(questions.map(q => q.chapter))];
+  chapters.sort((a, b) => {
+    const na = parseInt(a.match(/第(\d+)章/)?.[1] || '99');
+    const nb = parseInt(b.match(/第(\d+)章/)?.[1] || '99');
+    return na - nb;
+  });
   const grid = document.getElementById('chapter-grid');
-  grid.innerHTML = chapters.map((ch, i) =>
-    `<button class="chapter-btn${i===0?' active':''}" data-ch="${ch}" onclick="toggleChapter(this,'${ch.replace(/'/g,"\\'")}')">${ch}</button>`
+  grid.innerHTML = chapters.map(ch =>
+    `<button class="chapter-btn active" data-ch="${ch}" onclick="toggleChapter(this,'${ch.replace(/'/g,"\\'")}')">${ch}</button>`
   ).join('');
   // Select all by default
   selectedChapters = [...chapters];
@@ -284,7 +290,7 @@ function renderQuestions() {
     const name = `q${i}`;
     return `
       <div class="question-card" id="qcard-${i}">
-        <div class="q-num">第 ${i+1} 题${typeLabel} · ${q.chapter}</div>
+        <div class="q-num">第 ${i+1} 题${typeLabel}</div>
         <div class="q-text">${q.question}</div>
         <div class="options">
           ${q.options.map(opt => `
