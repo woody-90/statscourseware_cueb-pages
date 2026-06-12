@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "chapter": "第1章 统计学导论",
+    "type": "single",
+    "question": "某研究人员收集了500名大学生的月消费数据，计算平均消费为1500元。这属于？",
+    "options": [
+      {
+        "label": "A",
+        "text": "描述统计"
+      },
+      {
+        "label": "B",
+        "text": "推断统计"
+      },
+      {
+        "label": "C",
+        "text": "以上都不是"
+      }
+    ],
+    "correct": [
+      "A"
+    ],
+    "knowledge": "描述统计vs推断统计",
+    "review": "第1章 统计学导论"
+  },
+  {
+    "id": 2,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "single",
+    "question": "一组数据呈右偏分布，以下哪个最适合描述其集中趋势？",
+    "options": [
+      {
+        "label": "A",
+        "text": "均值"
+      },
+      {
+        "label": "B",
+        "text": "中位数"
+      },
+      {
+        "label": "C",
+        "text": "众数"
+      },
+      {
+        "label": "D",
+        "text": "极差"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "集中趋势度量选择",
+    "review": "第4章 数据特征的统计量描述"
+  },
+  {
+    "id": 3,
+    "chapter": "第4章 数据特征的统计量描述",
+    "type": "multi",
+    "question": "以下哪些属于离散程度的度量？（多选）",
+    "options": [
+      {
+        "label": "A",
+        "text": "方差"
+      },
+      {
+        "label": "B",
+        "text": "标准差"
+      },
+      {
+        "label": "C",
+        "text": "中位数"
+      },
+      {
+        "label": "D",
+        "text": "极差"
+      }
+    ],
+    "correct": [
+      "A",
+      "B",
+      "D"
+    ],
+    "knowledge": "离散程度度量",
+    "review": "第4章 数据特征的统计量描述"
+  },
+  {
+    "id": 4,
+    "chapter": "第2章 数据收集的方法",
+    "type": "single",
+    "question": "先将全市分区，再每区随机抽100户，这是？",
+    "options": [
+      {
+        "label": "A",
+        "text": "简单随机抽样"
+      },
+      {
+        "label": "B",
+        "text": "分层抽样"
+      },
+      {
+        "label": "C",
+        "text": "整群抽样"
+      },
+      {
+        "label": "D",
+        "text": "系统抽样"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "概率抽样方法",
+    "review": "第2章 数据收集的方法"
+  },
+  {
+    "id": 5,
+    "chapter": "第5章 数据资料的图形展示",
+    "type": "single",
+    "question": "直方图各矩形之间应分开排列，以区分不同组别。",
+    "options": [
+      {
+        "label": "A",
+        "text": "正确"
+      },
+      {
+        "label": "B",
+        "text": "错误"
+      }
+    ],
+    "correct": [
+      "B"
+    ],
+    "knowledge": "直方图与条形图区别",
+    "review": "第5章 数据资料的图形展示"
+  }
+]
