@@ -1138,15 +1138,25 @@ tags: 'ams',    macros: {
         第三节 决策方法
       </a></li>
       <li><a href="#slide-6" data-slide="6" class="toc-section">
-        第四节 一个总体均值的检验
+        第四节 一个总体参数的假设检验
       </a></li>
-      <li><a href="#slide-7" data-slide="7" class="toc-section">
-        第五节 两个总体参数的检验
+      <li>
+        <a href="#slide-7" data-slide="7">
+          <span class="toc-num">7</span>案例 1：大样本均值的 Z 检验
+        </a>
+      </li>
+      <li>
+        <a href="#slide-8" data-slide="8">
+          <span class="toc-num">8</span>案例 2：小样本均值的 t 检验
+        </a>
+      </li>
+      <li><a href="#slide-9" data-slide="9" class="toc-section">
+        第五节 两个总体参数的假设检验
       </a></li>
-      <li><a href="#slide-8" data-slide="8" class="toc-section">
+      <li><a href="#slide-10" data-slide="10" class="toc-section">
         注意事项
       </a></li>
-      <li><a href="#slide-9" data-slide="9" class="toc-section">
+      <li><a href="#slide-11" data-slide="11" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1156,7 +1166,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 10</span>
+  <span id="slide-counter">1 / 12</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1295,15 +1305,15 @@ data-has-math="true">
 <li><strong>增大 <span class="math inline">\(n\)</span></strong> 可同时降低两类错误</li>
 <li>先控制 <span class="math inline">\(\alpha\)</span>（常用 0.01 / 0.05 / 0.10）</li>
 </ul>
-<div class="quiz" id="quiz_2905012087040053490">
+<div class="quiz" id="quiz_5961007674089262463">
 <p class="quiz-question"><strong>📝 小测验：</strong>显著性水平 α = 0.05 的含义是？</p>
 <ul class="quiz-options">
-<li data-correct="true" id="quiz_2905012087040053490_0" class="quiz-option">允许犯第Ⅰ类错误的最大概率为 5%</li>
-<li data-correct="false" id="quiz_2905012087040053490_1" class="quiz-option">原假设为真的概率是 5%</li>
-<li data-correct="false" id="quiz_2905012087040053490_2" class="quiz-option">允许犯第Ⅱ类错误的最大概率为 5%</li>
-<li data-correct="false" id="quiz_2905012087040053490_3" class="quiz-option">备择假设为真的概率是 95%</li>
+<li data-correct="true" id="quiz_5961007674089262463_0" class="quiz-option">允许犯第Ⅰ类错误的最大概率为 5%</li>
+<li data-correct="false" id="quiz_5961007674089262463_1" class="quiz-option">原假设为真的概率是 5%</li>
+<li data-correct="false" id="quiz_5961007674089262463_2" class="quiz-option">允许犯第Ⅱ类错误的最大概率为 5%</li>
+<li data-correct="false" id="quiz_5961007674089262463_3" class="quiz-option">备择假设为真的概率是 95%</li>
 </ul>
-<div class="quiz-feedback" id="quiz_2905012087040053490_feedback"></div>
+<div class="quiz-feedback" id="quiz_5961007674089262463_feedback"></div>
 </div>
   </div>
 </section>
@@ -1331,15 +1341,15 @@ $$p \text{ 值} < \alpha \quad \Rightarrow \quad \text{拒绝 } H_0$$
 <p> p 值不是 <span class="math inline">\(H_0\)</span> 为真的概率！p 值越小，拒绝 <span class="math inline">\(H_0\)</span> 的证据越强。</p>
 </blockquote>
 <p>&nbsp;</p>
-<div class="quiz" id="quiz_7062064147780203223">
+<div class="quiz" id="quiz_2625060072176949750">
 <p class="quiz-question"><strong>📝 小测验：</strong>若 p 值 = 0.03，α = 0.05，应如何决策？</p>
 <ul class="quiz-options">
-<li data-correct="true" id="quiz_7062064147780203223_0" class="quiz-option">拒绝原假设</li>
-<li data-correct="false" id="quiz_7062064147780203223_1" class="quiz-option">不拒绝原假设</li>
-<li data-correct="false" id="quiz_7062064147780203223_2" class="quiz-option">接受原假设</li>
-<li data-correct="false" id="quiz_7062064147780203223_3" class="quiz-option">无法判断</li>
+<li data-correct="true" id="quiz_2625060072176949750_0" class="quiz-option">拒绝原假设</li>
+<li data-correct="false" id="quiz_2625060072176949750_1" class="quiz-option">不拒绝原假设</li>
+<li data-correct="false" id="quiz_2625060072176949750_2" class="quiz-option">接受原假设</li>
+<li data-correct="false" id="quiz_2625060072176949750_3" class="quiz-option">无法判断</li>
 </ul>
-<div class="quiz-feedback" id="quiz_7062064147780203223_feedback"></div>
+<div class="quiz-feedback" id="quiz_2625060072176949750_feedback"></div>
 </div>
   </div>
 </section>
@@ -1349,7 +1359,103 @@ $$p \text{ 值} < \alpha \quad \Rightarrow \quad \text{拒绝 } H_0$$
   id="slide-6"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_9">第四节 一个总体均值的检验</h2>
+    <h2 id="_9">第四节 一个总体参数的假设检验</h2>
+<table>
+<thead>
+<tr>
+<th>参数</th>
+<th>条件</th>
+<th>检验统计量</th>
+<th>分布</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>均值 <span class="math inline">\(\mu\)</span></strong></td>
+<td>正态 + <span class="math inline">\(\sigma\)</span> 已知 或 大样本</td>
+<td><span class="math inline">\(z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}\)</span></td>
+<td><span class="math inline">\(Z\)</span></td>
+</tr>
+<tr>
+<td><strong>均值 <span class="math inline">\(\mu\)</span></strong></td>
+<td>正态 + <span class="math inline">\(\sigma\)</span> 未知 + 小样本</td>
+<td><span class="math inline">\(t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}\)</span></td>
+<td><span class="math inline">\(t(n-1)\)</span></td>
+</tr>
+<tr>
+<td><strong>比例 <span class="math inline">\(P\)</span></strong></td>
+<td>大样本</td>
+<td><span class="math inline">\(z = \frac{p - P_0}{\sqrt{P_0(1-P_0)/n}}\)</span></td>
+<td><span class="math inline">\(Z\)</span></td>
+</tr>
+</tbody>
+</table>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="7"
+  id="slide-7"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="1-z">案例 1：大样本均值的 Z 检验</h3>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> 某品牌声称其袋装食品平均重量为 <strong>100 克</strong>。质检部门随机抽取 <strong>36 袋</strong>，测得 <span class="math inline">\(\bar{x} = 98.5\)</span> 克，<span class="math inline">\(s = 6\)</span> 克。在 <span class="math inline">\(\alpha = 0.05\)</span> 水平下，能否认为该品牌的说法不属实？（双侧检验）</p>
+</blockquote>
+<p><strong>解：</strong></p>
+<ol>
+<li>建立假设：<span class="math inline">\(H_0: \mu = 100\)</span>，<span class="math inline">\(H_1: \mu \neq 100\)</span></li>
+<li>检验统计量（<span class="math inline">\(n = 36\)</span> 大样本，用 <span class="math inline">\(s\)</span> 代替 <span class="math inline">\(\sigma\)</span>）：
+   
+<div class="math display">
+$$z = \frac{\bar{x} - \mu_0}{s/\sqrt{n}} = \frac{98.5 - 100}{6/6} = -1.5$$
+</div>
+</li>
+<li>临界值：<span class="math inline">\(\alpha = 0.05\)</span>（双侧），<span class="math inline">\(z_{\alpha/2} = 1.96\)</span></li>
+<li>决策：<span class="math inline">\(|z| = 1.5 < 1.96\)</span>，不拒绝 <span class="math inline">\(H_0\)</span></li>
+</ol>
+<blockquote>
+<p><strong>结论：</strong> 在 0.05 显著性水平下，没有充分证据否定该品牌的说法。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="8"
+  id="slide-8"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="2-t">案例 2：小样本均值的 t 检验</h3>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> 某工厂声称工人的平均日产量为 <strong>50 件</strong>。随机抽查 <strong>16 名</strong>工人，得 <span class="math inline">\(\bar{x} = 53\)</span> 件，<span class="math inline">\(s = 8\)</span> 件。假设日产量服从正态分布，<span class="math inline">\(\alpha = 0.05\)</span>，问是否有证据表明平均日产量<strong>显著高于</strong> 50 件？（右侧检验）</p>
+</blockquote>
+<p><strong>解：</strong></p>
+<ol>
+<li>建立假设：<span class="math inline">\(H_0: \mu \leq 50\)</span>，<span class="math inline">\(H_1: \mu > 50\)</span></li>
+<li>检验统计量（正态、<span class="math inline">\(\sigma\)</span> 未知、小样本 → <span class="math inline">\(t\)</span> 检验）：
+   
+<div class="math display">
+$$t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}} = \frac{53 - 50}{8/4} = 1.5$$
+</div>
+</li>
+<li>临界值：<span class="math inline">\(df = 15\)</span>，<span class="math inline">\(\alpha = 0.05\)</span>（右侧），<span class="math inline">\(t_{0.05}(15) = 1.753\)</span></li>
+<li>决策：<span class="math inline">\(t = 1.5 < 1.753\)</span>，不拒绝 <span class="math inline">\(H_0\)</span></li>
+</ol>
+<blockquote>
+<p><strong>结论：</strong> 在 0.05 显著性水平下，没有充分证据表明平均日产量显著高于 50 件。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-section"
+  data-slide="9"
+  id="slide-9"
+data-has-math="true">
+  <div class="slide-content">
+    <h2 id="_10">第五节 两个总体参数的假设检验</h2>
+<h3 id="_11">两个总体均值之差的检验</h3>
 <table>
 <thead>
 <tr>
@@ -1360,81 +1466,61 @@ data-has-math="true">
 </thead>
 <tbody>
 <tr>
-<td><span class="math inline">\(\sigma\)</span> 已知 或 大样本</td>
-<td><span class="math inline">\(z = \frac{\bar{x} - \mu_0}{\sigma/\sqrt{n}}\)</span></td>
+<td>独立大样本（<span class="math inline">\(\sigma_1^2,\sigma_2^2\)</span> 已知）</td>
+<td><span class="math inline">\(z = \frac{(\bar{x}_1-\bar{x}_2) - D_0}{\sqrt{\frac{\sigma_1^2}{n_1}+\frac{\sigma_2^2}{n_2}}}\)</span></td>
 <td><span class="math inline">\(Z\)</span></td>
 </tr>
 <tr>
-<td><span class="math inline">\(\sigma\)</span> 未知 + 小样本</td>
-<td><span class="math inline">\(t = \frac{\bar{x} - \mu_0}{s/\sqrt{n}}\)</span></td>
-<td><span class="math inline">\(t(n-1)\)</span></td>
-</tr>
-</tbody>
-</table>
-<h3 id="_10">总体比例的检验</h3>
-<p>大样本：<span class="math inline">\(z = \frac{p - P_0}{\sqrt{P_0(1-P_0)/n}}\)</span></p>
-  </div>
-</section>
-<section
-  class="slide slide-section"
-  data-slide="7"
-  id="slide-7"
-data-has-math="true">
-  <div class="slide-content">
-    <h2 id="_11">第五节 两个总体参数的检验</h2>
-<h3 id="_12">两个均值之差</h3>
-<table>
-<thead>
-<tr>
-<th>条件</th>
-<th>检验统计量</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>独立大样本</td>
-<td><span class="math inline">\(z = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}\)</span></td>
+<td>独立大样本（<span class="math inline">\(\sigma_1^2,\sigma_2^2\)</span> 未知）</td>
+<td><span class="math inline">\(z = \frac{(\bar{x}_1-\bar{x}_2) - D_0}{\sqrt{\frac{s_1^2}{n_1}+\frac{s_2^2}{n_2}}}\)</span></td>
+<td><span class="math inline">\(Z\)</span></td>
 </tr>
 <tr>
-<td>小样本 + 方差相等</td>
-<td><span class="math inline">\(t = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{s_p\sqrt{1/n_1 + 1/n_2}}\)</span></td>
+<td>独立小样本 + 正态 + <span class="math inline">\(\sigma_1^2=\sigma_2^2\)</span></td>
+<td><span class="math inline">\(t = \frac{(\bar{x}_1-\bar{x}_2) - D_0}{s_p\sqrt{\frac{1}{n_1}+\frac{1}{n_2}}}\)</span></td>
+<td><span class="math inline">\(t(n_1+n_2-2)\)</span></td>
 </tr>
 <tr>
 <td><strong>配对样本</strong></td>
 <td><span class="math inline">\(t = \frac{\bar{d} - D_0}{s_d/\sqrt{n}}\)</span></td>
+<td><span class="math inline">\(t(n-1)\)</span></td>
 </tr>
 </tbody>
 </table>
-<h3 id="_13">两个比例之差</h3>
-<p>大样本，<span class="math inline">\(H_0: P_1 = P_2\)</span>：
-
+<blockquote>
+<p><span class="math inline">\(D_0\)</span> 为假设的均值之差，通常 <span class="math inline">\(H_0: \mu_1-\mu_2 = 0\)</span>，即 <span class="math inline">\(D_0 = 0\)</span>。
+合并方差：<span class="math inline">\(s_p^2 = \frac{(n_1-1)s_1^2 + (n_2-1)s_2^2}{n_1+n_2-2}\)</span></p>
+</blockquote>
+<h3 id="_12">两个总体比例之差的检验</h3>
+<p>大样本，<span class="math inline">\(H_0: P_1 = P_2\)</span>：</p>
+<p>
 <div class="math display">
-$$z = \frac{p_1 - p_2}{\sqrt{\bar{p}(1-\bar{p})(1/n_1 + 1/n_2)}}, \quad \bar{p} = \frac{x_1+x_2}{n_1+n_2}$$
+$$z = \frac{p_1 - p_2}{\sqrt{\bar{p}(1-\bar{p})(\frac{1}{n_1}+\frac{1}{n_2})}}, \quad \bar{p} = \frac{x_1+x_2}{n_1+n_2}$$
 </div>
 </p>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="8"
-  id="slide-8"
+  data-slide="10"
+  id="slide-10"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_14">注意事项</h2>
+    <h2 id="_13">注意事项</h2>
 <ol>
 <li><strong>不拒绝 <span class="math inline">\(H_0 \neq\)</span> 接受 <span class="math inline">\(H_0\)</span></strong>：只是证据不足</li>
 <li><strong>统计显著 <span class="math inline">\(\neq\)</span> 实际重要</strong>：显著只表示"非偶然"</li>
-<li>先确定备择假设，再确定原假设；等号始终在 <span class="math inline">\(H_0\)</span></li>
+<li>先确定备择假设，再确定原假设；等号始终放在 <span class="math inline">\(H_0\)</span></li>
 </ol>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="9"
-  id="slide-9"
+  data-slide="11"
+  id="slide-11"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_15">本章小结</h2>
+    <h2 id="_14">本章小结</h2>
 <ol>
 <li>假设检验 = 反证法 + 小概率原理</li>
 <li>两类错误：弃真（<span class="math inline">\(\alpha\)</span>）、取伪（<span class="math inline">\(\beta\)</span>），增大 <span class="math inline">\(n\)</span> 可同时降低</li>
@@ -1445,8 +1531,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="10"
-  id="slide-10"
+  data-slide="12"
+  id="slide-12"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
