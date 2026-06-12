@@ -1239,7 +1239,7 @@ tags: 'ams',    macros: {
     <h2 id="_3">引言</h2>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
-<p> 不同地点的超市销售额是否有差异？某调查员收集了<strong>商业区、居民小区、写字楼</strong>三个地区各 <strong>12 家</strong>超市的销售额。</p>
+<p> 不同地点的超市销售额是否有差异？某调查员收集了<strong>商业区、居民小区、写字楼</strong>三个地区各 <strong>6 家</strong>超市的年销售额（万元）：</p>
 </blockquote>
 <table>
 <thead>
@@ -1251,13 +1251,18 @@ tags: 'ams',    macros: {
 </thead>
 <tbody>
 <tr>
-<td>销售额较高</td>
-<td>销售额中等</td>
-<td>销售额较低</td>
+<td>365, 382, 375</td>
+<td>320, 335, 345</td>
+<td>280, 295, 305</td>
+</tr>
+<tr>
+<td>398, 390, 408</td>
+<td>328, 340, 352</td>
+<td>288, 310, 302</td>
 </tr>
 </tbody>
 </table>
-<p>看起来有差异——但这种差异是<strong>真实的</strong>，还是<strong>随机波动</strong>造成的？方差分析可以回答这个问题。</p>
+<p>商业区均值为 386.3，居民小区为 336.7，写字楼为 296.7。看起来有差异——但这种差异是<strong>真实的地区效应</strong>，还是<strong>随机波动</strong>造成的？方差分析可以回答这个问题。</p>
   </div>
 </section>
 <section
@@ -1405,28 +1410,8 @@ $$F = \frac{MSA}{MSE} \sim F(k-1, n-k)$$
 data-has-math="true">
   <div class="slide-content">
     <h3 id="_9">案例：超市销售额的方差分析</h3>
-<blockquote class="callout-ex">
-<div class="callout-label">例子</div>
-<p> 为检验地理位置对销售额的影响，从商业区、居民小区、写字楼各随机抽取 <strong>6 家</strong>超市，年销售额（万元）如下：</p>
-</blockquote>
-<table>
-<thead>
-<tr>
-<th>商业区</th>
-<th>居民小区</th>
-<th>写字楼</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>365, 382, 375, 398, 390, 408</td>
-<td>320, 335, 345, 328, 340, 352</td>
-<td>280, 295, 305, 288, 310, 302</td>
-</tr>
-</tbody>
-</table>
 <blockquote>
-<p>在 <span class="math inline">\(\alpha = 0.05\)</span> 下检验三个地区平均销售额是否相等。</p>
+<p><strong>接引言案例：</strong> 在 <span class="math inline">\(\alpha = 0.05\)</span> 下，检验三个地区平均销售额是否相等。</p>
 </blockquote>
 <p><strong>解：</strong></p>
 <ol>
