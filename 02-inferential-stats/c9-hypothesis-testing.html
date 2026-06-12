@@ -1129,26 +1129,22 @@ tags: 'ams',    macros: {
         </a>
       </li>
       <li><a href="#slide-3" data-slide="3" class="toc-section">
-        第一节 假设检验的基本问题
+        第一节 假设检验的基本原理
       </a></li>
-      <li>
-        <a href="#slide-4" data-slide="4">
-          <span class="toc-num">4</span>两类错误
-        </a>
-      </li>
-      <li>
-        <a href="#slide-5" data-slide="5">
-          <span class="toc-num">5</span>决策方法
-        </a>
-      </li>
+      <li><a href="#slide-4" data-slide="4" class="toc-section">
+        第二节 两类错误
+      </a></li>
+      <li><a href="#slide-5" data-slide="5" class="toc-section">
+        第三节 决策方法
+      </a></li>
       <li><a href="#slide-6" data-slide="6" class="toc-section">
-        第二节 一个总体参数的假设检验
+        第四节 一个总体均值的检验
       </a></li>
       <li><a href="#slide-7" data-slide="7" class="toc-section">
-        第三节 两个总体参数的假设检验
+        第五节 两个总体参数的检验
       </a></li>
       <li><a href="#slide-8" data-slide="8" class="toc-section">
-        第四节 注意事项
+        注意事项
       </a></li>
       <li><a href="#slide-9" data-slide="9" class="toc-section">
         本章小结
@@ -1213,9 +1209,9 @@ tags: 'ams',    macros: {
     <h3 id="_2">本章内容</h3>
 <ul>
 <li>假设检验的基本原理</li>
+<li>两类错误与 p 值</li>
 <li>一个总体参数的假设检验</li>
 <li>两个总体参数的假设检验</li>
-<li>两类错误与 p 值</li>
 </ul>
   </div>
 </section>
@@ -1225,14 +1221,12 @@ tags: 'ams',    macros: {
   id="slide-3"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_3">第一节 假设检验的基本问题</h2>
+    <h2 id="_3">第一节 假设检验的基本原理</h2>
 <h3 id="_4">基本思想</h3>
-<blockquote>
-<p><strong>核心：</strong> 反证法 + 小概率原理。先假设 <span class="math inline">\(H_0\)</span> 成立，如果样本结果是小概率事件，则拒绝 <span class="math inline">\(H_0\)</span>。</p>
-</blockquote>
+<p><strong>反证法 + 小概率原理</strong>。先假设 <span class="math inline">\(H_0\)</span> 成立，如果样本结果是小概率事件，则拒绝 <span class="math inline">\(H_0\)</span>。</p>
 <h3 id="_5">原假设与备择假设</h3>
 <ul>
-<li><strong>原假设 <span class="math inline">\(H_0\)</span></strong>：待检验的假设，等号"="总是放在 <span class="math inline">\(H_0\)</span></li>
+<li><strong>原假设 <span class="math inline">\(H_0\)</span></strong>：待检验的假设（等号始终在 <span class="math inline">\(H_0\)</span>）</li>
 <li><strong>备择假设 <span class="math inline">\(H_1\)</span></strong>：<span class="math inline">\(H_0\)</span> 被拒绝后的替补</li>
 </ul>
 <p><strong>三种形式</strong>：</p>
@@ -1242,6 +1236,7 @@ data-has-math="true">
 <th>类型</th>
 <th><span class="math inline">\(H_0\)</span></th>
 <th><span class="math inline">\(H_1\)</span></th>
+<th>拒绝域</th>
 </tr>
 </thead>
 <tbody>
@@ -1249,77 +1244,81 @@ data-has-math="true">
 <td>双侧</td>
 <td><span class="math inline">\(\mu = \mu_0\)</span></td>
 <td><span class="math inline">\(\mu \neq \mu_0\)</span></td>
+<td>两侧</td>
 </tr>
 <tr>
 <td>右侧</td>
 <td><span class="math inline">\(\mu \leq \mu_0\)</span></td>
 <td><span class="math inline">\(\mu > \mu_0\)</span></td>
+<td>右侧</td>
 </tr>
 <tr>
 <td>左侧</td>
 <td><span class="math inline">\(\mu \geq \mu_0\)</span></td>
 <td><span class="math inline">\(\mu < \mu_0\)</span></td>
+<td>左侧</td>
 </tr>
 </tbody>
 </table>
   </div>
 </section>
 <section
-  class="slide slide-content"
+  class="slide slide-section"
   data-slide="4"
   id="slide-4"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_6">两类错误</h3>
+    <h2 id="_6">第二节 两类错误</h2>
 <table>
 <thead>
 <tr>
-<th>错误类型</th>
+<th>错误</th>
 <th>含义</th>
 <th>概率</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>第Ⅰ类错误（弃真）</strong></td>
-<td><span class="math inline">\(H_0\)</span> 为真却拒绝了</td>
+<td><strong>第Ⅰ类（弃真）</strong></td>
+<td><span class="math inline">\(H_0\)</span> 为真却拒绝</td>
 <td><span class="math inline">\(\alpha\)</span>（显著性水平）</td>
 </tr>
 <tr>
-<td><strong>第Ⅱ类错误（取伪）</strong></td>
+<td><strong>第Ⅱ类（取伪）</strong></td>
 <td><span class="math inline">\(H_0\)</span> 为假却不拒绝</td>
 <td><span class="math inline">\(\beta\)</span></td>
 </tr>
 </tbody>
 </table>
 <ul>
-<li><span class="math inline">\(\alpha\)</span> 和 <span class="math inline">\(\beta\)</span> 有跷跷板关系：样本量固定时，减小 <span class="math inline">\(\alpha\)</span> 会增大 <span class="math inline">\(\beta\)</span></li>
-<li><strong>增大样本量 <span class="math inline">\(n\)</span></strong> 可同时降低两类错误</li>
-<li>通常先控制 <span class="math inline">\(\alpha\)</span>（0.01 / 0.05 / 0.10）</li>
+<li><span class="math inline">\(\alpha\)</span> 和 <span class="math inline">\(\beta\)</span> 此消彼长（样本量固定时）</li>
+<li><strong>增大 <span class="math inline">\(n\)</span></strong> 可同时降低两类错误</li>
+<li>先控制 <span class="math inline">\(\alpha\)</span>（常用 0.01 / 0.05 / 0.10）</li>
 </ul>
   </div>
 </section>
 <section
-  class="slide slide-content"
+  class="slide slide-section"
   data-slide="5"
   id="slide-5"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_7">决策方法</h3>
-<p><strong>统计量决策</strong>：<span class="math inline">\(|统计量| > 临界值\)</span> → 拒绝 <span class="math inline">\(H_0\)</span></p>
-<p><strong>p 值决策</strong>：</p>
+    <h2 id="_7">第三节 决策方法</h2>
+<h3 id="_8">统计量决策</h3>
+<p><span class="math inline">\(|\)</span>统计量<span class="math inline">\(| > \)</span>临界值 → 拒绝 <span class="math inline">\(H_0\)</span></p>
+<h3 id="p">p 值决策</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> p 值 = 当 <span class="math inline">\(H_0\)</span> 为真时，得到当前样本结果或更极端结果的概率。</p>
+<p> <span class="math inline">\(p\)</span> 值 = 当 <span class="math inline">\(H_0\)</span> 为真时，观察到当前结果或更极端结果的概率。</p>
 </blockquote>
 <p>
 <div class="math display">
-$$\text{p 值} < \alpha \quad \Rightarrow \quad \text{拒绝 } H_0$$
+$$p \text{ 值} < \alpha \quad \Rightarrow \quad \text{拒绝 } H_0$$
 </div>
 </p>
 <blockquote class="callout-note">
 <div class="callout-label">注意</div>
-<p> p 值越小，拒绝 <span class="math inline">\(H_0\)</span> 的理由越充分。但 p 值<strong>不是</strong> <span class="math inline">\(H_0\)</span> 为真的概率！</p>
+<p> p 值不是 <span class="math inline">\(H_0\)</span> 为真的概率！p 值越小，拒绝 <span class="math inline">\(H_0\)</span> 的证据越强。</p>
 </blockquote>
   </div>
 </section>
@@ -1329,8 +1328,7 @@ $$\text{p 值} < \alpha \quad \Rightarrow \quad \text{拒绝 } H_0$$
   id="slide-6"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_8">第二节 一个总体参数的假设检验</h2>
-<h3 id="_9">总体均值的检验</h3>
+    <h2 id="_9">第四节 一个总体均值的检验</h2>
 <table>
 <thead>
 <tr>
@@ -1353,12 +1351,7 @@ data-has-math="true">
 </tbody>
 </table>
 <h3 id="_10">总体比例的检验</h3>
-<p>大样本：</p>
-<p>
-<div class="math display">
-$$z = \frac{p - P_0}{\sqrt{P_0(1-P_0)/n}}$$
-</div>
-</p>
+<p>大样本：<span class="math inline">\(z = \frac{p - P_0}{\sqrt{P_0(1-P_0)/n}}\)</span></p>
   </div>
 </section>
 <section
@@ -1367,8 +1360,8 @@ $$z = \frac{p - P_0}{\sqrt{P_0(1-P_0)/n}}$$
   id="slide-7"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_11">第三节 两个总体参数的假设检验</h2>
-<h3 id="_12">两个总体均值之差的检验</h3>
+    <h2 id="_11">第五节 两个总体参数的检验</h2>
+<h3 id="_12">两个均值之差</h3>
 <table>
 <thead>
 <tr>
@@ -1379,11 +1372,11 @@ data-has-math="true">
 <tbody>
 <tr>
 <td>独立大样本</td>
-<td><span class="math inline">\(z = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{\sqrt{\frac{s_1^2}{n_1} + \frac{s_2^2}{n_2}}}\)</span></td>
+<td><span class="math inline">\(z = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{\sqrt{s_1^2/n_1 + s_2^2/n_2}}\)</span></td>
 </tr>
 <tr>
-<td>独立小样本 + 方差相等</td>
-<td><span class="math inline">\(t = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{s_p \sqrt{1/n_1 + 1/n_2}}\)</span></td>
+<td>小样本 + 方差相等</td>
+<td><span class="math inline">\(t = \frac{(\bar{x}_1 - \bar{x}_2) - D_0}{s_p\sqrt{1/n_1 + 1/n_2}}\)</span></td>
 </tr>
 <tr>
 <td><strong>配对样本</strong></td>
@@ -1391,17 +1384,13 @@ data-has-math="true">
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p><span class="math inline">\(D_0\)</span> 为假设的均值之差，通常 <span class="math inline">\(H_0: \mu_1 - \mu_2 = 0\)</span>，即 <span class="math inline">\(D_0 = 0\)</span></p>
-</blockquote>
-<h3 id="_13">两个总体比例之差的检验</h3>
-<p>大样本，<span class="math inline">\(H_0: P_1 = P_2\)</span>：</p>
-<p>
+<h3 id="_13">两个比例之差</h3>
+<p>大样本，<span class="math inline">\(H_0: P_1 = P_2\)</span>：
+
 <div class="math display">
-$$z = \frac{p_1 - p_2}{\sqrt{\bar{p}(1-\bar{p})(\frac{1}{n_1} + \frac{1}{n_2})}}$$
+$$z = \frac{p_1 - p_2}{\sqrt{\bar{p}(1-\bar{p})(1/n_1 + 1/n_2)}}, \quad \bar{p} = \frac{x_1+x_2}{n_1+n_2}$$
 </div>
 </p>
-<p>其中合并比例 <span class="math inline">\(\bar{p} = \frac{x_1 + x_2}{n_1 + n_2}\)</span></p>
   </div>
 </section>
 <section
@@ -1410,12 +1399,11 @@ $$z = \frac{p_1 - p_2}{\sqrt{\bar{p}(1-\bar{p})(\frac{1}{n_1} + \frac{1}{n_2})}}
   id="slide-8"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_14">第四节 注意事项</h2>
+    <h2 id="_14">注意事项</h2>
 <ol>
-<li><strong>不拒绝 <span class="math inline">\(H_0 \neq\)</span> 接受 <span class="math inline">\(H_0\)</span></strong>：只是证据不足，不等于 <span class="math inline">\(H_0\)</span> 正确</li>
-<li><strong>统计显著 <span class="math inline">\(\neq\)</span> 实际重要</strong>：显著只表示"非偶然"，不表示效应大</li>
-<li>先确定备择假设，再确定原假设</li>
-<li>等号永远放在 <span class="math inline">\(H_0\)</span></li>
+<li><strong>不拒绝 <span class="math inline">\(H_0 \neq\)</span> 接受 <span class="math inline">\(H_0\)</span></strong>：只是证据不足</li>
+<li><strong>统计显著 <span class="math inline">\(\neq\)</span> 实际重要</strong>：显著只表示"非偶然"</li>
+<li>先确定备择假设，再确定原假设；等号始终在 <span class="math inline">\(H_0\)</span></li>
 </ol>
   </div>
 </section>
@@ -1427,11 +1415,10 @@ data-has-math="true">
   <div class="slide-content">
     <h2 id="_15">本章小结</h2>
 <ol>
-<li>假设检验遵循"反证法+小概率"逻辑</li>
+<li>假设检验 = 反证法 + 小概率原理</li>
 <li>两类错误：弃真（<span class="math inline">\(\alpha\)</span>）、取伪（<span class="math inline">\(\beta\)</span>），增大 <span class="math inline">\(n\)</span> 可同时降低</li>
-<li>p 值 &lt; <span class="math inline">\(\alpha\)</span> → 拒绝 <span class="math inline">\(H_0\)</span>；p 值不是 <span class="math inline">\(H_0\)</span> 为真的概率</li>
-<li>根据条件选择 <span class="math inline">\(Z\)</span> 检验或 <span class="math inline">\(t\)</span> 检验</li>
-<li>配对样本先算差值，再用单样本方法</li>
+<li>p 值 &lt; <span class="math inline">\(\alpha\)</span> → 拒绝 <span class="math inline">\(H_0\)</span></li>
+<li>根据条件选 <span class="math inline">\(Z\)</span> 检验或 <span class="math inline">\(t\)</span> 检验；配对样本先算差值</li>
 </ol>
   </div>
 </section>

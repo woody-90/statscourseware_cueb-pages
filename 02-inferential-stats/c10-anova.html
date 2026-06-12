@@ -1131,20 +1131,10 @@ tags: 'ams',    macros: {
       <li><a href="#slide-3" data-slide="3" class="toc-section">
         第一节 方差分析引论
       </a></li>
-      <li>
-        <a href="#slide-4" data-slide="4">
-          <span class="toc-num">4</span>基本假定
-        </a>
-      </li>
-      <li><a href="#slide-5" data-slide="5" class="toc-section">
+      <li><a href="#slide-4" data-slide="4" class="toc-section">
         第二节 单因素方差分析
       </a></li>
-      <li>
-        <a href="#slide-6" data-slide="6">
-          <span class="toc-num">6</span>关系强度与多重比较
-        </a>
-      </li>
-      <li><a href="#slide-7" data-slide="7" class="toc-section">
+      <li><a href="#slide-5" data-slide="5" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1154,7 +1144,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 8</span>
+  <span id="slide-counter">1 / 6</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1216,46 +1206,40 @@ tags: 'ams',    macros: {
   class="slide slide-section"
   data-slide="3"
   id="slide-3"
->
+data-has-math="true">
   <div class="slide-content">
     <h2 id="_3">第一节 方差分析引论</h2>
 <h3 id="_4">什么是方差分析？</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> <strong>方差分析（ANOVA）</strong> — 检验多个总体均值是否相等的统计方法。</p>
+<p> <strong>方差分析（ANOVA）</strong> — 检验<strong>多个</strong>总体均值是否相等的统计方法。</p>
 </blockquote>
 <ul>
-<li><strong>自变量</strong>：分类型变量（因子/Factor）</li>
+<li><strong>因子（Factor）</strong>：分类型自变量</li>
+<li><strong>水平/处理（Treatment）</strong>：因子的不同取值</li>
 <li><strong>因变量</strong>：数值型变量</li>
-<li><strong>水平/处理</strong>：因子的不同取值</li>
 </ul>
 <blockquote class="callout-ex">
 <div class="callout-label">例子</div>
-<p> 比较 4 种教学方法的教学效果 → 自变量=教学方法（4 个水平），因变量=考试成绩</p>
+<p> 比较 4 种教学方法的教学效果。因子 = 教学方法（4 个水平），因变量 = 考试成绩。要检验：4 个总体的平均成绩是否相等？</p>
 </blockquote>
-  </div>
-</section>
-<section
-  class="slide slide-content"
-  data-slide="4"
-  id="slide-4"
->
-  <div class="slide-content">
-    <h3 id="_5">基本假定</h3>
-<ol>
-<li><strong>正态性</strong>：每个总体服从正态分布</li>
-<li><strong>方差齐性</strong>：各总体方差相等</li>
-<li><strong>独立性</strong>：样本相互独立（最重要）</li>
-</ol>
+<h3 id="t">为什么不用多次 t 检验？</h3>
+<p>两两比较会增加犯第Ⅰ类错误的概率。4 个总体需要 <span class="math inline">\(C_4^2 = 6\)</span> 次 t 检验，若 <span class="math inline">\(\alpha = 0.05\)</span>，至少犯一次错误的概率高达 <span class="math inline">\(1 - (0.95)^6 \approx 0.26\)</span>。</p>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="5"
-  id="slide-5"
+  data-slide="4"
+  id="slide-4"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_6">第二节 单因素方差分析</h2>
+    <h2 id="_5">第二节 单因素方差分析</h2>
+<h3 id="_6">基本假定</h3>
+<ol>
+<li><strong>正态性</strong>：每个总体服从正态分布</li>
+<li><strong>方差齐性</strong>：各总体方差相等</li>
+<li><strong>独立性</strong>：样本相互独立（最重要，不满足影响最大）</li>
+</ol>
 <h3 id="_7">误差分解</h3>
 <p>
 <div class="math display">
@@ -1266,6 +1250,7 @@ $$SST = SSA + SSE$$
 <thead>
 <tr>
 <th>误差</th>
+<th>名称</th>
 <th>含义</th>
 <th>自由度</th>
 </tr>
@@ -1274,16 +1259,19 @@ $$SST = SSA + SSE$$
 <tr>
 <td><span class="math inline">\(SST\)</span></td>
 <td>总平方和</td>
+<td>全部观测值与总均值的差异</td>
 <td><span class="math inline">\(n-1\)</span></td>
 </tr>
 <tr>
 <td><span class="math inline">\(SSA\)</span></td>
-<td>组间平方和（因子效应+随机误差）</td>
+<td>组间平方和</td>
+<td>因子效应 + 随机误差</td>
 <td><span class="math inline">\(k-1\)</span></td>
 </tr>
 <tr>
 <td><span class="math inline">\(SSE\)</span></td>
-<td>组内平方和（仅随机误差）</td>
+<td>组内平方和</td>
+<td>仅随机误差</td>
 <td><span class="math inline">\(n-k\)</span></td>
 </tr>
 </tbody>
@@ -1295,50 +1283,41 @@ $$F = \frac{MSA}{MSE} = \frac{SSA/(k-1)}{SSE/(n-k)} \sim F(k-1, n-k)$$
 </div>
 </p>
 <ul>
-<li><span class="math inline">\(H_0\)</span> 为真（各均值相等）→ <span class="math inline">\(F \approx 1\)</span></li>
+<li><span class="math inline">\(H_0\)</span> 为真 → <span class="math inline">\(F \approx 1\)</span></li>
 <li><span class="math inline">\(H_0\)</span> 不真 → <span class="math inline">\(F > 1\)</span></li>
 </ul>
-<blockquote>
-<p><strong>决策：</strong> <span class="math inline">\(F > F_\alpha\)</span> 或 p 值 <span class="math inline">\(< \alpha\)</span> → 拒绝 <span class="math inline">\(H_0\)</span>，认为各总体均值<strong>不全相等</strong></p>
-</blockquote>
+<p><strong>决策</strong>：<span class="math inline">\(F > F_\alpha\)</span> 或 <span class="math inline">\(p < \alpha\)</span> → 拒绝 <span class="math inline">\(H_0\)</span></p>
+<h3 id="_9">关系强度</h3>
+<p>
+<div class="math display">
+$$R^2 = \frac{SSA}{SST}$$
+</div>
+</p>
+<p>表示自变量可解释的因变量变异比例。</p>
+<h3 id="_10">多重比较</h3>
+<p>拒绝 <span class="math inline">\(H_0\)</span>（各均值不全相等）后，进一步检验哪些均值间有差异。常用 LSD 法。</p>
+  </div>
+</section>
+<section
+  class="slide slide-section"
+  data-slide="5"
+  id="slide-5"
+data-has-math="true">
+  <div class="slide-content">
+    <h2 id="_11">本章小结</h2>
+<ol>
+<li>ANOVA 用于检验多个总体均值是否相等</li>
+<li><span class="math inline">\(SST = SSA + SSE\)</span>：总变异 = 组间 + 组内</li>
+<li><span class="math inline">\(F = MSA/MSE\)</span>，<span class="math inline">\(F > F_\alpha\)</span> → 拒绝 <span class="math inline">\(H_0\)</span></li>
+<li>三大假定：正态性、方差齐性、独立性</li>
+<li><span class="math inline">\(R^2 = SSA/SST\)</span> 衡量自变量解释程度</li>
+</ol>
   </div>
 </section>
 <section
   class="slide slide-content"
   data-slide="6"
   id="slide-6"
-data-has-math="true">
-  <div class="slide-content">
-    <h3 id="_9">关系强度与多重比较</h3>
-<p><strong>效应量</strong>：<span class="math inline">\(R^2 = \frac{SSA}{SST}\)</span> = 自变量可解释的比例</p>
-<p><strong>多重比较（LSD）</strong>：拒绝 <span class="math inline">\(H_0\)</span> 后，进一步检验哪些均值间有差异</p>
-<p>
-<div class="math display">
-$$|\bar{x}_i - \bar{x}_j| > LSD \Rightarrow \text{拒绝 } H_0: \mu_i = \mu_j$$
-</div>
-</p>
-  </div>
-</section>
-<section
-  class="slide slide-section"
-  data-slide="7"
-  id="slide-7"
-data-has-math="true">
-  <div class="slide-content">
-    <h2 id="_10">本章小结</h2>
-<ol>
-<li>方差分析用于检验<strong>多个</strong>总体均值是否相等</li>
-<li>核心：将总变异分解为<strong>组间（SSA）</strong>和<strong>组内（SSE）</strong></li>
-<li><span class="math inline">\(F = MSA/MSE\)</span>，<span class="math inline">\(F > F_\alpha\)</span> 则拒绝 <span class="math inline">\(H_0\)</span></li>
-<li>三大假定：正态性、方差齐性、独立性</li>
-<li><span class="math inline">\(R^2\)</span> 衡量自变量对因变量的解释程度</li>
-</ol>
-  </div>
-</section>
-<section
-  class="slide slide-content"
-  data-slide="8"
-  id="slide-8"
 >
   <div class="slide-content">
     <p>谢谢观看</p>

@@ -1132,10 +1132,10 @@ tags: 'ams',    macros: {
         第一节 时间数列及其种类
       </a></li>
       <li><a href="#slide-4" data-slide="4" class="toc-section">
-        第二节 时间数列的水平特征分析
+        第二节 水平特征分析
       </a></li>
       <li><a href="#slide-5" data-slide="5" class="toc-section">
-        第三节 时间数列的速度特征分析
+        第三节 速度特征分析
       </a></li>
       <li><a href="#slide-6" data-slide="6" class="toc-section">
         本章小结
@@ -1215,7 +1215,7 @@ tags: 'ams',    macros: {
 <h3 id="_4">基本概念</h3>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> <strong>时间数列</strong> — 同一现象按时间顺序排列的观测值。</p>
+<p> <strong>时间数列</strong> — 同一现象按时间顺序排列的观测值。可描述事物的持续发展变化过程。</p>
 </blockquote>
 <p><strong>编制原则</strong>：时间可比、核算范围一致、价格和计量单位一致。</p>
 <h3 id="_5">时间数列的种类</h3>
@@ -1225,28 +1225,33 @@ tags: 'ams',    macros: {
 <th>类型</th>
 <th>特点</th>
 <th>可加性</th>
+<th>例子</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><strong>时期数列</strong>（总量）</td>
+<td><strong>时期数列</strong></td>
 <td>连续登记，与时间长短有关</td>
 <td>✅ 可加</td>
+<td>年GDP、月销售额</td>
 </tr>
 <tr>
-<td><strong>时点数列</strong>（总量）</td>
+<td><strong>时点数列</strong></td>
 <td>按期登记，与时间长短无关</td>
 <td>❌ 不可加</td>
+<td>年末人口、月末库存</td>
 </tr>
 <tr>
-<td>相对指标时间数列</td>
-<td>比值</td>
+<td>相对指标数列</td>
+<td>两个指标之比</td>
 <td>❌ 不可加</td>
+<td>失业率</td>
 </tr>
 <tr>
-<td>平均指标时间数列</td>
-<td>均值</td>
+<td>平均指标数列</td>
+<td>均值序列</td>
 <td>❌ 不可加</td>
+<td>平均工资</td>
 </tr>
 </tbody>
 </table>
@@ -1258,24 +1263,40 @@ tags: 'ams',    macros: {
   id="slide-4"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_6">第二节 时间数列的水平特征分析</h2>
-<h3 id="_7">发展水平与平均发展水平</h3>
-<p><strong>发展水平</strong>：数列中每个指标值</p>
-<p><strong>序时平均数</strong>（平均发展水平）：
-- 时期数列：简单算术平均
-- 连续时点：简单算术平均
-- 间隔时点：<strong>首末折半法</strong></p>
+    <h2 id="_6">第二节 水平特征分析</h2>
+<h3 id="_7">发展水平</h3>
+<p>数列中每个指标值。<strong>报告期</strong> = 研究期，<strong>基期</strong> = 对比基准期。</p>
+<h3 id="_8">序时平均数（平均发展水平）</h3>
+<ul>
+<li><strong>时期数列</strong>：简单算术平均 <span class="math inline">\(\bar{y} = \frac{\sum y_i}{n}\)</span></li>
+<li><strong>连续时点</strong>：简单算术平均</li>
+<li><strong>间隔时点</strong>：<strong>首末折半法</strong></li>
+</ul>
 <p>
 <div class="math display">
 $$\bar{y} = \frac{\frac{y_1}{2} + y_2 + \cdots + y_{n-1} + \frac{y_n}{2}}{n-1}$$
 </div>
 </p>
-<h3 id="_8">增长量</h3>
-<ul>
-<li><strong>逐期增长量</strong>：报告期 − 前一期</li>
-<li><strong>累计增长量</strong>：报告期 − 固定基期</li>
-<li><strong>关系</strong>：逐期增长量之和 = 累计增长量</li>
-</ul>
+<h3 id="_9">增长量</h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>公式</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>逐期增长量</td>
+<td><span class="math inline">\(y_t - y_{t-1}\)</span></td>
+</tr>
+<tr>
+<td>累计增长量</td>
+<td><span class="math inline">\(y_t - y_0\)</span></td>
+</tr>
+</tbody>
+</table>
+<p><strong>逐期增长量之和 = 累计增长量</strong></p>
 <p><strong>平均增长量</strong> = <span class="math inline">\(\frac{\text{累计增长量}}{n-1}\)</span></p>
   </div>
 </section>
@@ -1285,8 +1306,8 @@ $$\bar{y} = \frac{\frac{y_1}{2} + y_2 + \cdots + y_{n-1} + \frac{y_n}{2}}{n-1}$$
   id="slide-5"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_9">第三节 时间数列的速度特征分析</h2>
-<h3 id="_10">发展速度</h3>
+    <h2 id="_10">第三节 速度特征分析</h2>
+<h3 id="_11">发展速度</h3>
 <p>
 <div class="math display">
 $$\text{发展速度} = \frac{\text{报告期水平}}{\text{基期水平}}$$
@@ -1297,27 +1318,29 @@ $$\text{发展速度} = \frac{\text{报告期水平}}{\text{基期水平}}$$
 <tr>
 <th>类型</th>
 <th>公式</th>
+<th>关系</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>环比发展速度</td>
+<td>环比</td>
 <td><span class="math inline">\(y_t / y_{t-1}\)</span></td>
+<td>连乘积 = 定基</td>
 </tr>
 <tr>
-<td>定基发展速度</td>
+<td>定基</td>
 <td><span class="math inline">\(y_t / y_0\)</span></td>
+<td>相邻相除 = 环比</td>
 </tr>
 </tbody>
 </table>
-<p><strong>关系</strong>：环比连乘积 = 定基；相邻定基相除 = 环比</p>
-<h3 id="_11">增长速度</h3>
+<h3 id="_12">增长速度</h3>
 <p>
 <div class="math display">
 $$\text{增长速度} = \text{发展速度} - 1$$
 </div>
 </p>
-<h3 id="_12">平均发展速度（水平法 / 几何平均法）</h3>
+<h3 id="_13">平均发展速度（水平法 / 几何平均法）</h3>
 <p>
 <div class="math display">
 $$\bar{x} = \sqrt[n-1]{\frac{y_n}{y_1}}$$
@@ -1333,13 +1356,13 @@ $$\bar{x} = \sqrt[n-1]{\frac{y_n}{y_1}}$$
   id="slide-6"
 >
   <div class="slide-content">
-    <h2 id="_13">本章小结</h2>
+    <h2 id="_14">本章小结</h2>
 <ol>
-<li>时间数列分时期数列（可加）和时点数列（不可加）</li>
-<li>间隔时点数列用<strong>首末折半法</strong>算序时平均数</li>
+<li>时期数列可加、时点数列不可加</li>
+<li>间隔时点用首末折半法算序时平均数</li>
 <li>逐期增长量之和 = 累计增长量</li>
-<li>环比发展速度连乘积 = 定基发展速度</li>
-<li>平均发展速度用几何平均法（水平法）</li>
+<li>环比发展速度连乘 = 定基；相邻定基相除 = 环比</li>
+<li>平均发展速度用几何平均法</li>
 </ol>
   </div>
 </section>

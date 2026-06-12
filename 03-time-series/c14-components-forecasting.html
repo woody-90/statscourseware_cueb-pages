@@ -1129,7 +1129,7 @@ tags: 'ams',    macros: {
         </a>
       </li>
       <li><a href="#slide-3" data-slide="3" class="toc-section">
-        第一节 时间数列的构成要素
+        第一节 构成要素与模式
       </a></li>
       <li><a href="#slide-4" data-slide="4" class="toc-section">
         第二节 长期趋势分析
@@ -1197,8 +1197,8 @@ tags: 'ams',    macros: {
     <h3 id="_2">本章内容</h3>
 <ul>
 <li>时间数列的构成要素与模式</li>
-<li>长期趋势分析</li>
-<li>季节变动分析（*）</li>
+<li>长期趋势的测定方法</li>
+<li>季节变动的测定（*）</li>
 </ul>
   </div>
 </section>
@@ -1208,8 +1208,9 @@ tags: 'ams',    macros: {
   id="slide-3"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_3">第一节 时间数列的构成要素</h2>
-<h3 id="tsci">TSCI 模型</h3>
+    <h2 id="_3">第一节 构成要素与模式</h2>
+<h3 id="tsci">TSCI 四要素</h3>
+<p>一个时间数列可能包含多种要素：</p>
 <table>
 <thead>
 <tr>
@@ -1223,20 +1224,20 @@ data-has-math="true">
 <tr>
 <td><strong>长期趋势</strong></td>
 <td><span class="math inline">\(T\)</span></td>
-<td>持续上升/下降的基本趋势</td>
+<td>持续上升/下降的基本方向</td>
 <td>长期</td>
 </tr>
 <tr>
 <td><strong>季节变动</strong></td>
 <td><span class="math inline">\(S\)</span></td>
 <td>1 年内周期性波动</td>
-<td>固定（1 年）</td>
+<td>固定（年）</td>
 </tr>
 <tr>
 <td><strong>循环变动</strong></td>
 <td><span class="math inline">\(C\)</span></td>
 <td>非固定周期的涨落起伏</td>
-<td>较长且不固定</td>
+<td>数年</td>
 </tr>
 <tr>
 <td><strong>不规则变动</strong></td>
@@ -1247,21 +1248,20 @@ data-has-math="true">
 </tbody>
 </table>
 <h3 id="_4">构成模式</h3>
-<p><strong>加法模型</strong>（因素相互独立）：</p>
-<p>
+<p><strong>加法模型</strong>（因素相互独立）：
+
 <div class="math display">
 $$Y = T + S + C + I$$
 </div>
 </p>
-<p><strong>乘法模型</strong>（因素相互影响）：</p>
-<p>
+<p>各分量与原始数据同单位。季节波动振幅保持恒定 → 加法模型。</p>
+<p><strong>乘法模型</strong>（因素相互影响）：
+
 <div class="math display">
 $$Y = T \times S \times C \times I$$
 </div>
 </p>
-<blockquote>
-<p><strong>判断依据：</strong> 季节波动振幅恒定 → 加法模型；振幅逐渐扩大 → 乘法模型</p>
-</blockquote>
+<p><span class="math inline">\(T\)</span> 与原始数据同单位，<span class="math inline">\(S, C, I\)</span> 为比例。振幅逐渐扩大 → 乘法模型。</p>
   </div>
 </section>
 <section
@@ -1272,28 +1272,13 @@ data-has-math="true">
   <div class="slide-content">
     <h2 id="_5">第二节 长期趋势分析</h2>
 <h3 id="_6">移动平均法</h3>
-<p>将原数列逐项递推移动，计算一系列移动平均数，形成趋势值。</p>
-<table>
-<thead>
-<tr>
-<th>项数</th>
-<th>效果</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>奇数项</td>
-<td>一次移动即得趋势值</td>
-</tr>
-<tr>
-<td>偶数项</td>
-<td>需二次移动平均（移正平均）</td>
-</tr>
-</tbody>
-</table>
-<blockquote class="callout-note">
-<div class="callout-label">注意</div>
-<p> 移动平均的项数要适中。<span class="math inline">\(k\)</span> 越大曲线越平滑，但首尾损失越多。</p>
+<p>将原数列逐项递推移动，计算一系列移动平均数：</p>
+<ul>
+<li><strong>奇数项</strong>（如 3 项、5 项）：一次移动即得趋势值</li>
+<li><strong>偶数项</strong>（如 4 项）：需<strong>移正平均</strong>（二次移动）</li>
+</ul>
+<blockquote>
+<p><span class="math inline">\(k\)</span> 越大曲线越平滑，但首尾损失越多。<span class="math inline">\(k\)</span> 要适中。</p>
 </blockquote>
 <h3 id="_7">线性趋势模型</h3>
 <p>
@@ -1301,7 +1286,7 @@ data-has-math="true">
 $$\hat{y}_t = a + bt$$
 </div>
 </p>
-<p>用最小二乘法求 <span class="math inline">\(a\)</span> 和 <span class="math inline">\(b\)</span>。</p>
+<p>用最小二乘法求 <span class="math inline">\(a\)</span> 和 <span class="math inline">\(b\)</span>，可用于趋势预测。</p>
   </div>
 </section>
 <section
@@ -1312,10 +1297,11 @@ data-has-math="true">
   <div class="slide-content">
     <h2 id="_8">本章小结</h2>
 <ol>
-<li>时间数列可分解为 <span class="math inline">\(T\)</span>（趋势）、<span class="math inline">\(S\)</span>（季节）、<span class="math inline">\(C\)</span>（循环）、<span class="math inline">\(I\)</span>（不规则）</li>
-<li>加法模型 <span class="math inline">\(Y = T+S+C+I\)</span>，乘法模型 <span class="math inline">\(Y = T \times S \times C \times I\)</span></li>
-<li>移动平均法是测度长期趋势的基本方法</li>
-<li>移动平均项数越大越平滑，但首尾数据损失越多</li>
+<li>四要素：<span class="math inline">\(T\)</span>（趋势）、<span class="math inline">\(S\)</span>（季节）、<span class="math inline">\(C\)</span>（循环）、<span class="math inline">\(I\)</span>（不规则）</li>
+<li>加法 <span class="math inline">\(Y = T+S+C+I\)</span> vs 乘法 <span class="math inline">\(Y = T \times S \times C \times I\)</span></li>
+<li>季节振幅恒定 → 加法；振幅扩大 → 乘法</li>
+<li>移动平均是测度长期趋势的基本方法</li>
+<li>偶数项移动平均需二次移正</li>
 </ol>
   </div>
 </section>

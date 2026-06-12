@@ -1132,10 +1132,10 @@ tags: 'ams',    macros: {
         第一节 相关分析
       </a></li>
       <li><a href="#slide-4" data-slide="4" class="toc-section">
-        第二节 线性回归分析
+        第二节 一元线性回归
       </a></li>
       <li><a href="#slide-5" data-slide="5" class="toc-section">
-        第三节 回归方程的评价与检验
+        第三节 回归方程的评价
       </a></li>
       <li><a href="#slide-6" data-slide="6" class="toc-section">
         本章小结
@@ -1199,8 +1199,8 @@ tags: 'ams',    macros: {
   <div class="slide-content">
     <h3 id="_2">本章内容</h3>
 <ul>
-<li>相关分析</li>
-<li>线性回归分析</li>
+<li>相关分析：变量间关系的度量</li>
+<li>一元线性回归</li>
 <li>回归方程的评价与检验</li>
 </ul>
   </div>
@@ -1214,8 +1214,8 @@ data-has-math="true">
     <h2 id="_3">第一节 相关分析</h2>
 <h3 id="_4">变量间的关系</h3>
 <ul>
-<li><strong>函数关系</strong>：一一对应的确定关系 <span class="math inline">\(y = f(x)\)</span></li>
-<li><strong>相关关系</strong>：有关系但不严格确定，<span class="math inline">\(x\)</span> 取某值，<span class="math inline">\(y\)</span> 对应一个分布</li>
+<li><strong>函数关系</strong>：<span class="math inline">\(y = f(x)\)</span>，一一对应</li>
+<li><strong>相关关系</strong>：有关系但不严格确定</li>
 </ul>
 <h3 id="pearson">Pearson 相关系数</h3>
 <p>
@@ -1230,22 +1230,22 @@ $$r = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sqrt{\sum (x - \bar{x})^2 \cdot \s
 <table>
 <thead>
 <tr>
-<th><span class="math inline">\(|r|\)</span> 范围</th>
-<th>相关程度</th>
+<th><span class="math inline">\(|r|\)</span></th>
+<th>程度</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><span class="math inline">\(\geq 0.8\)</span></td>
-<td>高度相关</td>
+<td>高度</td>
 </tr>
 <tr>
 <td><span class="math inline">\(0.5 \sim 0.8\)</span></td>
-<td>中度相关</td>
+<td>中度</td>
 </tr>
 <tr>
 <td><span class="math inline">\(0.3 \sim 0.5\)</span></td>
-<td>低度相关</td>
+<td>低度</td>
 </tr>
 <tr>
 <td><span class="math inline">\(< 0.3\)</span></td>
@@ -1256,20 +1256,15 @@ $$r = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sqrt{\sum (x - \bar{x})^2 \cdot \s
 <h3 id="_5">相关系数的性质</h3>
 <ul>
 <li><strong>对称性</strong>：<span class="math inline">\(r_{xy} = r_{yx}\)</span></li>
-<li><strong>尺度不变性</strong>：改变单位不改变 <span class="math inline">\(r\)</span></li>
-<li><strong>仅度量线性关系</strong>：<span class="math inline">\(r = 0\)</span> 只表示无线性关系，可能非线性相关</li>
+<li><strong>尺度不变</strong>：改变单位不改变 <span class="math inline">\(r\)</span></li>
+<li><strong>仅度量线性关系</strong>：<span class="math inline">\(r=0\)</span> 只表示无线性关系</li>
 <li><strong>不意味因果关系</strong></li>
 </ul>
 <h3 id="_6">显著性检验</h3>
-<p><span class="math inline">\(H_0: \rho = 0\)</span>，<span class="math inline">\(H_1: \rho \neq 0\)</span></p>
-<p>
-<div class="math display">
-$$t = |r| \sqrt{\frac{n-2}{1-r^2}} \sim t(n-2)$$
-</div>
-</p>
+<p><span class="math inline">\(H_0: \rho = 0\)</span>，检验统计量 <span class="math inline">\(t = |r| \sqrt{\frac{n-2}{1-r^2}} \sim t(n-2)\)</span></p>
 <blockquote class="callout-note">
 <div class="callout-label">注意</div>
-<p> 检验显著 <span class="math inline">\(\neq\)</span> 相关程度高，大样本下很小的 <span class="math inline">\(r\)</span> 也可能显著。</p>
+<p> 检验显著 <span class="math inline">\(\neq\)</span> 相关程度高！大样本下很小的 <span class="math inline">\(r\)</span> 也可能显著。</p>
 </blockquote>
   </div>
 </section>
@@ -1279,30 +1274,23 @@ $$t = |r| \sqrt{\frac{n-2}{1-r^2}} \sim t(n-2)$$
   id="slide-4"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_7">第二节 线性回归分析</h2>
+    <h2 id="_7">第二节 一元线性回归</h2>
 <h3 id="_8">回归模型</h3>
 <p>
 <div class="math display">
-$$Y = \beta_0 + \beta_1 X_1 + \cdots + \beta_p X_p + \varepsilon$$
+$$Y = \beta_0 + \beta_1 X + \varepsilon, \quad \varepsilon \sim N(0, \sigma^2)$$
 </div>
 </p>
-<p><strong>基本假定</strong>：
-- 线性关系
-- 误差项 <span class="math inline">\(\varepsilon \sim N(0, \sigma^2)\)</span>：正态性、方差齐性、独立性</p>
-<h3 id="ols">参数估计（最小二乘 OLS）</h3>
-<p>使 <span class="math inline">\(\sum (y_i - \hat{y}_i)^2\)</span> 最小。</p>
-<p><strong>一元线性回归</strong>：</p>
+<h3 id="ols">最小二乘估计（OLS）</h3>
+<p>使 <span class="math inline">\(\sum (y_i - \hat{y}_i)^2\)</span> 最小：</p>
 <p>
 <div class="math display">
 $$b_1 = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sum (x - \bar{x})^2}, \quad b_0 = \bar{y} - b_1 \bar{x}$$
 </div>
 </p>
-<h3 id="_9">回归系数的含义</h3>
-<ul>
-<li><span class="math inline">\(b_0\)</span>（截距）：<span class="math inline">\(X = 0\)</span> 时 <span class="math inline">\(Y\)</span> 的平均值</li>
-<li><span class="math inline">\(b_1\)</span>（斜率）：<span class="math inline">\(X\)</span> 每增加一个单位，<span class="math inline">\(Y\)</span> 平均变化 <span class="math inline">\(b_1\)</span> 个单位</li>
-<li>多元回归中 <span class="math inline">\(b_i\)</span>：<strong>其他变量不变</strong>时，<span class="math inline">\(X_i\)</span> 每增加一个单位 <span class="math inline">\(Y\)</span> 平均变化 <span class="math inline">\(b_i\)</span></li>
-</ul>
+<p><strong>系数含义</strong>：
+- <span class="math inline">\(b_0\)</span>：截距，<span class="math inline">\(X=0\)</span> 时 <span class="math inline">\(Y\)</span> 的平均值
+- <span class="math inline">\(b_1\)</span>：斜率，<span class="math inline">\(X\)</span> 每增加 1 单位，<span class="math inline">\(Y\)</span> 平均变化 <span class="math inline">\(b_1\)</span> 单位</p>
   </div>
 </section>
 <section
@@ -1311,18 +1299,15 @@ $$b_1 = \frac{\sum (x - \bar{x})(y - \bar{y})}{\sum (x - \bar{x})^2}, \quad b_0 
   id="slide-5"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_10">第三节 回归方程的评价与检验</h2>
-<h3 id="math_placeholder_c2d90c608f154da79020fb8ec916a4ef">拟合优度 <span class="math inline">\(R^2\)</span></h3>
+    <h2 id="_9">第三节 回归方程的评价</h2>
+<h3 id="math_placeholder_6c1be89af60a402d999e13da0962e0fd">拟合优度 <span class="math inline">\(R^2\)</span></h3>
 <p>
 <div class="math display">
 $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
 </div>
 </p>
-<ul>
-<li><span class="math inline">\(0 \leq R^2 \leq 1\)</span>，越接近 1 拟合越好</li>
-<li>一元回归：<span class="math inline">\(R^2 = r^2\)</span></li>
-</ul>
-<h3 id="_11">显著性检验</h3>
+<p><span class="math inline">\(0 \leq R^2 \leq 1\)</span>，越接近 1 拟合越好。一元回归中 <span class="math inline">\(R^2 = r^2\)</span>。</p>
+<h3 id="_10">显著性检验</h3>
 <table>
 <thead>
 <tr>
@@ -1333,26 +1318,18 @@ $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
 </thead>
 <tbody>
 <tr>
-<td><strong>回归系数 <span class="math inline">\(t\)</span> 检验</strong></td>
-<td>单个自变量是否显著</td>
+<td><span class="math inline">\(t\)</span> 检验</td>
+<td>单个系数是否显著</td>
 <td><span class="math inline">\(H_0: \beta_i = 0\)</span></td>
 </tr>
 <tr>
-<td><strong>方程总体 <span class="math inline">\(F\)</span> 检验</strong></td>
-<td>整体线性关系是否显著</td>
+<td><span class="math inline">\(F\)</span> 检验</td>
+<td>方程整体是否显著</td>
 <td><span class="math inline">\(H_0: \beta_1 = \cdots = \beta_p = 0\)</span></td>
 </tr>
 </tbody>
 </table>
-<blockquote>
-<p>一元回归：<span class="math inline">\(t\)</span> 检验 <span class="math inline">\(\equiv\)</span> <span class="math inline">\(F\)</span> 检验（<span class="math inline">\(F = t^2\)</span>）</p>
-</blockquote>
-<h3 id="_12">平方和分解</h3>
-<p>
-<div class="math display">
-$$SST = SSR + SSE$$
-</div>
-</p>
+<p>一元回归中 <span class="math inline">\(F = t^2\)</span>，两者等价。</p>
   </div>
 </section>
 <section
@@ -1361,13 +1338,12 @@ $$SST = SSR + SSE$$
   id="slide-6"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_13">本章小结</h2>
+    <h2 id="_11">本章小结</h2>
 <ol>
-<li>相关分析度量变量间线性关系的强度和方向（<span class="math inline">\(r\)</span>）</li>
-<li>回归分析建立因变量与自变量的数量关系（<span class="math inline">\(Y = \beta_0 + \beta_1 X + \varepsilon\)</span>）</li>
-<li><span class="math inline">\(R^2\)</span> 衡量回归方程的拟合优度</li>
-<li><span class="math inline">\(t\)</span> 检验检验单个系数，<span class="math inline">\(F\)</span> 检验检验整体显著性</li>
-<li>相关 <span class="math inline">\(\neq\)</span> 因果，显著 <span class="math inline">\(\neq\)</span> 重要</li>
+<li>相关系数 <span class="math inline">\(r \in [-1, 1]\)</span>，度量和方向；<span class="math inline">\(r = 0\)</span> 只表示无线性关系</li>
+<li>回归方程 <span class="math inline">\(\hat{y} = b_0 + b_1 x\)</span>，用 OLS 估计</li>
+<li><span class="math inline">\(R^2\)</span> 衡量拟合优度；<span class="math inline">\(t\)</span> 检验单个系数，<span class="math inline">\(F\)</span> 检验整体</li>
+<li>相关 <span class="math inline">\(\neq\)</span> 因果；显著 <span class="math inline">\(\neq\)</span> 重要</li>
 </ol>
   </div>
 </section>
