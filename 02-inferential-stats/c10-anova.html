@@ -1149,20 +1149,25 @@ tags: 'ams',    macros: {
       </a></li>
       <li>
         <a href="#slide-8" data-slide="8">
-          <span class="toc-num">8</span>案例：超市销售额的方差分析
+          <span class="toc-num">8</span>均方与F统计量
         </a>
       </li>
       <li>
         <a href="#slide-9" data-slide="9">
-          <span class="toc-num">9</span>关系强度
+          <span class="toc-num">9</span>案例：超市销售额的方差分析
         </a>
       </li>
       <li>
         <a href="#slide-10" data-slide="10">
-          <span class="toc-num">10</span>多重比较（LSD法）
+          <span class="toc-num">10</span>关系强度
         </a>
       </li>
-      <li><a href="#slide-11" data-slide="11" class="toc-section">
+      <li>
+        <a href="#slide-11" data-slide="11">
+          <span class="toc-num">11</span>多重比较（LSD法）
+        </a>
+      </li>
+      <li><a href="#slide-12" data-slide="12" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1172,7 +1177,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 12</span>
+  <span id="slide-counter">1 / 13</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1385,7 +1390,17 @@ $$SST = SSA + SSE$$
 </tr>
 </tbody>
 </table>
-<h3 id="f">均方与F统计量</h3>
+<h3 id="_9">方差分析表的基本结构</h3>
+<p><img src="assets/方差分析表的基本结构.png" alt="方差分析表"></p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="8"
+  id="slide-8"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="f">均方与F统计量</h3>
 <p>
 <div class="math display">
 $$MSA = \frac{SSA}{k-1}, \quad MSE = \frac{SSE}{n-k}$$
@@ -1405,11 +1420,11 @@ $$F = \frac{MSA}{MSE} \sim F(k-1, n-k)$$
 </section>
 <section
   class="slide slide-content"
-  data-slide="8"
-  id="slide-8"
+  data-slide="9"
+  id="slide-9"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_9">案例：超市销售额的方差分析</h3>
+    <h3 id="_10">案例：超市销售额的方差分析</h3>
 <blockquote>
 <p><strong>接引言案例：</strong> 在 <span class="math inline">\(\alpha = 0.05\)</span> 下，检验三个地区平均销售额是否相等。</p>
 </blockquote>
@@ -1464,11 +1479,11 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="9"
-  id="slide-9"
+  data-slide="10"
+  id="slide-10"
 data-has-math="true">
   <div class="slide-content">
-    <h3 id="_10">关系强度</h3>
+    <h3 id="_11">关系强度</h3>
 <p>
 <div class="math display">
 $$R^2 = \frac{SSA}{SST} = \frac{24213.3}{27461.3} = 0.882$$
@@ -1479,8 +1494,8 @@ $$R^2 = \frac{SSA}{SST} = \frac{24213.3}{27461.3} = 0.882$$
 </section>
 <section
   class="slide slide-content"
-  data-slide="10"
-  id="slide-10"
+  data-slide="11"
+  id="slide-11"
 data-has-math="true">
   <div class="slide-content">
     <h3 id="lsd">多重比较（LSD法）</h3>
@@ -1495,11 +1510,11 @@ $$LSD = t_{\alpha/2}(n-k) \cdot \sqrt{MSE \cdot \left(\frac{1}{n_i} + \frac{1}{n
 </section>
 <section
   class="slide slide-section"
-  data-slide="11"
-  id="slide-11"
+  data-slide="12"
+  id="slide-12"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_11">本章小结</h2>
+    <h2 id="_12">本章小结</h2>
 <ol>
 <li>ANOVA 检验多个总体均值是否相等；避免多次 t 检验增大犯错概率</li>
 <li><span class="math inline">\(SST = SSA + SSE\)</span>：总变异 = 组间（因子效应）+ 组内（随机误差）</li>
@@ -1512,8 +1527,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="12"
-  id="slide-12"
+  data-slide="13"
+  id="slide-13"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
