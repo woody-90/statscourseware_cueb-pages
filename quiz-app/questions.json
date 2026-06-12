@@ -565,34 +565,6 @@
   },
   {
     "qtype": "多选题",
-    "question": "下列平均数中，容易受数列中极端值影响的平均数有",
-    "options": [
-      [
-        "A",
-        "几何平均数\nB调和平均数"
-      ],
-      [
-        "C",
-        "中位数"
-      ],
-      [
-        "D",
-        "众数"
-      ],
-      [
-        "E",
-        "算术平均数"
-      ]
-    ],
-    "answer": "ABE",
-    "chapter": "第4章 数据特征的统计量描述",
-    "knowledge": "第4章 数据特征的统计量描述",
-    "source": "题库5",
-    "answer_original": "A，B，E",
-    "id": 21
-  },
-  {
-    "qtype": "多选题",
     "question": "下列各项中，不受个别低分同学影响的有",
     "options": [
       [
@@ -621,7 +593,7 @@
     "knowledge": "第4章 数据特征的统计量描述",
     "source": "题库5",
     "answer_original": "A，B",
-    "id": 22
+    "id": 21
   },
   {
     "qtype": "多选题",
@@ -653,7 +625,7 @@
     "knowledge": "第8章 参数估计",
     "source": "题库5",
     "answer_original": "A，B，C",
-    "id": 23
+    "id": 22
   },
   {
     "qtype": "多选题",
@@ -685,7 +657,7 @@
     "knowledge": "第1章 统计学导论",
     "source": "题库5",
     "answer_original": "A，B，C",
-    "id": 24
+    "id": 23
   },
   {
     "qtype": "多选题",
@@ -717,7 +689,7 @@
     "knowledge": "第9章 假设检验",
     "source": "题库5",
     "answer_original": "C，D",
-    "id": 25
+    "id": 24
   },
   {
     "qtype": "多选题",
@@ -749,7 +721,7 @@
     "knowledge": "第9章 假设检验",
     "source": "题库5",
     "answer_original": "B，C，E",
-    "id": 26
+    "id": 25
   },
   {
     "qtype": "多选题",
@@ -781,7 +753,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库5",
     "answer_original": "B，D，E",
-    "id": 27
+    "id": 26
   },
   {
     "qtype": "多选题",
@@ -813,7 +785,7 @@
     "knowledge": "第4章 数据特征的统计量描述",
     "source": "题库5",
     "answer_original": "B，C，D，E",
-    "id": 28
+    "id": 27
   },
   {
     "qtype": "多选题",
@@ -845,7 +817,7 @@
     "knowledge": "第4章 数据特征的统计量描述",
     "source": "题库5",
     "answer_original": "A，D，E",
-    "id": 29
+    "id": 28
   },
   {
     "qtype": "判断题",
@@ -865,7 +837,7 @@
     "knowledge": "第4章 数据特征的统计量描述",
     "source": "题库6",
     "answer_original": "错",
-    "id": 30
+    "id": 29
   },
   {
     "qtype": "判断题",
@@ -885,7 +857,7 @@
     "knowledge": "第3章 数据的预处理与分组整理",
     "source": "题库6",
     "answer_original": "错",
-    "id": 31
+    "id": 30
   },
   {
     "qtype": "判断题",
@@ -905,7 +877,7 @@
     "knowledge": "第3章 数据的预处理与分组整理",
     "source": "题库6",
     "answer_original": "对",
-    "id": 32
+    "id": 31
   },
   {
     "qtype": "判断题",
@@ -925,7 +897,7 @@
     "knowledge": "第4章 数据特征的统计量描述",
     "source": "题库6",
     "answer_original": "错",
-    "id": 33
+    "id": 32
   },
   {
     "qtype": "判断题",
@@ -945,7 +917,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库6",
     "answer_original": "错",
-    "id": 34
+    "id": 33
   },
   {
     "qtype": "判断题",
@@ -965,7 +937,7 @@
     "knowledge": "第3章 数据的预处理与分组整理",
     "source": "题库6",
     "answer_original": "对",
-    "id": 35
+    "id": 34
   },
   {
     "qtype": "判断题",
@@ -985,7 +957,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库6",
     "answer_original": "错",
-    "id": 36
+    "id": 35
   },
   {
     "qtype": "判断题",
@@ -1005,7 +977,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库6",
     "answer_original": "对",
-    "id": 37
+    "id": 36
   },
   {
     "qtype": "判断题",
@@ -1025,7 +997,7 @@
     "knowledge": "第9章 假设检验",
     "source": "题库6",
     "answer_original": "对",
-    "id": 38
+    "id": 37
   },
   {
     "qtype": "判断题",
@@ -1045,7 +1017,7 @@
     "knowledge": "第9章 假设检验",
     "source": "题库6",
     "answer_original": "错",
-    "id": 39
+    "id": 38
   },
   {
     "qtype": "判断题",
@@ -1065,7 +1037,7 @@
     "knowledge": "第9章 假设检验",
     "source": "题库6",
     "answer_original": "错",
-    "id": 40
+    "id": 39
   },
   {
     "qtype": "判断题",
@@ -1085,7 +1057,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库6",
     "answer_original": "错",
-    "id": 41
+    "id": 40
   },
   {
     "qtype": "判断题",
@@ -1105,7 +1077,7 @@
     "knowledge": "第2章 数据的收集方法",
     "source": "题库6",
     "answer_original": "错",
-    "id": 42
+    "id": 41
   },
   {
     "qtype": "判断题",
@@ -1125,7 +1097,7 @@
     "knowledge": "第1章 统计学导论",
     "source": "题库6",
     "answer_original": "错",
-    "id": 43
+    "id": 42
   },
   {
     "qtype": "判断题",
@@ -1145,6 +1117,6 @@
     "knowledge": "第8章 参数估计",
     "source": "题库6",
     "answer_original": "对",
-    "id": 44
+    "id": 43
   }
 ]
