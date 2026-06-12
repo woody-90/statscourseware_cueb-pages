@@ -106,6 +106,11 @@ window.MathJax = {
 <body>
 
 <div class="container">
+  <!-- Visitor Counter (powered by countapi.xyz) -->
+  <div style="position:fixed;top:10px;right:20px;background:var(--card);border:2px solid var(--border);border-radius:20px;padding:0.4rem 1rem;font-size:0.8rem;color:#888;z-index:999;box-shadow:0 2px 8px rgba(0,0,0,0.06)" id="usage-counter">
+    👥 测验参与人次：<b id="visitor-count">...</b>
+  </div>
+
   <!-- Header -->
   <div class="header">
     <h1>📊 统计学 · 复习测验</h1>
@@ -190,6 +195,12 @@ window.MathJax = {
       <div class="wrong-list" id="wrong-list"></div>
     </div>
 
+    <!-- Chapter wrong-answer stats -->
+    <div id="chapter-stats" style="margin-top:1.5rem;background:var(--card);border:2px solid var(--border);border-radius:10px;padding:1rem;text-align:left">
+      <h3 style="margin-bottom:0.8rem">📊 各章节错题统计</h3>
+      <div id="chapter-stats-content"></div>
+    </div>
+
     <button class="btn btn-primary" onclick="restartQuiz()" style="width:100%;margin-top:1rem">重新测验</button>
   </div>
 </div>
@@ -203,6 +214,34 @@ let quizQuestions = [];
 let userAnswers = {};
 let timerInterval = null;
 let timeLeft = 0;
+
+// Visitor counter: countapi (global) with localStorage fallback
+let visitorCount = parseInt(localStorage.getItem('stats_visitor_base') || '0');
+
+function fetchVisitorCount() {
+  fetch('https://api.countapi.xyz/get/stats-cueb-quiz-app/visits')
+    .then(r => r.json()).then(d => {
+      if (d.value !== undefined) {
+        visitorCount = d.value;
+        document.getElementById('visitor-count').textContent = visitorCount;
+      }
+    }).catch(() => {
+      document.getElementById('visitor-count').textContent = visitorCount || '--';
+    });
+}
+
+function incrementVisitorCount() {
+  visitorCount++;
+  localStorage.setItem('stats_visitor_base', visitorCount);
+  document.getElementById('visitor-count').textContent = visitorCount;
+  // Try to sync with global counter
+  fetch('https://api.countapi.xyz/hit/stats-cueb-quiz-app/visits')
+    .then(r => r.json()).then(d => {
+      if (d.value !== undefined) document.getElementById('visitor-count').textContent = d.value;
+    }).catch(() => {});
+}
+
+fetchVisitorCount();
 
 // Load questions
 fetch('questions.json')
@@ -355,6 +394,9 @@ function formatTime(s) {
 function submitQuiz() {
   if (timerInterval) clearInterval(timerInterval);
 
+  // Increment global visitor counter
+  incrementVisitorCount();
+
   let correct = 0;
   let wrong = [];
   const total = quizQuestions.length;
@@ -451,6 +493,38 @@ function submitQuiz() {
   } else {
     document.getElementById('wrong-section').classList.add('hidden');
   }
+
+  // Chapter wrong-answer statistics
+  const chWrong = {};
+  quizQuestions.forEach((q, i) => {
+    const userAns = (userAnswers[i] || []).sort().join('');
+    const correctAns = [...q.correct].sort().join('');
+    if (userAns !== correctAns) {
+      const ch = q.chapter || '其他';
+      if (!chWrong[ch]) chWrong[ch] = { wrong: 0, total: 0 };
+      chWrong[ch].wrong++;
+    }
+    const ch = q.chapter || '其他';
+    if (!chWrong[ch]) chWrong[ch] = { wrong: 0, total: 0 };
+    chWrong[ch].total++;
+  });
+
+  const chSorted = Object.entries(chWrong).sort((a, b) => b[1].wrong - a[1].wrong);
+  document.getElementById('chapter-stats-content').innerHTML = chSorted.map(([ch, data], idx) => {
+    const pct = data.total > 0 ? Math.round(data.wrong / data.total * 100) : 0;
+    const barColor = pct > 50 ? 'var(--wrong)' : pct > 25 ? 'var(--warn)' : 'var(--correct)';
+    const medal = idx === 0 ? '🔴' : idx === 1 ? '🟡' : '🟢';
+    return `
+      <div style="display:flex;align-items:center;gap:0.5rem;margin-bottom:0.4rem">
+        <span style="font-size:0.8rem;min-width:20px">${medal}</span>
+        <span style="flex:1;font-size:0.85rem;min-width:140px">${ch}</span>
+        <span style="font-size:0.8rem;color:#888;min-width:60px">${data.wrong}/${data.total} 错</span>
+        <div style="flex:2;height:8px;background:var(--border);border-radius:4px;overflow:hidden">
+          <div style="height:100%;width:${pct}%;background:${barColor};border-radius:4px"></div>
+        </div>
+        <span style="font-size:0.75rem;min-width:35px;text-align:right">${pct}%</span>
+      </div>`;
+  }).join('');
 
   window.scrollTo(0, 0);
 }
