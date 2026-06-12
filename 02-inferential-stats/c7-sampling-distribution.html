@@ -1653,13 +1653,69 @@ data-has-math="true">
   class="slide slide-section"
   data-slide="19"
   id="slide-19"
->
+data-has-math="true">
   <div class="slide-content">
     <h2 id="_22">第三节 抽样分布</h2>
-<h3 id="_23">抽样分布的概念</h3>
+<h3 id="_23">总体分布、样本分布、抽样分布</h3>
+<p>这三个概念是统计推断的基石，必须严格区分：</p>
 <blockquote class="callout-def">
 <div class="callout-label">定义</div>
-<p> <strong>抽样分布</strong> — 样本统计量的概率分布。每个样本统计量都是随机变量，所有可能样本的统计量构成抽样分布。</p>
+<p> <strong>总体分布</strong> — 总体中所有个体的观测值所形成的分布。参数是固定的（<span class="math inline">\(\mu, \sigma\)</span>），通常未知。</p>
+<p><strong>定义：</strong> <strong>样本分布</strong> — 从总体中抽取的<strong>一个具体样本</strong>中 <span class="math inline">\(n\)</span> 个观测值的分布。每次抽样得到的样本不同，分布也不同。</p>
+<p><strong>定义：</strong> <strong>抽样分布</strong> — 某个<strong>样本统计量</strong>（如 <span class="math inline">\(\bar{x}\)</span>）在所有可能样本中的概率分布。它是统计推断的理论基础。</p>
+</blockquote>
+<table>
+<thead>
+<tr>
+<th></th>
+<th>总体分布</th>
+<th>样本分布</th>
+<th>抽样分布</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>数据来源</td>
+<td>全体个体</td>
+<td>一个样本的 <span class="math inline">\(n\)</span> 个值</td>
+<td>所有可能样本的统计量</td>
+</tr>
+<tr>
+<td>性质</td>
+<td>固定但未知</td>
+<td>随样本变化</td>
+<td>有确定的理论分布</td>
+</tr>
+<tr>
+<td>均值</td>
+<td><span class="math inline">\(\mu\)</span></td>
+<td><span class="math inline">\(\bar{x}\)</span></td>
+<td><span class="math inline">\(E(\bar{x}) = \mu\)</span></td>
+</tr>
+<tr>
+<td>标准差</td>
+<td><span class="math inline">\(\sigma\)</span></td>
+<td><span class="math inline">\(s\)</span></td>
+<td><span class="math inline">\(\sigma/\sqrt{n}\)</span>（标准误差）</td>
+</tr>
+</tbody>
+</table>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> 设某大学 10000 名学生的身高为总体，<span class="math inline">\(\mu = 168\)</span>cm，<span class="math inline">\(\sigma = 10\)</span>cm。</p>
+<p><strong>总体分布</strong>：10000 名学生的身高分布（<span class="math inline">\(\mu = 168, \sigma = 10\)</span>）。</p>
+<p><strong>样本分布</strong>：从中随机抽取 <strong>50 名学生</strong>，这 50 人的身高分布。
+<div class="math display">
+$$\bar{x} \text{ 可能是 } 167.3, \quad s \text{ 可能是 } 9.8$$
+</div>
+</p>
+<p><strong>抽样分布</strong>：如果<strong>反复抽取</strong>无数个容量为 50 的样本，计算每个样本的均值 <span class="math inline">\(\bar{x}_1, \bar{x}_2, \bar{x}_3, \ldots\)</span>，这些样本均值的分布就是抽样分布。</p>
+<p>根据中心极限定理：
+<div class="math display">
+$$\bar{x} \sim N\left(168, \frac{100}{50}\right) = N(168, 2)$$
+</div>
+</p>
+<p>抽样分布的标准差 <span class="math inline">\(\frac{10}{\sqrt{50}} \approx 1.41\)</span> 称为<strong>标准误差</strong>，比总体标准差（10）小得多——这就是为什么用样本均值估计总体均值比较精确。</p>
 </blockquote>
   </div>
 </section>
