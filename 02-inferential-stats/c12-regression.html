@@ -1157,7 +1157,27 @@ tags: 'ams',    macros: {
       <li><a href="#slide-9" data-slide="9" class="toc-section">
         第三节 回归方程的评价与检验
       </a></li>
-      <li><a href="#slide-10" data-slide="10" class="toc-section">
+      <li>
+        <a href="#slide-10" data-slide="10">
+          <span class="toc-num">10</span>一、经济意义检验
+        </a>
+      </li>
+      <li>
+        <a href="#slide-11" data-slide="11">
+          <span class="toc-num">11</span>二、拟合优度 \(R^2\)
+        </a>
+      </li>
+      <li>
+        <a href="#slide-12" data-slide="12">
+          <span class="toc-num">12</span>三、估计标准误差
+        </a>
+      </li>
+      <li>
+        <a href="#slide-13" data-slide="13">
+          <span class="toc-num">13</span>四、显著性检验
+        </a>
+      </li>
+      <li><a href="#slide-14" data-slide="14" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1167,7 +1187,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 11</span>
+  <span id="slide-counter">1 / 15</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1475,10 +1495,40 @@ data-has-math="true">
   class="slide slide-section"
   data-slide="9"
   id="slide-9"
-data-has-math="true">
+>
   <div class="slide-content">
     <h2 id="_11">第三节 回归方程的评价与检验</h2>
-<h3 id="_12">平方和分解</h3>
+<p>回归方程建立后，需要从多个角度评价其质量：</p>
+<ol>
+<li><strong>经济意义检验</strong> — 系数符号和大小是否合理</li>
+<li><strong>拟合优度</strong> — 模型对数据的拟合程度</li>
+<li><strong>估计标准误差</strong> — 预测的精度</li>
+<li><strong>显著性检验</strong> — 系数和方程是否统计显著</li>
+</ol>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="10"
+  id="slide-10"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_12">一、经济意义检验</h3>
+<blockquote class="callout-def">
+<div class="callout-label">定义</div>
+<p> 利用经济学原理和经验，判断回归系数的符号和大小能否得到合理解释。这是<strong>最先进行</strong>也是最基础的检验。</p>
+<p><strong>例子：</strong> 人均消费支出 <span class="math inline">\(= 184.56 + 0.692 \times\)</span> 人均可支配收入。<span class="math inline">\(b_1 = 0.692\)</span> 意味着收入每增加 1 元，消费平均增加 0.692 元——符号为正、大小在 0~1 之间，经济意义合理。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="11"
+  id="slide-11"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="math_placeholder_6977cab588a54e5583112a637431c3c3">二、拟合优度 <span class="math inline">\(R^2\)</span></h3>
+<p><strong>平方和分解</strong>：</p>
 <p>
 <div class="math display">
 $$SST = SSR + SSE$$
@@ -1488,25 +1538,29 @@ $$SST = SSR + SSE$$
 <thead>
 <tr>
 <th>符号</th>
+<th>全称</th>
 <th>含义</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td><span class="math inline">\(SST\)</span></td>
-<td>总平方和（<span class="math inline">\(Y\)</span> 的总变异）</td>
+<td>总平方和</td>
+<td><span class="math inline">\(Y\)</span> 的总变异</td>
 </tr>
 <tr>
 <td><span class="math inline">\(SSR\)</span></td>
-<td>回归平方和（被 <span class="math inline">\(X\)</span> 解释的部分）</td>
+<td>回归平方和</td>
+<td>被 <span class="math inline">\(X\)</span> 解释的部分</td>
 </tr>
 <tr>
 <td><span class="math inline">\(SSE\)</span></td>
-<td>残差平方和（未被解释的部分）</td>
+<td>残差平方和</td>
+<td>未被解释的部分</td>
 </tr>
 </tbody>
 </table>
-<h3 id="math_placeholder_bf0133720ee647d88d8307c6a77c7eed">拟合优度 <span class="math inline">\(R^2\)</span></h3>
+<p><strong>判定系数</strong>：</p>
 <p>
 <div class="math display">
 $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
@@ -1515,42 +1569,82 @@ $$R^2 = \frac{SSR}{SST} = 1 - \frac{SSE}{SST}$$
 <ul>
 <li><span class="math inline">\(0 \leq R^2 \leq 1\)</span>，越接近 1 拟合越好</li>
 <li>一元回归中 <span class="math inline">\(R^2 = r^2\)</span></li>
-<li><strong>调整 <span class="math inline">\(R^2\)</span></strong>：修正自变量个数对 <span class="math inline">\(R^2\)</span> 的高估</li>
+<li><span class="math inline">\(R^2\)</span> 会随自变量增加而增大，需用调整 <span class="math inline">\(R^2\)</span> 修正</li>
 </ul>
-<h3 id="_13">显著性检验</h3>
-<table>
-<thead>
-<tr>
-<th>检验</th>
-<th>目的</th>
-<th>假设</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong><span class="math inline">\(t\)</span> 检验</strong></td>
-<td>单个系数是否显著</td>
-<td><span class="math inline">\(H_0: \beta_i = 0\)</span></td>
-</tr>
-<tr>
-<td><strong><span class="math inline">\(F\)</span> 检验</strong></td>
-<td>方程整体是否显著</td>
-<td><span class="math inline">\(H_0: \beta_1 = \cdots = 0\)</span></td>
-</tr>
-</tbody>
-</table>
-<blockquote>
-<p>一元回归中 <span class="math inline">\(F = t^2\)</span>，两者等价。</p>
+<p><strong>调整 <span class="math inline">\(R^2\)</span></strong>：</p>
+<p>
+<div class="math display">
+$$R^2_{adj} = 1 - \frac{SSE/(n-p-1)}{SST/(n-1)}$$
+</div>
+</p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="12"
+  id="slide-12"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_13">三、估计标准误差</h3>
+<p>
+<div class="math display">
+$$s_e = \sqrt{\frac{SSE}{n-p-1}} = \sqrt{MSE}$$
+</div>
+</p>
+<p>度量回归方程预测 <span class="math inline">\(Y\)</span> 时的<strong>平均误差大小</strong>。<span class="math inline">\(s_e\)</span> 越小，预测越精确。</p>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="13"
+  id="slide-13"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_14">四、显著性检验</h3>
+<h4 id="1-math_placeholder_a55585f309534fe5a0b79aac13c7e458">（1）回归系数的显著性检验 — <span class="math inline">\(t\)</span> 检验</h4>
+<p><strong>目的</strong>：检验单个自变量对 <span class="math inline">\(Y\)</span> 的影响是否显著。</p>
+<p>
+<div class="math display">
+$$H_0: \beta_i = 0, \quad H_1: \beta_i \neq 0$$
+</div>
+</p>
+<p>
+<div class="math display">
+$$t = \frac{b_i}{SE(b_i)} \sim t(n-p-1)$$
+</div>
+</p>
+<p>若 <span class="math inline">\(|t| > t_{\alpha/2}\)</span> 或 <span class="math inline">\(p < \alpha\)</span>，则拒绝 <span class="math inline">\(H_0\)</span>，认为该自变量的影响是显著的。</p>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> 人均消费支出回归中，<span class="math inline">\(b_1\)</span> 的 <span class="math inline">\(t = 24.148\)</span>，<span class="math inline">\(p = 0.00 < 0.05\)</span>，拒绝 <span class="math inline">\(H_0\)</span>，人均可支配收入对消费支出的影响是显著的。</p>
+</blockquote>
+<h4 id="2-math_placeholder_fd015736d5c1470783030715dcb107af">（2）回归方程线性关系的显著性检验 — <span class="math inline">\(F\)</span> 检验</h4>
+<p><strong>目的</strong>：检验所有自变量与 <span class="math inline">\(Y\)</span> 的整体线性关系是否显著。</p>
+<p>
+<div class="math display">
+$$H_0: \beta_1 = \beta_2 = \cdots = \beta_p = 0$$
+</div>
+</p>
+<p>
+<div class="math display">
+$$F = \frac{SSR/p}{SSE/(n-p-1)} = \frac{MSR}{MSE} \sim F(p, n-p-1)$$
+</div>
+</p>
+<p>若 <span class="math inline">\(F > F_\alpha\)</span> 或 <span class="math inline">\(p < \alpha\)</span>，则拒绝 <span class="math inline">\(H_0\)</span>，认为整体线性关系显著。</p>
+<blockquote class="callout-ex">
+<div class="callout-label">例子</div>
+<p> <span class="math inline">\(F = 583.144\)</span>，<span class="math inline">\(p = 0.00 < 0.05\)</span>，拒绝 <span class="math inline">\(H_0\)</span>，回归方程整体显著。</p>
+<p><strong>注意：</strong> 一元回归中 <span class="math inline">\(F = t^2\)</span>，两者等价。多元回归中两者检验不同。</p>
 </blockquote>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="10"
-  id="slide-10"
+  data-slide="14"
+  id="slide-14"
 data-has-math="true">
   <div class="slide-content">
-    <h2 id="_14">本章小结</h2>
+    <h2 id="_15">本章小结</h2>
 <ol>
 <li>相关系数 <span class="math inline">\(r \in [-1, 1]\)</span>，度量线性关系的强度和方向；<span class="math inline">\(r=0\)</span> 只表示无线性关系</li>
 <li>回归方程 <span class="math inline">\(\hat{y} = b_0 + b_1 x\)</span>，用 OLS 估计</li>
@@ -1561,8 +1655,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="11"
-  id="slide-11"
+  data-slide="15"
+  id="slide-15"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
