@@ -1131,10 +1131,15 @@ tags: 'ams',    macros: {
       <li><a href="#slide-3" data-slide="3" class="toc-section">
         第一节 构成要素与模式
       </a></li>
-      <li><a href="#slide-4" data-slide="4" class="toc-section">
+      <li>
+        <a href="#slide-4" data-slide="4">
+          <span class="toc-num">4</span>构成模式
+        </a>
+      </li>
+      <li><a href="#slide-5" data-slide="5" class="toc-section">
         第二节 长期趋势分析（略讲）
       </a></li>
-      <li><a href="#slide-5" data-slide="5" class="toc-section">
+      <li><a href="#slide-6" data-slide="6" class="toc-section">
         本章小结
       </a></li>
     </ul>
@@ -1144,7 +1149,7 @@ tags: 'ams',    macros: {
 <!-- ====== Navigation Controls ====== -->
 <nav id="slide-controls" aria-label="演示控制">
   <button id="btn-prev" title="上一页 (←)" aria-label="上一页">▲</button>
-  <span id="slide-counter">1 / 6</span>
+  <span id="slide-counter">1 / 7</span>
   <button id="btn-next" title="下一页 (→)" aria-label="下一页">▼</button>
   <button id="btn-mode" title="切换滚动模式 (M)" aria-label="切换模式">☰</button>
   <button id="btn-fullscreen" title="全屏 (F)" aria-label="全屏">⛶</button>
@@ -1197,8 +1202,7 @@ tags: 'ams',    macros: {
     <h3 id="_2">本章内容</h3>
 <ul>
 <li>时间数列的构成要素与模式</li>
-<li>长期趋势的测定方法</li>
-<li>季节变动的测定（*）</li>
+<li>长期趋势的测定方法（略讲）</li>
 </ul>
   </div>
 </section>
@@ -1210,14 +1214,15 @@ data-has-math="true">
   <div class="slide-content">
     <h2 id="_3">第一节 构成要素与模式</h2>
 <h3 id="tsci">TSCI 四要素</h3>
-<p>一个时间数列可能包含多种要素：</p>
+<p>一个时间数列的变化通常由四种因素共同作用：</p>
 <table>
 <thead>
 <tr>
 <th>要素</th>
 <th>符号</th>
 <th>含义</th>
-<th>周期</th>
+<th>特点</th>
+<th>例子</th>
 </tr>
 </thead>
 <tbody>
@@ -1225,59 +1230,69 @@ data-has-math="true">
 <td><strong>长期趋势</strong></td>
 <td><span class="math inline">\(T\)</span></td>
 <td>持续上升/下降的基本方向</td>
-<td>长期</td>
+<td>长期、稳定</td>
+<td>GDP 逐年增长</td>
 </tr>
 <tr>
 <td><strong>季节变动</strong></td>
 <td><span class="math inline">\(S\)</span></td>
 <td>1 年内周期性波动</td>
-<td>固定（年）</td>
+<td>周期固定（年）</td>
+<td>羽绒服销量冬季高</td>
 </tr>
 <tr>
 <td><strong>循环变动</strong></td>
 <td><span class="math inline">\(C\)</span></td>
 <td>非固定周期的涨落起伏</td>
-<td>数年</td>
+<td>周期较长（数年）</td>
+<td>经济繁荣-衰退周期</td>
 </tr>
 <tr>
 <td><strong>不规则变动</strong></td>
 <td><span class="math inline">\(I\)</span></td>
 <td>随机因素引起</td>
-<td>无规律</td>
+<td>无规律、不可预测</td>
+<td>自然灾害、突发事件</td>
 </tr>
 </tbody>
 </table>
-<h3 id="_4">构成模式</h3>
-<p><strong>加法模型</strong>（因素相互独立）：
-
+<blockquote class="callout-note">
+<div class="callout-label">注意</div>
+<p> 并非每个时间数列都包含四种要素。有的可能只包含 <span class="math inline">\(T\)</span> 和 <span class="math inline">\(I\)</span>，取决于数据的性质。</p>
+</blockquote>
+  </div>
+</section>
+<section
+  class="slide slide-content"
+  data-slide="4"
+  id="slide-4"
+data-has-math="true">
+  <div class="slide-content">
+    <h3 id="_4">构成模式</h3>
+<p><strong>加法模型</strong>（假设四种因素相互独立，各分量与原始数据同单位）：</p>
+<p>
 <div class="math display">
 $$Y = T + S + C + I$$
 </div>
 </p>
-<p>各分量与原始数据同单位。季节波动振幅保持恒定 → 加法模型。</p>
-<p><strong>乘法模型</strong>（因素相互影响）：
-
+<blockquote>
+<p><strong>判断依据：</strong> 季节波动的<strong>振幅保持恒定</strong>（平行带状）→ 用加法模型。</p>
+</blockquote>
+<p><strong>乘法模型</strong>（假设四种因素相互影响，<span class="math inline">\(T\)</span> 与原始数据同单位，<span class="math inline">\(S, C, I\)</span> 为比例）：</p>
+<p>
 <div class="math display">
 $$Y = T \times S \times C \times I$$
 </div>
 </p>
-<p><span class="math inline">\(T\)</span> 与原始数据同单位，<span class="math inline">\(S, C, I\)</span> 为比例。振幅逐渐扩大 → 乘法模型。</p>
-<div class="quiz" id="quiz_4951656209065178525">
-<p class="quiz-question"><strong>📝 小测验：</strong>季节变动的振幅逐年扩大，应选用哪种模型？</p>
-<ul class="quiz-options">
-<li data-correct="false" id="quiz_4951656209065178525_0" class="quiz-option">加法模型</li>
-<li data-correct="true" id="quiz_4951656209065178525_1" class="quiz-option">乘法模型</li>
-<li data-correct="false" id="quiz_4951656209065178525_2" class="quiz-option">混合模型</li>
-<li data-correct="false" id="quiz_4951656209065178525_3" class="quiz-option">线性模型</li>
-</ul>
-<div class="quiz-feedback" id="quiz_4951656209065178525_feedback"></div>
-</div>
+<blockquote>
+<p><strong>判断依据：</strong> 季节波动的<strong>振幅逐渐扩大或缩小</strong>（喇叭口状）→ 用乘法模型。</p>
+</blockquote>
   </div>
 </section>
 <section
   class="slide slide-section"
-  data-slide="4"
-  id="slide-4"
+  data-slide="5"
+  id="slide-5"
 data-has-math="true">
   <div class="slide-content">
     <h2 id="_5">第二节 长期趋势分析（略讲）</h2>
@@ -1287,8 +1302,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-section"
-  data-slide="5"
-  id="slide-5"
+  data-slide="6"
+  id="slide-6"
 data-has-math="true">
   <div class="slide-content">
     <h2 id="_6">本章小结</h2>
@@ -1302,8 +1317,8 @@ data-has-math="true">
 </section>
 <section
   class="slide slide-content"
-  data-slide="6"
-  id="slide-6"
+  data-slide="7"
+  id="slide-7"
 >
   <div class="slide-content">
     <p>谢谢观看</p>
