@@ -26,7 +26,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 2,
@@ -55,7 +55,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 3,
@@ -84,7 +84,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 4,
@@ -113,7 +113,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 5,
@@ -142,7 +142,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 6,
@@ -171,7 +171,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 7,
@@ -200,7 +200,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 8,
@@ -229,7 +229,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第7章 概率抽样与抽样分布"
+    "review": "../02-推断统计/第7章-概率抽样与抽样分布.html"
   },
   {
     "id": 9,
@@ -258,7 +258,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 10,
@@ -287,7 +287,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 11,
@@ -316,7 +316,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 12,
@@ -345,7 +345,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 13,
@@ -374,7 +374,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 14,
@@ -403,7 +403,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 15,
@@ -432,7 +432,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 16,
@@ -461,7 +461,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 17,
@@ -490,7 +490,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 18,
@@ -519,7 +519,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 19,
@@ -548,7 +548,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 20,
@@ -583,7 +583,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 21,
@@ -617,7 +617,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 22,
@@ -652,7 +652,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 23,
@@ -687,7 +687,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 24,
@@ -721,7 +721,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 25,
@@ -756,7 +756,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 26,
@@ -791,7 +791,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 27,
@@ -827,7 +827,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 28,
@@ -862,7 +862,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 29,
@@ -883,7 +883,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 30,
@@ -904,7 +904,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 31,
@@ -925,7 +925,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 32,
@@ -946,7 +946,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 33,
@@ -967,7 +967,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 34,
@@ -988,7 +988,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 35,
@@ -1009,7 +1009,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 36,
@@ -1030,7 +1030,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 37,
@@ -1051,7 +1051,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 38,
@@ -1072,7 +1072,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 39,
@@ -1093,7 +1093,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 40,
@@ -1114,7 +1114,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 41,
@@ -1135,7 +1135,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 42,
@@ -1156,7 +1156,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第1章 统计学导论"
+    "review": "../01-description/c1-stat-introduction.html"
   },
   {
     "id": 43,
@@ -1177,7 +1177,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 44,
@@ -1206,7 +1206,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 45,
@@ -1235,7 +1235,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 46,
@@ -1264,7 +1264,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 47,
@@ -1293,7 +1293,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 48,
@@ -1322,7 +1322,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 49,
@@ -1351,7 +1351,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 50,
@@ -1380,7 +1380,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 51,
@@ -1409,7 +1409,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 52,
@@ -1433,7 +1433,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 53,
@@ -1462,7 +1462,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 54,
@@ -1491,7 +1491,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 55,
@@ -1520,7 +1520,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 56,
@@ -1549,7 +1549,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 57,
@@ -1578,7 +1578,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 58,
@@ -1607,7 +1607,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 59,
@@ -1636,7 +1636,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 60,
@@ -1661,7 +1661,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 61,
@@ -1692,7 +1692,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 62,
@@ -1723,7 +1723,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 63,
@@ -1759,7 +1759,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 64,
@@ -1788,7 +1788,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 65,
@@ -1817,7 +1817,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 66,
@@ -1846,7 +1846,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 67,
@@ -1875,7 +1875,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 68,
@@ -1900,7 +1900,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 69,
@@ -1930,7 +1930,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 70,
@@ -1964,7 +1964,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 71,
@@ -1993,7 +1993,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 72,
@@ -2022,7 +2022,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 73,
@@ -2051,7 +2051,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 74,
@@ -2080,7 +2080,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 75,
@@ -2109,7 +2109,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 76,
@@ -2138,7 +2138,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 77,
@@ -2173,7 +2173,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 78,
@@ -2207,7 +2207,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 79,
@@ -2236,7 +2236,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 80,
@@ -2265,7 +2265,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 81,
@@ -2294,7 +2294,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 82,
@@ -2323,7 +2323,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 83,
@@ -2352,7 +2352,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 84,
@@ -2381,7 +2381,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第13章 时间序列的描述性分析"
+    "review": "../04-时间序列/第13章-时间序列的描述性分析.html"
   },
   {
     "id": 85,
@@ -2410,7 +2410,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 86,
@@ -2439,7 +2439,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 87,
@@ -2468,7 +2468,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 88,
@@ -2497,7 +2497,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 89,
@@ -2526,7 +2526,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 90,
@@ -2555,7 +2555,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 91,
@@ -2584,7 +2584,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 92,
@@ -2613,7 +2613,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第12章 相关分析与回归分析"
+    "review": "../03-高级方法/第12章-相关分析与回归分析.html"
   },
   {
     "id": 93,
@@ -2648,7 +2648,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 94,
@@ -2683,7 +2683,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 95,
@@ -2712,7 +2712,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 96,
@@ -2741,7 +2741,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 97,
@@ -2770,7 +2770,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第5章 数据资料的图形展示"
+    "review": "../01-description/c5-data-visualization.html"
   },
   {
     "id": 98,
@@ -2799,7 +2799,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 99,
@@ -2828,7 +2828,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 100,
@@ -2857,7 +2857,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第13章 时间序列的描述性分析"
+    "review": "../04-时间序列/第13章-时间序列的描述性分析.html"
   },
   {
     "id": 101,
@@ -2893,7 +2893,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第1章 统计学导论"
+    "review": "../01-description/c1-stat-introduction.html"
   },
   {
     "id": 102,
@@ -2924,7 +2924,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 103,
@@ -2955,7 +2955,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 104,
@@ -2991,7 +2991,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 105,
@@ -3027,7 +3027,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第14章 时间序列的构成与预测"
+    "review": "../04-时间序列/第14章-时间序列的构成与预测.html"
   },
   {
     "id": 106,
@@ -3056,7 +3056,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 107,
@@ -3085,7 +3085,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 108,
@@ -3120,7 +3120,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第1章 统计学导论"
+    "review": "../01-description/c1-stat-introduction.html"
   },
   {
     "id": 109,
@@ -3155,7 +3155,7 @@
       "E"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   },
   {
     "id": 110,
@@ -3190,7 +3190,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第10章 方差分析"
+    "review": "../03-高级方法/第10章-方差分析.html"
   },
   {
     "id": 111,
@@ -3226,7 +3226,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第14章 时间序列的构成与预测"
+    "review": "../04-时间序列/第14章-时间序列的构成与预测.html"
   },
   {
     "id": 112,
@@ -3255,7 +3255,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 113,
@@ -3284,7 +3284,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第3章 数据的预处理与分组整理"
+    "review": "../01-description/c3-data-preprocessing.html"
   },
   {
     "id": 114,
@@ -3313,7 +3313,7 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 115,
@@ -3342,7 +3342,7 @@
       "D"
     ],
     "knowledge": "",
-    "review": "第4章 数据特征的统计量描述"
+    "review": "../01-description/c4-descriptive-measures.html"
   },
   {
     "id": 116,
@@ -3371,7 +3371,7 @@
       "C"
     ],
     "knowledge": "",
-    "review": "第2章 数据的收集方法"
+    "review": "../01-description/c2-data-collection.html"
   },
   {
     "id": 117,
@@ -3400,7 +3400,7 @@
       "B"
     ],
     "knowledge": "",
-    "review": "第8章 参数估计"
+    "review": "../02-推断统计/第8章-参数估计.html"
   },
   {
     "id": 118,
@@ -3429,6 +3429,6 @@
       "A"
     ],
     "knowledge": "",
-    "review": "第9章 假设检验"
+    "review": "../02-推断统计/第9章-假设检验.html"
   }
 ]
