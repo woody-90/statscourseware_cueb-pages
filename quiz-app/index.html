@@ -106,9 +106,9 @@ window.MathJax = {
 <body>
 
 <div class="container">
-  <!-- Visitor Counter (powered by countapi.xyz) -->
+  <!-- Completed Tests Counter (localStorage, per browser) -->
   <div style="position:fixed;top:10px;right:20px;background:var(--card);border:2px solid var(--border);border-radius:20px;padding:0.4rem 1rem;font-size:0.8rem;color:#888;z-index:999;box-shadow:0 2px 8px rgba(0,0,0,0.06)" id="usage-counter">
-    👥 测验参与人次：<b id="visitor-count">...</b>
+    📝 本浏览器完成测验：<b id="test-count">0</b> 次
   </div>
 
   <!-- Header -->
@@ -215,33 +215,9 @@ let userAnswers = {};
 let timerInterval = null;
 let timeLeft = 0;
 
-// Visitor counter: countapi (global) with localStorage fallback
-let visitorCount = parseInt(localStorage.getItem('stats_visitor_base') || '0');
-
-function fetchVisitorCount() {
-  fetch('https://api.countapi.xyz/get/stats-cueb-quiz-app/visits')
-    .then(r => r.json()).then(d => {
-      if (d.value !== undefined) {
-        visitorCount = d.value;
-        document.getElementById('visitor-count').textContent = visitorCount;
-      }
-    }).catch(() => {
-      document.getElementById('visitor-count').textContent = visitorCount || '--';
-    });
-}
-
-function incrementVisitorCount() {
-  visitorCount++;
-  localStorage.setItem('stats_visitor_base', visitorCount);
-  document.getElementById('visitor-count').textContent = visitorCount;
-  // Try to sync with global counter
-  fetch('https://api.countapi.xyz/hit/stats-cueb-quiz-app/visits')
-    .then(r => r.json()).then(d => {
-      if (d.value !== undefined) document.getElementById('visitor-count').textContent = d.value;
-    }).catch(() => {});
-}
-
-fetchVisitorCount();
+// Completed test counter (per browser, via localStorage)
+let testCount = parseInt(localStorage.getItem('stats_test_count') || '0');
+document.getElementById('test-count').textContent = testCount;
 
 // Load questions
 fetch('questions.json')
@@ -394,8 +370,10 @@ function formatTime(s) {
 function submitQuiz() {
   if (timerInterval) clearInterval(timerInterval);
 
-  // Increment global visitor counter
-  incrementVisitorCount();
+  // Increment local test completion counter
+  testCount++;
+  localStorage.setItem('stats_test_count', testCount);
+  document.getElementById('test-count').textContent = testCount;
 
   let correct = 0;
   let wrong = [];
